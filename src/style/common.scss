@@ -1,0 +1,124 @@
+$primary-color: #ffdb1b;
+$text-black: #242629;
+.font68 {
+  font-size: 3.4rem;
+}
+.font56 {
+  font-size: 2.8rem;
+}
+.font46 {
+  font-size: 2.3rem;
+}
+.font40 {
+  font-size: 2rem;
+}
+.font34 {
+  font-size: 1.7rem;
+}
+
+.font32 {
+  font-size: 1.6rem;
+}
+
+.font28 {
+  font-size: 1.4rem;
+}
+
+.font26 {
+  font-size: 1.3rem;
+}
+
+.font24 {
+  font-size: 1.2rem;
+}
+
+.font20 {
+  font-size: 1rem;
+}
+
+.font18 {
+  font-size: .9rem;
+}
+
+.font16 {
+  font-size: .8rem;
+}
+
+.font14 {
+  font-size: .7rem;
+}
+
+.fon12 {
+  font-size: .6rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.c-text-primary {
+  color: $primary-color;
+}
+.text-grey {
+  color: #BDBFC2;
+}
+.text-grey-dark {
+  color: #717376;
+}
+.text-red {
+  color: #EF5656;
+}
+.text-black {
+  color: $text-black;
+}
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-start-center {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+button {
+  outline: none!important;
+}
+[role="button"] {
+  outline: none!important;
+}
+.primary-btn {
+  height: 2.8rem;
+  padding: .8rem 1.5rem;
+  background-color: $primary-color;
+  box-shadow: 0 4px 8px 2px rgba(255, 219, 27, 0.3);
+  font-size: .8rem;
+  color: #242629;
+  border: none;
+  border-radius: 2.8rem;
+  font-weight: 500;
+}
+.icon {
+  display: inline-block;
+  width: .8rem;
+  height: .8rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.select-icon {
+  background-image: url("~@/assets/arrow-down.svg");
+}
+
+
+@media (min-width: 960px) {
+  section {
+    padding: 3rem;
+  }
+}
+@media (max-width: 960px) {
+  section {
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+  }
+}
