@@ -11,7 +11,8 @@
       </div>
     </div>
     <div class="m-img">
-      <img class="mission-img" src="~@/assets/start-img1.png" alt="">
+      <img v-if="$i18n.locale==='zh'" class="mission-img" src="~@/assets/start-img-zh.png" alt="">
+      <img v-else class="mission-img" src="~@/assets/start-img1.png" alt="">
     </div>
   </section>
 </template>

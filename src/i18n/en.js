@@ -7,6 +7,8 @@ export default {
   aboutUs: 'About Us',
   peanut: 'Peanut',
   crowdLoan: 'Crowdloan',
+  economicWhitePaper: 'Economic Whitepaper',
+  technicalWhitePaper: 'Technical Whitepaper',
   startSection: {
     p1: 'Build Your Own Staking Economy',
     getStarted: 'Get Started'

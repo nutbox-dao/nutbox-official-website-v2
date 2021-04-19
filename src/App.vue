@@ -1,6 +1,6 @@
 <template>
   <div id="app" >
-    <div class="page-container" v-on:scroll="windowScroll">
+    <div class="page-container">
       <div class="page-header">
         <div class="container">
           <b-navbar toggleable="lg">
@@ -9,26 +9,26 @@
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
-              <b-navbar-nav>
-                <b-nav-item-dropdown variant="text" right no-caret>
+              <b-navbar-nav v-for="item of menuOptions" :key="item.name">
+                <b-nav-item-dropdown variant="text" no-caret v-if="item.multi">
                   <template #button-content>
                     <div class="d-flex align-items-center justify-content-center">
-                      <span class="font-bold">{{$t('products')}}</span>
+                      <span class="font-bold">{{$t(item.name)}}</span>
                       <i class="icon select-icon ml-1"></i>
                     </div>
                   </template>
-                  <b-dropdown-item v-for="item of productsOptions" :key="item.name"
-                                   :href="item.url" target="_blank">
+                  <b-dropdown-item v-for="subItem of item.subOptions" :key="subItem.name"
+                                   :href="subItem.url" target="_blank">
                     <div class="flex-between-center" style="line-height: 2rem">
-                      <span class="font-bold">{{$t(item.name)}}</span>
+                      <div class="flex-start-center">
+                        <img v-if="item.name==='doc'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
+                        <span class="font-bold">{{$t(subItem.name)}}</span>
+                      </div>
                       <img style="width: .8rem" src="~@/assets/arrow-forward.svg" alt="">
                     </div>
                   </b-dropdown-item>
                 </b-nav-item-dropdown>
-              </b-navbar-nav>
-              <b-navbar-nav class="mr-auto">
-                <b-nav-item v-for="item of menuOptions" :key="item.name"
-                            href="javascript:void(0)" :class="activeNav === item.id? 'active':''"
+                <b-nav-item v-else href="javascript:void(0)" :class="activeNav === item.id? 'active':''"
                             @click="selectMenu(item.id, item.url, item.target)">{{ $t(item.name) }}
                 </b-nav-item>
               </b-navbar-nav>
@@ -72,27 +72,31 @@ export default {
   data () {
     return {
       menuOptions: [
-        // { name: 'home', url: '/', id: 'home' },
+        {
+          name: 'products',
+          multi: true,
+          id: 'products',
+          url: '',
+          subOptions: [
+            { name: 'peanut', url: 'https://nutbox.io' },
+            { name: 'crowdLoan', url: 'https://crowdloan.nutbox.io' }
+          ]
+        },
         {
           name: 'doc',
-          url: 'https://docs.nutbox.io',
           id: 'doc',
-          target: 'blank'
+          multi: true,
+          url: '',
+          subOptions: [
+            { name: 'economicWhitePaper', url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/eb3d99a2-63b2-4f2c-ac20-339d4b5c2623/Nutbox-Economic_Whitepaper_-_EN.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210419%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210419T111942Z&X-Amz-Expires=86400&X-Amz-Signature=3021c606db5773debee84a157d459cd3429b41a94204a8b8a4c20c3feb5e6367&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Nutbox-Economic_Whitepaper_-_EN.pdf%22' },
+            { name: 'technicalWhitePaper', url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/70830ba6-0686-420d-abb6-9fd44cf9a72d/Nutbox-Technical_Whitepaper_-_EN.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210419%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210419T112730Z&X-Amz-Expires=86400&X-Amz-Signature=8ffeffc924431963c643b290564c5a86dccd52395f265e82da7b33dfd437ee78&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Nutbox-Technical_Whitepaper_-_EN.pdf%22' }
+          ]
         },
         {
           name: 'aboutUs',
+          multi: false,
           url: '/about',
           id: 'about'
-        }
-      ],
-      productsOptions: [
-        {
-          name: 'peanut',
-          url: 'https://nutbox.io'
-        },
-        {
-          name: 'crowdLoan',
-          url: 'https://crowdloan.nutbox.io'
         }
       ],
       activeNav: 'home',
@@ -119,14 +123,6 @@ export default {
           break
         }
       }
-    },
-    windowScroll () {
-      // this.scroll = document.querySelector('#app').scrollTop
-      // if (this.scroll > 70) {
-      //   document.querySelector('.page-header').classList.add('header-fixed')
-      // } else {
-      //   document.querySelector('.page-header').classList.remove('header-fixed')
-      // }
     },
     selectMenu (id, url, target = '') {
       if (target === 'blank') {

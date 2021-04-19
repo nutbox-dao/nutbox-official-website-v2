@@ -7,6 +7,8 @@ export default {
   aboutUs: '关于我们',
   peanut: 'Peanut',
   crowdLoan: '众贷',
+  economicWhitePaper: '经济白皮书',
+  technicalWhitePaper: '技术白皮书',
   startSection: {
     p1: '创建自己的质押经济平台',
     getStarted: '点击开启'
@@ -51,14 +53,14 @@ export default {
     t7: '2021年08月',
     n7: 'Nutbox v2主网上线',
     d7: '',
-    t8: '2021 Q3',
-    n8: 'Nutbox v2 support more PoS Chain（BSC、ETH2.0、Near.etc）',
+    t8: '2021年Q3',
+    n8: 'Nutbox v2 支持更多 PoS 链（BSC、ETH2.0、Near等）',
     d8: '',
-    t9: '2021 Q4',
+    t9: '2021年Q4',
     n9: '上线 Donut',
-    d9: 'Donut —— A cross-chain bridge of Steem Blockchain and Polkadot',
-    t10: '2022 ->',
-    n10: 'Nutbox for Polkadot parachain，上Staking Economy之上构建DAO Factory',
+    d9: 'Donut —Steem和Polkadot之间的跨链桥',
+    t10: '2022年->',
+    n10: 'Nutbox开发Polkadot 平行链，在Staking Economy之上构建DAO Factory',
     d10: ''
   },
   partnerSection: {
