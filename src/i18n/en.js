@@ -9,9 +9,11 @@ export default {
   crowdLoan: 'Crowdloan',
   economicWhitePaper: 'Economic Whitepaper',
   technicalWhitePaper: 'Technical Whitepaper',
+  comingSoon: 'Coming Soon',
   startSection: {
     p1: 'Build Your Own Staking Economy',
-    getStarted: 'Get Started'
+    btn1: 'Try Nutbox V2',
+    btn2: 'Try Peanut'
   },
   factorySection: {
     title: 'All in one DAO Factory',

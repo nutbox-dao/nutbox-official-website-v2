@@ -9,9 +9,11 @@ export default {
   crowdLoan: '众贷',
   economicWhitePaper: '经济白皮书',
   technicalWhitePaper: '技术白皮书',
+  comingSoon: '即将推出',
   startSection: {
     p1: '创建自己的质押经济平台',
-    getStarted: '点击开启'
+    btn1: '进入 Nutbox V2',
+    btn2: '进入 Peanut'
   },
   factorySection: {
     title: '一站式的DAO工厂',

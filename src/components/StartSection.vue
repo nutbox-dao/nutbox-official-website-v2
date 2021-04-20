@@ -5,8 +5,27 @@
         <div class="col-md-6 text-left left-box">
           <div class="font32 font-bold mb-4">Nutbox</div>
           <div class="desc font-bold mb-4" style="line-height: 3.6rem">{{$t('startSection.p1')}}</div>
-          <a class="primary-btn"
-             href="https://nutbox.io" target="_blank">{{$t('startSection.getStarted')}}</a>
+          <div class="flex-start-center">
+            <a class="primary-btn mr-2"
+               href="https://peanut.nutbox.io" target="_blank">{{$t('startSection.btn2')}}</a>
+            <a class="primary-btn coming"
+               v-b-tooltip.hover :title="$t('comingSoon')"
+               href="#" target="_self">{{$t('startSection.btn1')}}</a>
+          </div>
+          <div class="row-img">
+            <a href="https://github.com/nutbox-dao" target="_blank">
+              <img src="~@/assets/github.png" alt="">
+            </a>
+            <a href="https://twitter.com/nutbox_steem" target="_blank">
+              <img src="~@/assets/twitter.svg" alt="">
+            </a>
+            <a href="https://t.me/nutbox_defi" target="_blank">
+              <img src="~@/assets/telegram.svg" alt="">
+            </a>
+            <a href="https://discord.gg/zPkMuGY" target="_blank">
+              <img src="~@/assets/discord.svg" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -39,8 +58,16 @@ export default {
     justify-content: center;
     min-height: 25rem;
     max-height: 40rem;
+    z-index: 1;
     .desc {
       font-size: 3.2rem;
+    }
+    .row-img {
+      margin-top: 10%;
+    }
+    .row-img img{
+      width: 2rem;
+      margin-right: 1rem;
     }
   }
   .m-img {
@@ -53,7 +80,7 @@ export default {
   .mission-img {
     width: 100%;
   }
-  a {
+  .primary-btn {
     width: 10rem;
     text-align: center;
     background-color: rgba(36, 38, 41, 1);
@@ -61,6 +88,9 @@ export default {
     box-shadow: none;
     text-decoration: none;
     font-weight: 700;
+    &.coming {
+      background-color: rgba(255, 255, 255, .4);
+    }
   }
 }
 @media (min-width: 1660px) {
@@ -86,6 +116,9 @@ export default {
   }
 }
 @media (max-width: 577px) {
+  .row-img {
+    margin-top: 1rem!important;
+  }
   .left-box .desc {
     font-size: 2.8rem!important;
   }
