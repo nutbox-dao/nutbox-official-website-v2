@@ -94,7 +94,7 @@ export default {
       p3: 'CEO of Chengdu 9Broad Technology'
     },
     member3: {
-      title: 'Co-funder',
+      title: 'Co-founder',
       name: 'Wenfeng Wang',
       p1: 'More than 5 years of experience in blockchain development',
       p2: 'Developer of Bitcoin, Ethereum, Polkadot'
