@@ -111,7 +111,7 @@ export default {
     title: 'Our First DAO',
     msg1: 'The 1st DAO built by Nutbox',
     msg2: 'The 2nd largest agent of Steem',
-    msg3: 'Staking Value of STEEM',
+    msg3: 'Staking Value of Steem',
     msg4: 'Market Value of Peanut'
   },
   globalSection: {

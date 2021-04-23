@@ -36,7 +36,8 @@ export default {
   border-radius: 1.2rem;
   padding: 2rem 1rem;
   img {
-    height: 2.5rem;
+    //height: 2.5rem;
+    width: 100%;
   }
 }
 a{
