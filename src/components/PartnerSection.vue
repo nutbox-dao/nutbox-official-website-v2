@@ -2,17 +2,20 @@
   <section id="partner-section">
     <div class="font40 font-bold">{{$t('partnerSection.title')}}</div>
     <div class="row mt-2 mb-2">
-      <div class="col-lg-3 col-6  mb-4">
+      <div class="col-lg-4 col-6  mb-4">
         <div class="p-card"><img src="~@/assets/partner-logo1.png" alt=""></div>
       </div>
-      <div class="col-lg-3 col-6 mb-4">
+      <div class="col-lg-4 col-6 mb-4">
         <div class="p-card"><img src="~@/assets/partner-logo2.png" alt=""></div>
       </div>
-      <div class="col-lg-3 col-6 mb-4">
+      <div class="col-lg-4 col-6 mb-4">
         <div class="p-card"><img src="~@/assets/partner-logo3.png" alt=""></div>
       </div>
-      <div class="col-lg-3 col-6 mb-4">
+      <div class="col-lg-4 offset-lg-2 col-6 mb-4">
         <div class="p-card"><img src="~@/assets/partner-logo4.png" alt=""></div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4">
+        <div class="p-card"><img src="~@/assets/partner-logo5.png" alt=""></div>
       </div>
     </div>
     <a class="partner-btn" href="http://nutboxteam.hk.mikecrm.com/wRvLdZR"

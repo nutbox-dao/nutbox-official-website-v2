@@ -30,6 +30,7 @@
     </div>
     <div class="m-img">
       <img v-if="$i18n.locale==='zh'" class="mission-img" src="~@/assets/start-img-zh.png" alt="">
+      <img v-if="$i18n.locale==='es'" class="mission-img" src="~@/assets/start-img-es.png" alt="">
       <img v-else class="mission-img" src="~@/assets/start-img1.png" alt="">
     </div>
   </section>
