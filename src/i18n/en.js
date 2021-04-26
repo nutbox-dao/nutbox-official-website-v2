@@ -55,7 +55,7 @@ export default {
     n7: 'Launch Nutbox v2 on main networks',
     d7: '',
     t8: '2021 Q3',
-    n8: 'Nutbox v2 support more PoS Chain（BSC、ETH2.0、Near.etc）',
+    n8: 'Nutbox v2 support more PoS Chain（BSC, ETH2.0, NEAR, etc.）',
     d8: '',
     t9: '2021 Q4',
     n9: 'Launch  Donut',
