@@ -6,6 +6,7 @@ import VueRouter from 'vue-router'
 import VueI18n from 'vue-i18n'
 import zh from './i18n/zh'
 import en from './i18n/en'
+import es from './i18n/es'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import router from './router'
@@ -21,7 +22,8 @@ const i18n = new VueI18n({
   locale: 'en',
   messages: {
     zh: zh,
-    en: en
+    en: en,
+    es: es
   }
 })
 

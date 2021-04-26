@@ -1,7 +1,7 @@
 export default {
-  lang: 'Lang',
   zh: '中文(简体)',
   en: 'English',
+  es: 'Español',
   products: 'Products',
   doc: 'Documents',
   aboutUs: 'About Us',
@@ -9,7 +9,6 @@ export default {
   crowdLoan: 'Crowdloan',
   economicWhitePaper: 'Economic Whitepaper',
   technicalWhitePaper: 'Technical Whitepaper',
-  comingSoon: 'Coming Soon',
   startSection: {
     p1: 'Build Your Own Staking Economy',
     btn1: 'Try Nutbox V2',

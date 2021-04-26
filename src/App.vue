@@ -88,10 +88,8 @@ export default {
           multi: true,
           url: '',
           subOptions: [
-            // { name: 'economicWhitePaper', target: '_blank', url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/eb3d99a2-63b2-4f2c-ac20-339d4b5c2623/Nutbox-Economic_Whitepaper_-_EN.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210419%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210419T111942Z&X-Amz-Expires=86400&X-Amz-Signature=3021c606db5773debee84a157d459cd3429b41a94204a8b8a4c20c3feb5e6367&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Nutbox-Economic_Whitepaper_-_EN.pdf%22' },
             { name: 'economicWhitePaper', target: '_blank', url: '/economic-en.pdf' },
             { name: 'technicalWhitePaper', target: '_blank', url: '/technical-en.pdf' }
-            // { name: 'technicalWhitePaper', target: '_blank', url: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/70830ba6-0686-420d-abb6-9fd44cf9a72d/Nutbox-Technical_Whitepaper_-_EN.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210419%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210419T112730Z&X-Amz-Expires=86400&X-Amz-Signature=8ffeffc924431963c643b290564c5a86dccd52395f265e82da7b33dfd437ee78&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Nutbox-Technical_Whitepaper_-_EN.pdf%22' }
           ]
         },
         {
@@ -102,7 +100,7 @@ export default {
         }
       ],
       activeNav: 'home',
-      langOptions: ['en', 'zh'],
+      langOptions: ['en', 'zh', 'es'],
       lang: 'en'
     }
   },
