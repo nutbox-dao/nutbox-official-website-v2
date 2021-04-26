@@ -41,6 +41,9 @@ export default {
     display: flex;
     padding: .5rem;
     animation: move-scroll 22s linear infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
   }
 }
 .card-box {
