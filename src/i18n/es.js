@@ -11,8 +11,8 @@ export default {
   technicalWhitePaper: 'Libro blanco técnico',
   startSection: {
     p1: 'Construye tu propia Economía de Staking',
-    btn1: 'Entrar Nutbox V2',
-    btn2: 'Entrar Peanut'
+    btn1: 'Entrar a Nutbox V2',
+    btn2: 'Entrar a Peanut'
   },
   factorySection: {
     title: 'Todo en una misma fabrica DAO',
@@ -108,7 +108,7 @@ export default {
   daoSection: {
     title: 'Nuestro Primer DAO',
     msg1: 'El 1st DAO Construido por Nutbox',
-    msg2: 'El 2nd El agente más grande de Steem',
+    msg2: 'El 2nd agente más grande de Steem',
     msg3: 'Total de Staking en STEEM',
     msg4: 'Valor del Mercado de Peanut'
   },
