@@ -81,7 +81,8 @@ export default {
     width: 100%;
   }
   .primary-btn {
-    width: 10rem;
+    width: 12rem;
+    white-space: nowrap;
     text-align: center;
     background-color: rgba(36, 38, 41, 1);
     color: white;
