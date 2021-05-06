@@ -23,7 +23,7 @@ export default {
         { name: 'Sampraise', flag: require('../assets/ve.svg'), avatar: require('../assets/sampraise.png') },
         { name: 'Aku', flag: require('../assets/us.svg'), avatar: require('../assets/aku.png') },
         { name: 'Sook Jin Goh', flag: require('../assets/my.svg'), avatar: require('../assets/sookjin.png') },
-        { name: 'PARK TAEHOON', flag: require('../assets/ks.svg'), avatar: require('../assets/park.png') },
+        { name: 'PARK TAEHOON', flag: require('../assets/ks.svg'), avatar: require('../assets/happy.png') },
         { name: 'Allen Hu', flag: require('../assets/ch.svg'), avatar: require('../assets/allen.png') },
         { name: 'Alejandro Aristeguieta', flag: require('../assets/ve.svg'), avatar: require('../assets/alejandro.png') }
       ]
