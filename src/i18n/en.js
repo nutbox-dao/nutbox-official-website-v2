@@ -72,7 +72,7 @@ export default {
   missionSection: {
     title: 'Our Mission',
     p1: 'Help the communities on the PoS chain like Polkadot, ETH2.0, ' +
-      'to easily create their Staking Economy platform and build DAO by Staking airdrop, ' +
+      'to easily create their Staking Economy platform and build DAO by Crowd-Staking, ' +
       'DApp, Dao governance and other factory protocols.'
   },
   teamSection: {

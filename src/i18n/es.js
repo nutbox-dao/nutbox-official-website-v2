@@ -72,7 +72,7 @@ export default {
     title: 'Nuestra Misión',
     p1: 'Ayudar a las comunidades en el desarrollo PoS chain como Polkadot y ETH2.0. ' +
       'Facilitar la creación de una plataforma en Economía de Staking y la construcción del ' +
-      'DAO mediante el Staking Airdrop, la Gobernanza DAO y la fabrica de protocolos.'
+      'DAO mediante el Crowd-Staking, la Gobernanza DAO y la fabrica de protocolos.'
   },
   teamSection: {
     title: 'Nuestro Equipo',

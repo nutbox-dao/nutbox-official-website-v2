@@ -71,7 +71,7 @@ export default {
   },
   missionSection: {
     title: '团队使命',
-    p1: '通过Staking Airdrop、DApp、DAO Governance等Factory协议，' +
+    p1: '通过Crowd-Staking、DApp、DAO Governance等Factory协议，' +
       '帮助PoS链(如Polkadot、ETH2.0、EOS、Tezos、Cosmos、Kusama)上的社区能够轻易而举地创建其质押经济平台并开启DAO。'
   },
   teamSection: {
