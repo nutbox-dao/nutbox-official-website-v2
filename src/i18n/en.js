@@ -17,7 +17,7 @@ export default {
   factorySection: {
     title: 'All in one DAO Factory',
     p1: 'Nutbox offers following tools to community',
-    t1: 'Staking Airdrop Factory',
+    t1: 'Crowd-Staking Factory',
     desc1: 'It only takes 5 minutes to configure the community Staking mining module and start the community Staking Economy',
     t2: 'DApp Factory',
     desc2: 'It\'s easy to bring DeFi, social media and NFT to the community',

@@ -17,7 +17,7 @@ export default {
   factorySection: {
     title: '一站式的DAO工厂',
     p1: 'Nutbox为社区提供以下工具',
-    t1: 'Staking Airdrop工厂',
+    t1: 'Crowd-Staking工厂',
     desc1: '5分钟配置社区质押挖矿模块，开启社区质押经济',
     t2: 'DApp工厂',
     desc2: '轻易而举，为社区带来DeFi、Social Media、NFT',
