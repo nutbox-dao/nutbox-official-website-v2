@@ -46,6 +46,7 @@ export default {
   align-items: center;
   img {
     max-height: 4rem;
+    max-width: 100%;
   }
 }
 a{
