@@ -3,6 +3,9 @@
     <div class="font40 font-bold">{{$t('partnerSection.title')}}</div>
     <div class="row mt-2 mb-2">
       <div class="col-lg-4 col-6  mb-4">
+        <div class="p-card"><img src="~@/assets/partner-logo0.png" alt=""></div>
+      </div>
+      <div class="col-lg-4 col-6  mb-4">
         <div class="p-card"><img src="~@/assets/partner-logo1.png" alt=""></div>
       </div>
       <div class="col-lg-4 col-6 mb-4">
@@ -11,7 +14,7 @@
       <div class="col-lg-4 col-6 mb-4">
         <div class="p-card"><img src="~@/assets/partner-logo3.png" alt=""></div>
       </div>
-      <div class="col-lg-4 offset-lg-2 col-6 mb-4">
+      <div class="col-lg-4 col-6 mb-4">
         <div class="p-card"><img src="~@/assets/partner-logo4.png" alt=""></div>
       </div>
       <div class="col-lg-4 col-6 mb-4">
@@ -38,9 +41,11 @@ export default {
   box-shadow: 1rem 1.4rem 1.8rem .6rem rgba(36, 38, 41, 0.04);
   border-radius: 1.2rem;
   padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
-    //height: 2.5rem;
-    width: 100%;
+    max-height: 4rem;
   }
 }
 a{
