@@ -79,7 +79,7 @@ export default {
           url: '',
           subOptions: [
             { name: 'peanut', url: 'https://peanut.nutbox.io', target: '_blank' },
-            { name: 'crowdLoan', url: '#', target: '_self' }
+            { name: 'crowdLoan', url: 'https://polkadot.nutbox.io', target: '_blank' }
           ]
         },
         {

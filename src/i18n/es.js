@@ -11,7 +11,7 @@ export default {
   technicalWhitePaper: 'Libro blanco técnico',
   startSection: {
     p1: 'Construye tu propia Economía de Staking',
-    btn1: 'Entrar a Nutbox V2',
+    btn1: 'Entrar a Crowdloan',
     btn2: 'Entrar a Peanut'
   },
   factorySection: {

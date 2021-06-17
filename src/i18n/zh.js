@@ -11,7 +11,7 @@ export default {
   technicalWhitePaper: '技术白皮书',
   startSection: {
     p1: '创建自己的质押经济平台',
-    btn1: '进入 Nutbox V2',
+    btn1: '进入 Crowdloan',
     btn2: '进入 Peanut'
   },
   factorySection: {

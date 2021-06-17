@@ -11,7 +11,7 @@ export default {
   technicalWhitePaper: 'Technical Whitepaper',
   startSection: {
     p1: 'Build Your Own Staking Economy',
-    btn1: 'Try Nutbox V2',
+    btn1: 'Try Crowdloan',
     btn2: 'Try Peanut'
   },
   factorySection: {

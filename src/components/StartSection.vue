@@ -9,7 +9,7 @@
             <a class="primary-btn mr-2"
                href="https://peanut.nutbox.io" target="_blank">{{$t('startSection.btn2')}}</a>
             <a class="primary-btn coming"
-               href="#" target="_self">{{$t('startSection.btn1')}}</a>
+               href="https://polkadot.nutbox.io" target="_blank">{{$t('startSection.btn1')}}</a>
           </div>
           <div class="row-img">
             <a href="https://github.com/nutbox-dao" target="_blank">
