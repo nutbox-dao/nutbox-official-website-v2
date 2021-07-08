@@ -20,7 +20,7 @@ export default {
   data () {
     return {
       partnerList: [
-        { name: 'Sampraise', flag: require('../assets/ve.svg'), avatar: require('../assets/sampraise.png') },
+        { name: 'BAE KYEONGHAK', flag: require('../assets/ks.svg'), avatar: require('../assets/bae.png') },
         { name: 'Aku', flag: require('../assets/us.svg'), avatar: require('../assets/aku.png') },
         { name: 'Sook Jin Goh', flag: require('../assets/my.svg'), avatar: require('../assets/sookjin.png') },
         { name: 'PARK TAEHOON', flag: require('../assets/ks.svg'), avatar: require('../assets/happy.png') },

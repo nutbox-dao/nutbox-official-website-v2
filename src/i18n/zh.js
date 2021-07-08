@@ -10,12 +10,12 @@ export default {
   economicWhitePaper: '经济白皮书',
   technicalWhitePaper: '技术白皮书',
   startSection: {
-    p1: '创建自己的质押经济平台',
+    p1: 'Link Community to Web3.0',
     btn1: '进入 Crowdloan',
     btn2: '进入 Peanut'
   },
   factorySection: {
-    title: '一站式的DAO工厂',
+    title: '面向Web3.0的DAO操作系统',
     p1: 'Nutbox为社区提供以下工具',
     t1: 'Crowd-Staking工厂',
     desc1: '5分钟配置社区质押挖矿模块，开启社区质押经济',
@@ -123,5 +123,8 @@ export default {
   },
   footerSection: {
     contactUs: '联系我们'
+  },
+  communitySection: {
+    title: '已经加入Nutbox生态的社区'
   }
 }

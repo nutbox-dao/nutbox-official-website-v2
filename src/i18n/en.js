@@ -10,12 +10,12 @@ export default {
   economicWhitePaper: 'Economic Whitepaper',
   technicalWhitePaper: 'Technical Whitepaper',
   startSection: {
-    p1: 'Build Your Own Staking Economy',
+    p1: 'Link Community to Web3.0',
     btn1: 'Try Crowdloan',
     btn2: 'Try Peanut'
   },
   factorySection: {
-    title: 'All in one DAO Factory',
+    title: 'The DAO Operating System for Web3.0',
     p1: 'Nutbox offers following tools to community',
     t1: 'Crowd-Staking Factory',
     desc1: 'It only takes 5 minutes to configure the community Staking mining module and start the community Staking Economy',
@@ -124,5 +124,8 @@ export default {
   },
   footerSection: {
     contactUs: 'Contact Us'
+  },
+  communitySection: {
+    title: 'Communities joined Nutbox ecosystem'
   }
 }

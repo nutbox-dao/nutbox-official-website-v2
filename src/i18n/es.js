@@ -123,5 +123,8 @@ export default {
   },
   footerSection: {
     contactUs: 'Contacto'
+  },
+  communitySection: {
+    title: 'Communities joined Nutbox ecosystem'
   }
 }
