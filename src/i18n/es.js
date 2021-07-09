@@ -10,12 +10,12 @@ export default {
   economicWhitePaper: 'Libro blanco económico',
   technicalWhitePaper: 'Libro blanco técnico',
   startSection: {
-    p1: 'Link Community to Web3.0',
+    p1: 'Únete a la Comunidad Web 3.0',
     btn1: 'Entrar a Crowdloan',
     btn2: 'Entrar a Peanut'
   },
   factorySection: {
-    title: 'The DAO Operating System for Web3.0',
+    title: 'El sistema DAO operativo para la Web 3.0',
     p1: 'Nutbox ofrece las siguientes herramientas a la comunidad',
     t1: 'Fabrica Crowd-Staking',
     desc1: 'Solo toma 5 minutos configurar el modulo de Staking Mining para comenzar una comunidad basada en Economía de Staking.',
@@ -125,6 +125,6 @@ export default {
     contactUs: 'Contacto'
   },
   communitySection: {
-    title: 'Communities joined Nutbox ecosystem'
+    title: 'Comunidades que se han unido al ecosistema Nutbox'
   }
 }
