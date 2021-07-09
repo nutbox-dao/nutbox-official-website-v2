@@ -77,19 +77,25 @@ export default {
   margin-top: 1.4rem;
   margin-bottom: 2.5rem;
   display: flex;
-  gap: 2rem;
+  //gap: 2rem;
   flex-flow: wrap;
   justify-content: center;
   .eco-box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
   }
   img {
     width: 5rem;
     height: 5rem;
     border-radius: 5rem;
     box-shadow: .5rem .7rem .9rem .3rem rgba(36, 38, 41, 0.04);
+  }
+}
+@media (max-width: 500px) {
+  .eco-box {
+    margin: .5rem;
   }
 }
 </style>
