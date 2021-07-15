@@ -16,15 +16,15 @@
       </div>
       <div class="eco-box">
         <img src="../assets/eco/Phala@2x.png" alt="">
-        <span class="font-bold">Crust</span>
+        <span class="font-bold">Phala</span>
       </div>
       <div class="eco-box">
         <img src="../assets/eco/Bifrost@2x.png" alt="">
-        <span class="font-bold">Crust</span>
+        <span class="font-bold">Bifrost</span>
       </div>
       <div class="eco-box">
         <img src="../assets/eco/Token Pocket@2x.png" alt="">
-        <span class="font-bold">Crust</span>
+        <span class="font-bold">Token Pocket</span>
       </div>
       <div class="eco-box">
         <img src="../assets/eco/Ares@2x.png" alt="">
