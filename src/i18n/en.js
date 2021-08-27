@@ -7,12 +7,14 @@ export default {
   aboutUs: 'About Us',
   peanut: 'Peanut',
   crowdLoan: 'Crowdloan',
+  walnut: 'Walnut',
   economicWhitePaper: 'Economic Whitepaper',
   technicalWhitePaper: 'Technical Whitepaper',
   startSection: {
     p1: 'Link Community to Web3.0',
     btn1: 'Try Crowdloan',
-    btn2: 'Try Peanut'
+    btn2: 'Try Peanut',
+    btn3: 'Try Walnut'
   },
   factorySection: {
     title: 'The DAO Operating System for Web3.0',

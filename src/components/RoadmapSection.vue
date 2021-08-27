@@ -5,12 +5,12 @@
     <div class="line"></div>
     <div class="map-container">
       <div class="map-container-box">
-        <div class="card-box" v-for="item of 10" :key="item">
+        <div class="card-box" v-for="item of 6" :key="item">
           <div class="info text-left">
             <div class="font28 font-bold">{{$t(`roadmapSection.t${item}`)}}</div>
             <div class="h-line"></div>
             <div class="font16 font-bold">{{$t(`roadmapSection.n${item}`)}}</div>
-            <div class="font14 text-grey">{{$t(`roadmapSection.d${item}`)}}</div>
+            <div class="font14 text-grey mt-2" v-html="$t(`roadmapSection.d${item}`)"></div>
           </div>
           <div class="wave-img"></div>
           <div class="dot"></div>
@@ -32,7 +32,7 @@ export default {
   overflow-y: hidden;
   overflow-x: scroll;
   width: 100%;
-  height: 26rem;
+  height: 32rem;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -47,7 +47,7 @@ export default {
   }
 }
 .card-box {
-  min-width: 10rem;
+  min-width: 16rem;
   padding: 1rem .5rem;
   box-sizing: border-box;
   border-left: 1px solid #E3E5E8;
@@ -99,22 +99,29 @@ export default {
     }
   }
 }
+.wave-img {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 16rem;
+  height: 6.2rem;
+  position: absolute;
+  left: -0rem;
+  bottom: 0;
+}
 .card-box:nth-child(odd) {
-  height: 24rem;
+  height: 30rem;
+  .wave-img {
+    background-image: url("~@/assets/wave-left.png");
+    bottom: 0;
+  }
 }
 .card-box:nth-child(even) {
   margin-top: 6rem;
-  margin-bottom: 5.8rem;
+  margin-bottom: 6rem;
   .wave-img {
-    background-image: url("~@/assets/wave-right.svg");
-    background-repeat: no-repeat;
-    background-size: 200% 100%;
-    background-position: center;
-    width: 20rem;
-    height: 6rem;
-    position: absolute;
-    left: -10rem;
-    bottom: -5.8rem;
+    background-image: url("~@/assets/wave-right.png");
+    bottom: -6rem;
   }
 }
 //.card-box:last-child {

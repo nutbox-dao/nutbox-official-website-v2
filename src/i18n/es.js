@@ -7,12 +7,14 @@ export default {
   aboutUs: 'Sobre nosotros',
   peanut: 'Peanut',
   crowdLoan: 'CrowdLoan',
+  walnut: 'Walnut',
   economicWhitePaper: 'Libro blanco económico',
   technicalWhitePaper: 'Libro blanco técnico',
   startSection: {
     p1: 'Únete a la Comunidad Web 3.0',
     btn1: 'Entrar a Crowdloan',
-    btn2: 'Entrar a Peanut'
+    btn2: 'Entrar a Peanut',
+    btn3: 'Entrar a Walnut'
   },
   factorySection: {
     title: 'El sistema DAO operativo para la Web 3.0',
