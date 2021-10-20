@@ -21,7 +21,8 @@
                                    :href="subItem.url" :target="subItem.target">
                     <div class="flex-between-center" style="line-height: 2rem">
                       <div class="flex-start-center">
-                        <img v-if="item.name==='doc'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
+                        <img v-if="subItem.name==='economicWhitePaper'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
+                        <img v-if="subItem.name==='technicalWhitePaper'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
                         <span class="font-bold">{{$t(subItem.name)}}</span>
                       </div>
                       <img style="width: .8rem" src="~@/assets/arrow-forward.svg" alt="">
@@ -89,6 +90,7 @@ export default {
           multi: true,
           url: '',
           subOptions: [
+            { name: 'Nutbox Wiki', target: '_blank', url: 'https://sedimenttech.gitbook.io/nutbox-wiki/' },
             { name: 'economicWhitePaper', target: '_blank', url: '/economic-en.pdf' },
             { name: 'technicalWhitePaper', target: '_blank', url: '/technical-en.pdf' }
           ]
