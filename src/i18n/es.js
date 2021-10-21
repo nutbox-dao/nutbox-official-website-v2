@@ -19,9 +19,9 @@ export default {
   factorySection: {
     title: 'El sistema DAO operativo para la Web 3.0',
     p1: 'Nutbox ofrece las siguientes herramientas a la comunidad',
-    t1: 'Fabrica Crowd-Staking',
+    t1: 'Protocolo de oferta Crowd-Staking',
     desc1: 'Solo toma 5 minutos configurar el modulo de Staking Mining para comenzar una comunidad basada en Economía de Staking.',
-    t2: 'Fabrica DApp',
+    t2: 'Tienda DApp',
     desc2: 'Es fácil ofrecer DeFi, medios de difusión y NFT a toda la comunidad.',
     t3: 'DAO Fabrica de Gobernanza',
     desc3: 'Hace que la gobernanza de la comunidad sea más eficiente basada en la interacción social con el DAO de la gobernanza.'

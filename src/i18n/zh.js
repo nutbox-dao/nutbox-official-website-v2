@@ -19,9 +19,9 @@ export default {
   factorySection: {
     title: '面向Web3.0的DAO操作系统',
     p1: 'Nutbox为社区提供以下工具',
-    t1: 'Crowd-Staking工厂',
+    t1: 'CSO协议',
     desc1: '5分钟配置社区质押挖矿模块，开启社区质押经济',
-    t2: 'DApp工厂',
+    t2: 'DApp商店',
     desc2: '轻易而举，为社区带来DeFi、Social Media、NFT',
     t3: 'DAO治理工厂',
     desc3: '基于社交互动的DAO Governance，让社区治理丰富而高效'

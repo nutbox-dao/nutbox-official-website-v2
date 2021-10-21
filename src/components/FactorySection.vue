@@ -102,7 +102,7 @@ export default {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: .6rem;
-    white-space: nowrap;
+    //white-space: nowrap;
   }
   .item-desc {
     text-align: left;

@@ -90,7 +90,7 @@ export default {
           multi: true,
           url: '',
           subOptions: [
-            { name: 'Nutbox Wiki', target: '_blank', url: 'https://sedimenttech.gitbook.io/nutbox-wiki/' },
+            { name: 'Nutbox Wiki', target: '_blank', url: 'https://nutbox-io.gitbook.io/nutbox/' },
             { name: 'economicWhitePaper', target: '_blank', url: '/economic-en.pdf' },
             { name: 'technicalWhitePaper', target: '_blank', url: '/technical-en.pdf' }
           ]

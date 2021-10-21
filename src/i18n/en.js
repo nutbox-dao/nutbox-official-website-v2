@@ -19,9 +19,9 @@ export default {
   factorySection: {
     title: 'The DAO Operating System for Web3.0',
     p1: 'Nutbox offers following tools to community',
-    t1: 'Crowd-Staking Factory',
+    t1: 'Crowd-Staking Offering Protocol',
     desc1: 'It only takes 5 minutes to configure the community Staking mining module and start the community Staking Economy',
-    t2: 'DApp Factory',
+    t2: 'DApp Store',
     desc2: 'It\'s easy to bring DeFi, social media and NFT to the community',
     t3: 'DAO Governance Factory',
     desc3: 'It makes community governance to be efficient based on social interaction DAO governance'
