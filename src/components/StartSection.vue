@@ -11,7 +11,7 @@
 <!--            <a class="primary-btn coming"-->
 <!--               href="https://polkadot.nutbox.io" target="_blank">{{$t('startSection.btn1')}}</a>-->
             <a class="primary-btn coming"
-               href="https://test.nutbox.io" target="_blank">{{$t('startSection.btn3')}}</a>
+               href="https://walnut.nutbox.app" target="_blank">{{$t('startSection.btn3')}}</a>
           </div>
           <div class="row-img">
             <a href="https://github.com/nutbox-dao" target="_blank">
