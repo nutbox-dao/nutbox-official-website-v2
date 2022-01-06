@@ -17,7 +17,7 @@
           <a href="https://github.com/nutbox-dao" target="_blank">
             <img src="~@/assets/github.png" alt="">
           </a>
-          <a href="https://twitter.com/nutbox_steem" target="_blank">
+          <a href="https://twitter.com/NutboxDao" target="_blank">
             <img src="~@/assets/twitter.svg" alt="">
           </a>
           <a href="https://t.me/nutbox_defi" target="_blank">
