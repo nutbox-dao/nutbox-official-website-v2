@@ -79,7 +79,7 @@ export default {
           id: 'products',
           url: '',
           subOptions: [
-            { name: 'walnut', url: 'https://test.nutbox.io/', target: '_blank' },
+            { name: 'walnut', url: 'https://walnut.nutbox.io', target: '_blank' },
             { name: 'peanut', url: 'https://peanut.nutbox.io', target: '_blank' },
             { name: 'crowdLoan', url: 'https://polkadot.nutbox.io', target: '_blank' }
           ]
