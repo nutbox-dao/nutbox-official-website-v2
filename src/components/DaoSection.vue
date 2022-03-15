@@ -1,45 +1,47 @@
 <template>
  <section id="dao-section">
-   <div class="row">
-     <div class="col-md-5">
-       <div class="font40 font-bold mb-4 text-left">{{$t('daoSection.title')}}</div>
-       <div class="left-box pl-2 text-left">
-         <div class="msg-item">
-           <div class="img-box"><img src="~@/assets/dao-icon1.png" alt=""></div>
-           <div>
-             <div class="title">NO.1</div>
-             <div class="msg">{{$t('daoSection.msg1')}}</div>
-           </div>
-         </div>
-         <div class="msg-item">
-           <div class="img-box"><img src="~@/assets/dao-icon2.png" alt=""></div>
-           <div>
-             <div class="title">NO.2</div>
-             <div class="msg">{{$t('daoSection.msg2')}}</div>
-           </div>
-         </div>
-         <div class="msg-item">
-           <div class="img-box"><img src="~@/assets/dao-icon3.png" alt=""></div>
-           <div>
-             <div class="title">$ 6.7M</div>
-             <div class="msg">{{$t('daoSection.msg3')}}</div>
-           </div>
-         </div>
-         <div class="msg-item">
-           <div class="img-box"><img src="~@/assets/dao-icon3.png" alt=""></div>
-           <div>
-             <div class="title">$ 4M</div>
-             <div class="msg">{{$t('daoSection.msg4')}}</div>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="col-md-7">
-       <div class="right-box">
-         <img src="~@/assets/dao-bg.png" alt="">
-       </div>
-     </div>
-   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="font32 font-bold mb-4 text-left">{{$t('daoSection.title1')}}</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <img src="~@/assets/dao-img1.png" alt="">
+      </div>
+      <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center">
+        <div class="line-height40 font-bold mb-4 text-left text-grey-dark">{{$t('daoSection.desc1')}}</div>
+        <div class="d-flex">
+          <button class="primary-btn primary-btn-outline mr-2">{{$t('readMore')}}</button>
+          <button class="primary-btn primary-btn-outline-primary">{{$t('daoSection.btn1')}}</button>
+        </div>
+      </div>
+    </div>
+    <div class="row t2">
+      <div class="col-lg-6 col-md-6">
+        <div class="font32 font-bold mb-4 text-left">{{$t('daoSection.title2')}} <span class="text-primary-c">DAO</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="line-height40 font-bold mb-4 text-left text-grey-dark">{{$t('daoSection.desc1')}}</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 d-flex">
+        <button class="primary-btn primary-btn-outline mr-2">{{$t('readMore')}}</button>
+      </div>
+      <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center">
+        <img src="~@/assets/dao-img2.png" alt="">
+        <div class="links text-right">
+          <a href="#">Contribute by build and earn</a>
+          <a href="#">Self-bootstrap by adding Dapps</a>
+          <a href="#">Deploy without code</a>
+        </div>
+      </div>
+    </div>
+  </div>
  </section>
 </template>
 
@@ -50,43 +52,23 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.left-box {
-  .msg-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: .6rem;
-    padding: 1rem;
-    &:hover {
-      border-radius: 1.2rem;
-      box-shadow: .6rem 1.2rem 1.6rem .6rem rgba(36, 38, 41, 0.02);
-    }
-    .img-box {
-      width: 4rem;
-      height: 4rem;
-      padding: 1rem;
-      box-shadow: .6rem 1.2rem 1.6rem .6rem rgba(36, 38, 41, 0.02);
-      border-radius: 5rem;
-      margin-right: 1rem;
-      img {
-        width: 100%;
-      }
-    }
-  }
-  .title {
-    font-size: 1.4rem;
-    font-weight: 600;
-  }
-  .msg {
-    color: #BDBFC2;
-  }
+img {
+  width: 100%;
 }
-.right-box {
-  height: 100%;
+.t2 {
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+.links {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-.right-box img {
-  width: 100%;
+  margin-top: 1rem;
+  a {
+    color: white;
+    margin: .6rem;
+    &:hover {
+      color: var(--primary-custom);
+    }
+  }
 }
 </style>

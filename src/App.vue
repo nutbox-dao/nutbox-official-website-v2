@@ -9,31 +9,31 @@
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
-              <b-navbar-nav v-for="item of menuOptions" :key="item.name">
-                <b-nav-item-dropdown variant="text" no-caret v-if="item.multi">
-                  <template #button-content>
-                    <div class="d-flex align-items-center justify-content-center">
-                      <span class="font-bold">{{$t(item.name)}}</span>
-                      <i class="icon select-icon ml-1"></i>
-                    </div>
-                  </template>
-                  <b-dropdown-item v-for="subItem of item.subOptions" :key="subItem.name"
-                                   :href="subItem.url" :target="subItem.target">
-                    <div class="flex-between-center" style="line-height: 2rem">
-                      <div class="flex-start-center">
-                        <img v-if="subItem.name==='economicWhitePaper'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
-                        <img v-if="subItem.name==='technicalWhitePaper'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
-                        <span class="font-bold">{{$t(subItem.name)}}</span>
-                      </div>
-                      <img style="width: .8rem" src="~@/assets/arrow-forward.svg" alt="">
-                    </div>
-                  </b-dropdown-item>
-                </b-nav-item-dropdown>
-                <b-nav-item v-else href="javascript:void(0)" :class="activeNav === item.id? 'active':''"
-                            @click="selectMenu(item.id, item.url, item.target)">{{ $t(item.name) }}
-                </b-nav-item>
-              </b-navbar-nav>
               <b-navbar-nav class="ml-auto">
+                <div v-for="item of menuOptions" :key="item.name">
+                  <b-nav-item-dropdown variant="text" no-caret v-if="item.multi">
+                    <template #button-content>
+                      <div class="d-flex align-items-center justify-content-center">
+                        <span class="">{{$t(item.name)}}</span>
+                        <i class="icon select-icon ml-1"></i>
+                      </div>
+                    </template>
+                    <b-dropdown-item v-for="subItem of item.subOptions" :key="subItem.name"
+                                     :href="subItem.url" :target="subItem.target">
+                      <div class="flex-between-center" style="line-height: 2rem">
+                        <div class="flex-start-center">
+                          <img v-if="subItem.name==='economicWhitePaper'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
+                          <img v-if="subItem.name==='technicalWhitePaper'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
+                          <span class="font-bold">{{$t(subItem.name)}}</span>
+                        </div>
+                        <img style="width: .8rem" src="~@/assets/arrow-forward.svg" alt="">
+                      </div>
+                    </b-dropdown-item>
+                  </b-nav-item-dropdown>
+                  <b-nav-item v-else href="javascript:void(0)" :class="activeNav === item.id? 'active':''"
+                              @click="selectMenu(item.id, item.url, item.target)">{{ $t(item.name) }}
+                  </b-nav-item>
+                </div>
                 <b-nav-item-dropdown variant="text" right no-caret>
                   <template #button-content>
                     <div class="d-flex align-items-center justify-content-center">
@@ -145,6 +145,9 @@ export default {
 </script>
 
 <style lang="scss">
+:root {
+  --primary-custom: #45C691;
+}
 #app,
 html,
 body {
@@ -152,8 +155,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #242629;
+  color: #ffff;
   height: 100%;
+  background-color: #000;
 }
 #app {
   width: 100%;
@@ -161,14 +165,12 @@ body {
 .page-container {
   width: 100%;
   overflow-x: hidden;
-  //max-width: 1800px;
   margin: auto;
 }
 .page-header {
   position: fixed;
   width: 100%;
-  background: white;
-  //max-width: 1800px;
+  background: #000;
   margin: auto;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.04) ;
   border-bottom-left-radius: 1.2rem;
@@ -191,8 +193,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-weight: bold;
-    opacity: .5;
+    color: white!important;
   }
   .navbar-nav .active > .nav-link {
     color: $primary-color;

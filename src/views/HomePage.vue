@@ -1,18 +1,20 @@
 <template>
   <div class="home-page">
     <StartSection/>
-    <FactorySection/>
-    <BlockchainSections/>
+    <DaoSection/>
+    <PeanutSection/>
+    <NutPowerSection/>
     <div class="container">
       <RoadmapSection/>
-      <PartnerSection/>
-      <CommunityEcology/>
     </div>
   </div>
 </template>
 
 <script>
 import StartSection from '@/components/StartSection'
+import DaoSection from '@/components/DaoSection'
+import PeanutSection from '@/components/PeanutSection'
+import NutPowerSection from '@/components/NutPowerSection'
 import FactorySection from '@/components/FactorySection'
 import PartnerSection from '@/components/PartnerSection'
 import RoadmapSection from '@/components/RoadmapSection'
@@ -22,11 +24,10 @@ export default {
   name: 'HomePage',
   components: {
     StartSection,
-    FactorySection,
-    PartnerSection,
-    BlockchainSections,
-    RoadmapSection,
-    CommunityEcology
+    DaoSection,
+    PeanutSection,
+    NutPowerSection,
+    RoadmapSection
   }
 }
 </script>

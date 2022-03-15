@@ -1,18 +1,18 @@
 <template>
   <section id="footer-section">
     <div class="container">
-      <div class="row top-box">
-        <div class="col-6 text-left">
-          <img class="logo" src="../assets/white-logo.svg" alt="">
-        </div>
-        <div class="col-6">
-          <div class="contact-us">
-            <div class="font-bold font20">{{$t('footerSection.contactUs')}}</div>
-            <div>contact@nutbox.io</div>
-          </div>
-        </div>
-      </div>
-      <div class=" bottom-box">
+<!--      <div class="row top-box">-->
+<!--        <div class="col-6 text-left">-->
+<!--          <img class="logo" src="../assets/white-logo.svg" alt="">-->
+<!--        </div>-->
+<!--        <div class="col-6">-->
+<!--          <div class="contact-us">-->
+<!--            <div class="font-bold font20">{{$t('footerSection.contactUs')}}</div>-->
+<!--            <div>contact@nutbox.io</div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+      <div class="bottom-box">
         <div class="row-img">
           <a href="https://github.com/nutbox-dao" target="_blank">
             <img src="~@/assets/github.png" alt="">
@@ -59,11 +59,10 @@ export default {
 <style scoped lang="scss">
 #footer-section {
   margin: 0;
-  background: #242629;
   color: white;
   padding: 2rem 0 1.5rem 0;
   .top-box {
-    border-bottom: 1px solid rgba(255,255,255,.1);
+    //border-bottom: 1px solid rgba(255,255,255,.1);
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
   }

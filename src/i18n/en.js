@@ -109,11 +109,10 @@ export default {
     }
   },
   daoSection: {
-    title: 'Our First DAO',
-    msg1: 'The 1st DAO built by Nutbox',
-    msg2: 'The 2nd largest agent of Steem',
-    msg3: 'Staking Value of Steem',
-    msg4: 'Market Value of Peanut'
+    title1: 'Create and configure your DAO in 5 minutes',
+    desc1: 'Build Defi apps and tools on the largest crypto project on Ethereum. Get started with quick start guides, protocol documentation, a Javascript SDK and fully open source code.',
+    btn1: 'Explore Communities',
+    title2: 'Provide everything needed to govern your'
   },
   globalSection: {
     title: 'Our Global Partners'
@@ -129,5 +128,16 @@ export default {
   },
   communitySection: {
     title: 'Communities joined Nutbox ecosystem'
-  }
+  },
+  peanutSection: {
+    title: 'First DAO created by Nutbox.',
+    desc1: 'Build Defi apps and tools on the largest crypto project on Ethereum. Get started with quick start guides, protocol documentation, a Javascript SDK and fully open source code.',
+    btn1: 'Explore Peanut'
+  },
+  nutPowerSection: {
+    title: '',
+    desc1: 'Build Defi apps and tools on the largest crypto project on Ethereum. Get started with quick start guides, protocol documentation, a Javascript SDK and fully open source code.',
+    btn1: 'Explore Peanut'
+  },
+  readMore: 'Read More'
 }
