@@ -7,7 +7,11 @@
             <b-navbar-brand>
               <img src="~@/assets/logo.png" alt="" class="logo-brand" @click="selectMenu('home', '/')">
             </b-navbar-brand>
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+            <b-navbar-toggle target="nav-collapse">
+              <template #default>
+                <i class="menu-toggle"></i>
+              </template>
+            </b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
               <b-navbar-nav class="ml-auto">
                 <div v-for="item of menuOptions" :key="item.name">
@@ -26,7 +30,7 @@
                           <img v-if="subItem.name==='technicalWhitePaper'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
                           <span class="font-bold">{{$t(subItem.name)}}</span>
                         </div>
-                        <img style="width: .8rem" src="~@/assets/arrow-forward.svg" alt="">
+                        <i class="arrow-forward-icon"></i>
                       </div>
                     </b-dropdown-item>
                   </b-nav-item-dropdown>
@@ -34,27 +38,18 @@
                               @click="selectMenu(item.id, item.url, item.target)">{{ $t(item.name) }}
                   </b-nav-item>
                 </div>
-                <b-nav-item-dropdown variant="text" right no-caret>
-                  <template #button-content>
-                    <div class="d-flex align-items-center justify-content-center">
-                      <span class="font-bold">{{$t(lang)}}</span>
-                      <i class="icon select-icon ml-1"></i>
-                    </div>
-                  </template>
-                  <b-dropdown-item v-for="(item) of langOptions" :key="item"
-                                   @click="setLang(item)">
-                    <div class="flex-between-center">
-                      <span>{{$t(item)}}</span>
-                      <img v-if="lang===item" class="active-icon" src="~@/assets/selected.png" alt="">
-                    </div>
-                  </b-dropdown-item>
-                </b-nav-item-dropdown>
+                <b-nav-item>
+                  <button class="launch-app-btn">launch app</button>
+                </b-nav-item>
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>
         </div>
       </div>
       <div class="page-content">
+        <div class="h-line">
+          <div class="container"></div>
+        </div>
         <router-view></router-view>
       </div>
       <div class="page-footer">
@@ -145,13 +140,28 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face
+{
+  font-family: GothamRoundedLight;
+  src: url('~@/style/GothamRounded-Light.otf');
+}
+@font-face
+{
+  font-family: GothamRoundedMedium;
+  src: url('~@/style/GothamRounded-Medium.otf');
+}
+@font-face
+{
+  font-family: TimesNewRoman;
+  src: url('~@/style/TimesNewRoman.ttf');
+}
 :root {
   --primary-custom: #45C691;
 }
 #app,
 html,
 body {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family:GothamRoundedLight, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -166,43 +176,63 @@ body {
   width: 100%;
   overflow-x: hidden;
   margin: auto;
+  background-image: url("~@/assets/bg.png");
 }
 .page-header {
   position: fixed;
   width: 100%;
-  background: #000;
+  height: 60px;
+  background-image: url("~@/assets/bg.png");
+  //background: #000;
   margin: auto;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.04) ;
   border-bottom-left-radius: 1.2rem;
   border-bottom-right-radius: 1.2rem;
   z-index: 10;
   font-size: 1rem;
+  .menu-toggle {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("~@/assets/menu-icon.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
   .navbar-brand {
     display: flex;
     align-items: center;
     min-height: 58px;
   }
   .logo-brand {
-    height: 2.8rem;
+    height: 50px;
   }
   .navbar {
     padding: 0;
   }
   .navbar-nav .nav-link {
-    height: 3.6rem;
+    height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white!important;
+    margin-left: 2rem;
   }
-  .navbar-nav .active > .nav-link {
-    color: $primary-color;
-    opacity: 1;
-    //border-bottom: 4px solid $primary-color;
-    background-image: linear-gradient(to right, $primary-color, $primary-color);
-    background-repeat: no-repeat;
-    background-size: 2rem 4px;
-    background-position: center bottom;
+  .navbar-light .navbar-nav .show > .nav-link {
+    color: white;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    &:hover {
+      color: var(--primary-custom);
+      .select-icon {
+        background-image: url("~@/assets/arrow-down-primary.svg");
+      }
+    }
+    &:focus {
+      color: white;
+    }
+  }
+  .navbar-light .navbar-nav .active > .nav-link {
+    color: var(--primary-custom);
   }
   .dropdown-menu {
     border-radius: 1.2rem;
@@ -211,16 +241,65 @@ body {
     min-width: 15rem;
     margin: .5rem auto 1rem auto;
     padding: .8rem;
+    background-color: #181818;
     .dropdown-item {
       padding: .2rem .5rem;
+      color: white;
+      .arrow-forward-icon {
+        background-image: url("~@/assets/arrow-forward.svg");
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+      }
+      &:hover {
+        color: var(--primary-custom);
+        background-color: transparent;
+        .arrow-forward-icon {
+          background-image: url("~@/assets/arrow-forward-primary.svg");
+        }
+      }
     }
     .active-icon {
       width: 1.2rem;
     }
   }
+  .launch-app-btn {
+    background-image: linear-gradient(to right, #6ADDB7, #6ADDB7, #3DB981);
+    border: transparent;
+    color: white;
+    height: 42px;
+    font-size: 16px;
+    padding: 0 25px;
+    font-weight: bold;
+  }
 }
 .page-content {
-  //padding-top: 3.6rem;
+  margin-top: 60px;
+  .h-line .container{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  }
 }
-
+@media (max-width: 960px) {
+  .page-header {
+    .container {
+      width: 100%;
+      max-width: 100%;
+    }
+    .navbar-nav {
+      padding: 20px;
+      background-color: black;
+      border-radius: 0 0 20px 20px;
+    }
+    .navbar-nav .nav-link {
+      margin-left: 0;
+    }
+  }
+  .h-line .container{
+    max-width: 100%;
+  }
+}
 </style>

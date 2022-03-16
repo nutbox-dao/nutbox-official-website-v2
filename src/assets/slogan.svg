@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="856px" height="318px" viewBox="0 0 856 318" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="normal">
+        <g id="编组" fill="#FFFFFF">
+            <text id="TO-WEB" font-family="STSongti-SC-Regular, Songti SC" font-size="120">
+                <tspan x="0" y="277">TO WEB</tspan>
+            </text>
+            <text id="LINK" font-family="TimesNewRomanPSMT, Times New Roman" font-size="120">
+                <tspan x="0" y="107">LINK </tspan>
+            </text>
+            <text id="COMMUNITY" font-family="STSongti-SC-Regular, Songti SC" font-size="120">
+                <tspan x="108" y="192">COMMUNITY</tspan>
+            </text>
+            <text id="3.0" font-family="HoeflerText-Regular, Hoefler Text" font-size="130">
+                <tspan x="458" y="269">3.0</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -12,6 +12,10 @@ $text-black: #242629;
   font-size: 40px;
 }
 
+.font36 {
+  font-size: 36px;
+}
+
 .font32 {
   font-size: 32px;
 }
@@ -80,7 +84,18 @@ $text-black: #242629;
 .line-height40 {
   line-height: 40px;
 }
-
+.line-height46 {
+  line-height: 46px;
+}
+.line-height50 {
+  line-height: 50px;
+}
+.text-medium {
+  font-family: GothamRoundedMedium, Avenir, Helvetica, Arial, sans-serif;
+}
+.text-tnr {
+  font-family: TimesNewRoman, Avenir, Helvetica, Arial, sans-serif;
+}
 .font-bold {
   font-weight: bold;
 }
@@ -92,7 +107,7 @@ $text-black: #242629;
   color: #BDBFC2;
 }
 .text-grey-dark {
-  color: #717376;
+  color: #A7A7A7;
 }
 .text-red {
   color: #EF5656;
@@ -117,11 +132,12 @@ button {
   outline: none!important;
 }
 .primary-btn {
-  height: 2.8rem;
+  height: 52px;
   padding: 0 1.5rem;
-  font-size: .8rem;
+  font-size: 1rem;
   color: #242629;
-  font-weight: 500;
+  font-weight: bold;
+  width: fit-content;
   &-outline {
     background-color: transparent;
     border: 2px solid #717376;

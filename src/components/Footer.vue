@@ -27,6 +27,9 @@
             <img src="~@/assets/discord.svg" alt="">
           </a>
         </div>
+        <div></div>
+      </div>
+      <div>
         <div class="copy-right">Copyright © 2021 Nutbox</div>
       </div>
     </div>
@@ -81,10 +84,6 @@ export default {
     margin-left: 1rem;
   }
   .copy-right {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
     font-size: .6rem;
   }
 }
