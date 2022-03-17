@@ -3,8 +3,7 @@
     <div class="img-box">
       <div class="img-box-content">
         <div class="desc">
-          Bootstrap,govern,and contribute a DAO
-          in decentralized way.
+          Bootstrap, govern, and contribute a DAO in decentralized way.
         </div>
         <div class="row-img">
           <a href="https://github.com/nutbox-dao" target="_blank">

@@ -13,12 +13,12 @@
         <div class="col-lg-6 col-md-6 d-flex flex-column">
           <div class="text-left">
             <div class="font36 line-height50 text-medium">NUT</div>
-            <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">{{$t('peanutSection.desc1')}}</div>
+            <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">{{$t('nutPowerSection.desc1')}}</div>
             <button class="primary-btn primary-btn-outline mr-2">{{$t('readMore')}}</button>
           </div>
           <div class="text-left np-box">
             <div class="font36 line-height50 text-medium">NUT Power</div>
-            <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">{{$t('peanutSection.desc1')}}</div>
+            <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">{{$t('nutPowerSection.desc2')}}</div>
             <button class="primary-btn primary-btn-outline mr-2">{{$t('readMore')}}</button>
           </div>
         </div>

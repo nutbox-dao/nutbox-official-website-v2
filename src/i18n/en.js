@@ -36,35 +36,19 @@ export default {
     title: 'Roadmap',
     p1: 'Nutbox team has gone through 3 years',
     t1: 'Jan 2019',
-    n1: 'Launch WhereIN Dapp',
-    d1: 'a Steem-based image community ',
-    t2: 'Apr-Jun 2020',
-    n2: 'WhereIN become one of the Super nodes of Steem',
-    d2: '',
-    t3: 'Oct 2020',
-    n3: 'Launch Nutbox v1（Peanut）on Steem',
-    d3: '',
-    t4: 'Jan 2021',
-    n4: 'Launch Ooops Dapp',
-    d4: 'a Steem-based local Social',
-    t5: 'Apr 2021',
-    n5: 'Launch  nutbox.crowdloan on Rococo',
-    d5: 'a pre-test network of Polkadot, and support parachain slot auction',
-    t6: 'Jun 2021',
-    n6: 'Launch Nutbox v2 on pre-test networks',
-    d6: '',
-    t7: 'Aug 2021',
-    n7: 'Launch Nutbox v2 on main networks',
-    d7: '',
-    t8: '2021 Q3',
-    n8: 'Nutbox v2 support more PoS Chain（BSC, ETH2.0, NEAR, etc.）',
-    d8: '',
-    t9: '2021 Q4',
-    n9: 'Launch  Donut',
-    d9: 'a cross-chain bridge of Steem Blockchain and Polkadot',
-    t10: '2022 ->',
-    n10: 'Nutbox for Polkadot parachain build DAO Factory based on Staking Economy',
-    d10: ''
+    d1: 'Launch WhereIN DApp, a Steem-based lifestyle sharing community. We decentralizes WhereIN DAO with community curators, WhereIN also becomes one of the super witness of Steem Blockchain',
+    t2: 'Oct 2020',
+    d2: 'Launch Nutbox Sub-DAO（Peanut v1）on Steem and Tron Blockchain',
+    t3: 'May 2021',
+    d3: 'Launch Nutbox Slot Auction, try to implement Nutbox ISO module in Polkadot ecosystem',
+    t4: 'Feb 2022',
+    d4: 'Launch Nutbox Walnut on BSC, support PoS chains such as Steem, Hive, Cosmos',
+    t5: 'Q3 2022',
+    d5: 'Multi-chain support and Toolkits Voting',
+    t6: 'Q1 2023',
+    d6: 'Launch NFT and Social Module',
+    t7: 'Q3 2023',
+    d7: 'Launch Toolkits System, enable community extensions and DApp entries'
   },
   partnerSection: {
     title: 'Partners',
@@ -108,12 +92,6 @@ export default {
       p3: 'CEO of Chengdu Guzi Trade'
     }
   },
-  daoSection: {
-    title1: 'Create and configure your DAO in 5 minutes',
-    desc1: 'Build Defi apps and tools on the largest crypto project on Ethereum. Get started with quick start guides, protocol documentation, a Javascript SDK and fully open source code.',
-    btn1: 'Explore Communities',
-    title2: 'Provide everything needed to govern your'
-  },
   globalSection: {
     title: 'Our Global Partners'
   },
@@ -129,15 +107,22 @@ export default {
   communitySection: {
     title: 'Communities joined Nutbox ecosystem'
   },
+  daoSection: {
+    title1: 'Create and configure your DAO in 5 minutes',
+    desc1: 'Build Defi apps and tools on the largest crypto project on Nutbox. Get started with quick start guides, protocol documentation, a Javascript SDK and fully open source code.',
+    desc2: 'Help Web3 community automatically distribute community Token to community contributors. ',
+    btn1: 'Explore Communities',
+    title2: 'Provide everything needed to govern your'
+  },
   peanutSection: {
     title: 'First DAO created by Nutbox.',
-    desc1: 'Build Defi apps and tools on the largest crypto project on Ethereum. Get started with quick start guides, protocol documentation, a Javascript SDK and fully open source code.',
+    desc1: 'By tokenization the PoS Chain’s Staking rewards, it has become a new generation, community-owned staking providers platform.',
     btn1: 'Explore Peanut'
   },
   nutPowerSection: {
     title: '',
-    desc1: 'Build Defi apps and tools on the largest crypto project on Ethereum. Get started with quick start guides, protocol documentation, a Javascript SDK and fully open source code.',
-    btn1: 'Explore Peanut'
+    desc1: 'The utility token of Nutbox ecosystem, providing members and communities with benefits and services, and dictates Nutbox’s governance.',
+    desc2: 'The Governance Power of Nutbox DAO. The Nutbox governance reward of a user is charged by the user governance activity.'
   },
   readMore: 'Read More'
 }

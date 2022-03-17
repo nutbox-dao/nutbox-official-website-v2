@@ -3,10 +3,10 @@
     <div class="font36 line-height50 mb-5 text-tnr">{{$t('roadmapSection.title')}}</div>
     <div class="map-container">
       <div class="map-container-box">
-        <div class="card-box" v-for="item of 6" :key="item">
+        <div class="card-box" v-for="item of 7" :key="item">
           <div class="info text-left">
             <div class="font24 text-primary-c mb-4">{{$t(`roadmapSection.t${item}`)}}</div>
-            <div class="font16 line-height24 text-grey-dark">{{$t(`roadmapSection.n${item}`)}}</div>
+<!--            <div class="font16 line-height24 text-grey-dark">{{$t(`roadmapSection.n${item}`)}}</div>-->
             <div class="font16 line-height24 text-grey-dark mt-2" v-html="$t(`roadmapSection.d${item}`)"></div>
           </div>
         </div>

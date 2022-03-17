@@ -23,7 +23,7 @@
         <div class="font36 line-height50 mb-5 text-left text-medium">
           {{$t('daoSection.title2')}} <span class="text-primary-c">DAO</span>
         </div>
-        <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">{{$t('daoSection.desc1')}}</div>
+        <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">{{$t('daoSection.desc2')}}</div>
         <button class="primary-btn primary-btn-outline mt-3">{{$t('readMore')}}</button>
       </div>
       <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center">
