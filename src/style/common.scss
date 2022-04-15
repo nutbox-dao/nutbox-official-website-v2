@@ -1,19 +1,19 @@
 $primary-color: #ffdb1b;
 $text-black: #242629;
 .font56 {
-  font-size: 56px;
+  font-size: 2.8rem;
 }
 
 .font46 {
-  font-size: 46px;
+  font-size: 2.3rem;
 }
 
 .font40 {
-  font-size: 40px;
+  font-size: 2rem;
 }
 
 .font36 {
-  font-size: 36px;
+  font-size: 1.8rem;
 }
 
 .font32 {
@@ -37,7 +37,7 @@ $text-black: #242629;
 }
 
 .font18 {
-  font-size: 18px;
+  font-size: .9rem;
 }
 
 .font16 {
@@ -85,19 +85,19 @@ $text-black: #242629;
   line-height: 40px;
 }
 .line-height46 {
-  line-height: 46px;
+  line-height: 2.3rem;
 }
 .line-height50 {
-  line-height: 50px;
+  line-height: 2.5rem;
 }
 .text-medium {
-  font-family: GothamRoundedMedium, Avenir, Helvetica, Arial, sans-serif;
+  font-family: MontserratMedium, Avenir, Helvetica, Arial, sans-serif;
 }
 .text-tnr {
   font-family: TimesNewRoman, Avenir, Helvetica, Arial, sans-serif;
 }
 .font-bold {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .text-primary-c {
@@ -132,16 +132,26 @@ button {
   outline: none!important;
 }
 .primary-btn {
-  height: 52px;
+  height: 2.7rem;
+  min-height: 40px;
   padding: 0 1.5rem;
   font-size: 1rem;
   color: #242629;
   font-weight: bold;
   width: fit-content;
+  min-width: 166px;
+  border-radius: 8px;
   &-outline {
-    background-color: transparent;
-    border: 2px solid #717376;
     color: #717376;
+    border: 2px solid transparent;
+    background-image: linear-gradient(to right, #A7A7A7, #F8B62B, #F8752B);
+    background-origin: border-box;
+    box-shadow: 2px 1000px 1px black inset;
+    &:hover {
+      background-image: linear-gradient(to right, #F8B62B, #F8752B);
+      box-shadow: none;
+      color: white;
+    }
   }
   &-outline-primary {
     background-color: transparent;
@@ -161,6 +171,59 @@ button {
   background-image: url("~@/assets/arrow-down.svg");
 }
 
+.gradient-text {
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  width: fit-content;
+  &-left {
+    background-image:-webkit-linear-gradient(left, var(--gradient-primary-color1), var(--gradient-primary-color2));
+  }
+  &-bottom {
+    background-image:-webkit-linear-gradient(bottom, var(--gradient-primary-color2), var(--gradient-primary-color1));
+  }
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  a {
+    color: white;
+    margin: .6rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 2.5rem;
+    span {
+      font-size: 1.3rem;
+      font-weight: bold;
+      //line-height: 50px;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .arrow-icon {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("~@/assets/arrow-icon-white.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-left: 1.5rem;
+      &-1 {
+        background-image: url("~@/assets/arrow-icon-primary2.svg");
+      }
+    }
+    &.link-hover:hover {
+      color: var(--primary-custom);
+      span {
+        border-bottom: 5px solid var(--primary-custom);
+      }
+      .arrow-icon {
+        background-image: url("~@/assets/arrow-icon-primary.svg");
+      }
+    }
+  }
+}
 
 @media (min-width: 960px) {
   section {
@@ -173,3 +236,37 @@ button {
     margin-bottom: 3rem;
   }
 }
+@media (max-width: 991px) {
+  .links a span {
+    font-size: 1.2rem;
+  }
+  .links a .arrow-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .links a span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .links a span {
+    font-size: 16px;
+    &.btn-link {
+      font-size: 20px;
+    }
+  }
+  .links a .arrow-icon {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    margin-left: 10px;
+  }
+}
+//@media (max-width: 400px) {
+//  .links a span {
+//    font-size: 12px;
+//  }
+//}

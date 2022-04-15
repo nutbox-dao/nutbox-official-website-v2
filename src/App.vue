@@ -1,7 +1,7 @@
 <template>
   <div id="app" >
-    <div class="page-container">
-      <div class="page-header">
+    <div class="page-container" @scroll="pageScroll" ref="pageContainerRef">
+      <div class="page-header" :class="headerClass">
         <div class="container">
           <b-navbar toggleable="lg">
             <b-navbar-brand>
@@ -45,11 +45,11 @@
             </b-collapse>
           </b-navbar>
         </div>
-      </div>
-      <div class="page-content">
         <div class="h-line">
           <div class="container"></div>
         </div>
+      </div>
+      <div class="page-content">
         <router-view></router-view>
       </div>
       <div class="page-footer">
@@ -85,7 +85,7 @@ export default {
           multi: true,
           url: '',
           subOptions: [
-            { name: 'Nutbox Wiki', target: '_blank', url: 'https://nutbox-io.gitbook.io/nutbox/' },
+            { name: 'wiki', target: '_blank', url: 'https://nutbox-io.gitbook.io/nutbox/' },
             { name: 'economicWhitePaper', target: '_blank', url: '/economic-en.pdf' },
             { name: 'technicalWhitePaper', target: '_blank', url: '/technical-en.pdf' }
           ]
@@ -99,7 +99,8 @@ export default {
       ],
       activeNav: 'home',
       langOptions: ['en', 'zh', 'es'],
-      lang: 'en'
+      lang: 'en',
+      headerClass: ''
     }
   },
   watch: {
@@ -134,6 +135,13 @@ export default {
       this.lang = lang
       this.$i18n.locale = lang
       localStorage.setItem('lang', lang)
+    },
+    pageScroll (e) {
+      if (e.target.scrollTop > 100) {
+        this.headerClass = 'page-header-bg'
+      } else {
+        this.headerClass = ''
+      }
     }
   }
 }
@@ -142,26 +150,23 @@ export default {
 <style lang="scss">
 @font-face
 {
-  font-family: GothamRoundedLight;
-  src: url('~@/style/GothamRounded-Light.otf');
+  font-family: MontserratRegular;
+  src: url('~@/style/Montserrat-Regular.ttf');
 }
 @font-face
 {
-  font-family: GothamRoundedMedium;
-  src: url('~@/style/GothamRounded-Medium.otf');
-}
-@font-face
-{
-  font-family: TimesNewRoman;
-  src: url('~@/style/TimesNewRoman.ttf');
+  font-family: MontserratMedium;
+  src: url('~@/style/Montserrat-Medium.ttf');
 }
 :root {
-  --primary-custom: #45C691;
+  --primary-custom: #F8B62B;
+  --gradient-primary-color1: #F8B62B;
+  --gradient-primary-color2: #F8752B;
 }
 #app,
 html,
 body {
-  font-family:GothamRoundedLight, Avenir, Helvetica, Arial, sans-serif;
+  font-family:MontserratRegular, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -170,19 +175,26 @@ body {
   background-color: #000;
 }
 #app {
-  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 .page-container {
   width: 100%;
+  height: 100%;
   overflow-x: hidden;
   margin: auto;
-  background-image: url("~@/assets/bg.png");
+  position: relative;
 }
 .page-header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
-  height: 60px;
-  background-image: url("~@/assets/bg.png");
+  height: 120px;
+  padding-top: 47px;
+  //background-image: url("~@/assets/bg.png");
   //background: #000;
   margin: auto;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.04) ;
@@ -190,6 +202,17 @@ body {
   border-bottom-right-radius: 1.2rem;
   z-index: 10;
   font-size: 1rem;
+  .h-line .container{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(white, .3);
+  }
+  &-bg {
+    background: rgba(black, .9);
+    .h-line .container {
+      background-color: transparent;
+    }
+  }
   .menu-toggle {
     display: block;
     width: 30px;
@@ -210,29 +233,36 @@ body {
     padding: 0;
   }
   .navbar-nav .nav-link {
-    height: 60px;
+    height: 72px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 2rem;
   }
   .navbar-light .navbar-nav .show > .nav-link {
-    color: white;
+    color: #A7A7A7;
   }
   .navbar-light .navbar-nav .nav-link {
-    color: white;
+    color: #A7A7A7;
+    font-weight: bold;
     &:hover {
-      color: var(--primary-custom);
-      .select-icon {
-        background-image: url("~@/assets/arrow-down-primary.svg");
-      }
+      background-image:-webkit-linear-gradient(left, var(--gradient-primary-color1), var(--gradient-primary-color2));
+      //-webkit-background-clip:text;
+      //-webkit-text-fill-color:transparent;
+      //width: fit-content;
+      //.select-icon {
+      //  background-image: url("~@/assets/arrow-down-primary.svg");
+      //}
     }
     &:focus {
       color: white;
     }
   }
   .navbar-light .navbar-nav .active > .nav-link {
-    color: var(--primary-custom);
+    background-image:-webkit-linear-gradient(left, var(--gradient-primary-color1), var(--gradient-primary-color2));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    width: fit-content;
   }
   .dropdown-menu {
     border-radius: 1.2rem;
@@ -266,21 +296,24 @@ body {
     }
   }
   .launch-app-btn {
-    background-image: linear-gradient(to right, #6ADDB7, #6ADDB7, #3DB981);
+    background-image: linear-gradient(to right, var(--gradient-primary-color1), var(--gradient-primary-color2));
     border: transparent;
     color: white;
     height: 42px;
     font-size: 16px;
     padding: 0 25px;
     font-weight: bold;
+    &:hover {
+      color: white!important;
+    }
   }
 }
 .page-content {
-  margin-top: 60px;
-  .h-line .container{
-    width: 100%;
-    height: 1px;
-    background-color: white;
+  //margin-top: 60px;
+}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1400px!important;
   }
 }
 @media (max-width: 960px) {

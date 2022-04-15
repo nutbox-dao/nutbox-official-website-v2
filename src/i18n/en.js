@@ -8,6 +8,7 @@ export default {
   peanut: 'Peanut',
   crowdLoan: 'Crowdloan',
   walnut: 'Walnut',
+  wiki: 'Nutbox Wiki',
   economicWhitePaper: 'Economic Whitepaper',
   technicalWhitePaper: 'Technical Whitepaper',
   startSection: {
@@ -33,7 +34,7 @@ export default {
     planned: 'Planned'
   },
   roadmapSection: {
-    title: 'Roadmap',
+    title: 'ROAD MAP',
     p1: 'Nutbox team has gone through 3 years',
     t1: 'Jan 2019',
     d1: 'Launch WhereIN DApp, a Steem-based lifestyle sharing community. We decentralizes WhereIN DAO with community curators, WhereIN also becomes one of the super witness of Steem Blockchain',

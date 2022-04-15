@@ -8,6 +8,7 @@ export default {
   peanut: 'Peanut',
   crowdLoan: 'CrowdLoan',
   walnut: 'Walnut',
+  wiki: 'Nutbox Wiki',
   economicWhitePaper: 'Libro blanco económico',
   technicalWhitePaper: 'Libro blanco técnico',
   startSection: {

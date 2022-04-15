@@ -15,7 +15,7 @@
       <div class="bottom-box">
         <div class="row-img">
           <a href="https://github.com/nutbox-dao" target="_blank">
-            <img src="~@/assets/github.png" alt="">
+            <img src="~@/assets/github.svg" alt="">
           </a>
           <a href="https://twitter.com/NutboxDao" target="_blank">
             <img src="~@/assets/twitter.svg" alt="">

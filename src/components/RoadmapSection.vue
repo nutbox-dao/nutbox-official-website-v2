@@ -1,6 +1,6 @@
 <template>
   <section id="road-map-section">
-    <div class="font36 line-height50 mb-5 text-tnr">{{$t('roadmapSection.title')}}</div>
+    <div class="title mb-5 text-medium font-bold">{{$t('roadmapSection.title')}}</div>
     <div class="map-container">
       <div class="map-container-box">
         <div class="card-box" v-for="item of 7" :key="item">
@@ -26,6 +26,9 @@ export default {
   padding: 0;
   margin-top: 10rem;
   margin-bottom: 6rem;
+  .title {
+    font-size: 3rem;
+  }
 }
 .map-container {
   margin-top: 4rem;
@@ -53,7 +56,7 @@ export default {
   box-sizing: border-box;
   position: relative;
   background-repeat: no-repeat;
-  border-bottom: 6px solid #717376;
+  border-bottom: 6px solid rgba(#717376, .3);
   &::before {
     content: '';
     position: absolute;

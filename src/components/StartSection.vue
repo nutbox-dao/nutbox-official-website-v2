@@ -1,16 +1,21 @@
 <template>
   <section id="start-section">
-    <div class="img-box">
-      <div class="img-box-content">
+    <div class="container">
+      <div class="banner-info-box">
+        <div class="title">
+          Link <br>
+          <span class="gradient-text gradient-text-left">Community</span> <br>
+          To Web3.0
+        </div>
         <div class="desc">
-          Bootstrap, govern, and contribute a DAO in decentralized way.
+          Bootstrap, govern, and contribute a DAO in a decentralized way.
         </div>
         <div class="row-img">
-          <a href="https://github.com/nutbox-dao" target="_blank">
-            <img src="~@/assets/github.png" alt="">
-          </a>
           <a href="https://twitter.com/NutboxDao" target="_blank">
             <img src="~@/assets/twitter.svg" alt="">
+          </a>
+          <a href="https://github.com/nutbox-dao" target="_blank">
+            <img src="~@/assets/github.svg" alt="">
           </a>
           <a href="https://t.me/nutbox_defi" target="_blank">
             <img src="~@/assets/telegram.svg" alt="">
@@ -20,25 +25,22 @@
           </a>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row bottom-info">
-        <div class="col-lg-3 col-md-6">
-          <div class="font20 line-height46 mb-3">Communities</div>
-          <div class="text-primary-c font46 line-height46">666</div>
+      <div class="bottom-info">
+        <div class="value-item">
+          <div class="label mb-3">Communities</div>
+          <div class="gradient-text gradient-text-bottom value">666</div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="font20 line-height46 mb-3">DApp Entities</div>
-          <div class="text-primary-c font46 line-height46">1024</div>
+        <div class="value-item">
+          <div class="label mb-3">DApp Entities</div>
+          <div class="gradient-text gradient-text-bottom value">1024</div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="font20 line-height46 mb-3">Users</div>
-          <div class="text-primary-c font46 line-height46">123 k</div>
+        <div class="value-item">
+          <div class="label mb-3">Users</div>
+          <div class="gradient-text gradient-text-bottom value">123 k</div>
         </div>
-<!--        <div class="col-md-3 col-sm-6">-->
-        <div class="col-lg-3 col-md-6">
-          <div class="font20 line-height46 mb-3">TVL</div>
-          <div class="text-primary-c font46 line-height46">$300 M</div>
+        <div class="value-item">
+          <div class="label mb-3">TVL</div>
+          <div class="gradient-text gradient-text-bottom value">$300 M</div>
         </div>
       </div>
     </div>
@@ -53,72 +55,107 @@ export default {
 </script>
 
 <style scoped lang="scss">
-#start-section {}
-.img-box {
-  height: 600px;
-  min-height: 45rem;
-  background-image: url("~@/assets/slogan.svg"),url("~@/assets/start-bg.png");
+#start-section {
+  background-image: url("~@/assets/start-bg.png");
   background-repeat: no-repeat;
-  background-size: 40%, contain;
-  background-position: center 40%, center;
+  background-size: cover;
+  background-position: center bottom;
+  height: 80vh;
+  max-height: 1060px;
+  min-height: 800px;
+  padding-bottom: 0;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-  .img-box-content {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20%;
-    max-width: 650px;
+}
+.banner-info-box {
+  .title {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 4.5rem;
+    font-family: MontserratMedium, Avenir, Helvetica, Arial, sans-serif;
     text-align: left;
   }
   .desc {
     text-align: left;
-    font-size: 1.8rem;
-    line-height: 2.3rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-top: 10px;
   }
   .row-img {
     margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
   }
   .row-img img {
     width: 2rem;
     margin-right: 1rem;
   }
 }
-.container {
-  margin-top: -5rem;
-}
-@media (min-width: 1441px) {
-  .img-box {
-    background-size: 650px, contain;
-  }
-}
-@media (max-width: 1440px) {
-  .img-box .img-box-content {
-    max-width: 40%;
-  }
-}
-@media (max-width: 1060px) {
-  .img-box {
-    background-size: 450px, cover;
-    .img-box-content {
-      max-width: 450px;
+.bottom-info {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  .value-item {
+    min-width: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, white, white);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 1px 1.7rem;
+    &:last-child {
+      background-image: none;
+    }
+    .label {
+      font-size: 1rem;
+      line-height: 2.3rem;
+    }
+    .value {
+      font-size: 3rem;
+      line-height: 2.3rem;
+      font-family: MontserratMedium, Avenir, Helvetica, Arial, sans-serif;
     }
   }
 }
-@media (max-width: 900px) {
-  .img-box .img-box-content {
-    max-width: fit-content;
-    width: 450px;
+@media (max-width: 960px) {
+  .bottom-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .value-item {
+      margin-top: 1rem;
+      &:nth-child(2) {
+        background-image: none;
+      }
+    }
   }
 }
 @media (max-width: 767px) {
-  .img-box {
-  }
 }
-@media (max-width: 560px) {
-  .img-box {
-    background-size: 80%, cover;
-    .img-box-content {
-      width: 80%;
+@media (max-width: 500px) {
+  #start-section {
+    height: fit-content;
+    max-height: fit-content;
+    min-height: fit-content;
+  }
+  .container {
+    justify-content: flex-start;
+  }
+  .banner-info-box {
+    margin-top: 50%;
+  }
+  .bottom-info {
+    position: relative;
+    .value-item {
+      margin-top: 2rem;
     }
   }
 }
