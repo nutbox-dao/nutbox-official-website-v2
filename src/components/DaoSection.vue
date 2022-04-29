@@ -3,48 +3,41 @@
   <div class="container">
     <div class="create-card">
       <div class="row">
-        <div class="col-lg-6 col-md-6 offset-lg-6 offset-md-6 d-flex flex-column justify-content-center">
-          <div class="font36 line-height50 mb-3 text-left text-medium">{{$t('daoSection.title1')}}</div>
-          <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">{{$t('daoSection.desc1')}}</div>
-          <div class="d-flex btn-box">
-            <button class="primary-btn primary-btn-outline mr-2">{{$t('readMore')}}</button>
+        <div class="bg1">
+          <img src="~@/assets/dao-img1.png" alt="">
+        </div>
+        <div class="col-lg-6  offset-lg-6 col-md-8 offset-md-4 d-flex flex-column justify-content-center right-box">
+          <div class="links mb-3">
+            <a class="justify-content-start" href="#">
+              <span class="gradient-text gradient-text-bottom text-medium btn-link">
+                Explore  Communities
+              </span>
+              <i class="arrow-icon arrow-icon-1"></i>
+            </a>
+          </div>
+          <div class="font36 line-height46 mb-3 text-left text-medium font-bold">
+            Enter the world of communities and get connected.
+          </div>
+          <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">
+            The best community supporting platform for community entrepreneurs and digital
+            nomads which provides out-of-box facilities and connects worldwide communities.
           </div>
         </div>
       </div>
     </div>
-    <div class="links text-right" style="margin-right: 3rem">
-      <a href="#">
-        <span class="gradient-text gradient-text-bottom text-medium btn-link">
-          Explore  Communities
-        </span>
-        <i class="arrow-icon arrow-icon-1"></i>
-      </a>
-    </div>
-    <div class="row" style="margin-top: 4rem">
-      <div class="col-lg-6 col-md-6  d-flex flex-column justify-content-center">
-        <div class="dao-card dao-card-1 text-left">
-          <div class="font36 line-height50 mb-5 text-left text-medium">
-            {{$t('daoSection.title2')}} <span class="text-primary-c">DAO</span>
-          </div>
-          <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">{{$t('daoSection.desc2')}}</div>
-          <button class="primary-btn primary-btn-outline mt-3">{{$t('readMore')}}</button>
-        </div>
+    <div class="dao-card row">
+      <div class="bg2">
+        <img src="~@/assets/dao-img2.png" alt="">
       </div>
-      <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center">
-        <div class="dao-card dao-card-2">
-          <div class="links text-right">
-            <a class="link-hover" href="#">
-              <span>Contribute by build and earn</span>
-              <i class="arrow-icon"></i>
-            </a>
-            <a class="link-hover" href="#">
-              <span>Self-bootstrap by adding Dapps</span>
-              <i class="arrow-icon"></i>
-            </a>
-            <a class="link-hover" href="#">
-              <span>Deploy without code</span>
-              <i class="arrow-icon"></i>
-            </a>
+      <div class="col-lg-5 col-md-8 d-flex flex-column">
+        <div class="dao-card-1 text-left">
+          <div class="font36 line-height50 mb-5 text-left text-medium font-bold">
+            Create and configure your DAO in 5 minutes.
+          </div>
+          <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">
+            With Nutbox Toolkits, you can easily create a DAO in 5
+            minutes and configure its Defi (Walnut), NFT (Chestnut)
+            and Social (Donut) modules.
           </div>
         </div>
       </div>
@@ -61,55 +54,46 @@ export default {
 
 <style scoped lang="scss">
 #dao-section {
-  background-image: url("~@/assets/dao-img0.png"), url("~@/assets/dao-img3.png");
-  background-position: left 2rem, right bottom;
+  background-image: url("~@/assets/dao-img3.png");
+  background-position: left 95%;
   background-repeat: no-repeat;
-  background-size: auto, 18rem;
-  padding-bottom: 5rem;
-}
-.container  {
-  margin-top: 10rem;
+  background-size: auto 12rem;
+  padding-bottom: 0;
 }
 .create-card {
-  background-image: url("~@/assets/dao-card-bg0.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 5rem 3rem;
   position: relative;
-  &::after {
-    content: '';
+  padding-bottom: 8rem;
+  .bg1 {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-image: url("~@/assets/card-line.svg");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
+    left: -13rem;
+    top: 25%;
+    width: 40rem;
+    img {
+      width: 100%;
+    }
   }
-  .desc {
-    font-size: 18px;
+  .right-box {
+    min-height: 29rem;
+    background-image: url("~@/assets/dao-img0.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 10rem auto;
   }
 }
 .dao-card {
   height: 100%;
   background-repeat: no-repeat;
-  min-height: 35rem;
-  &-1 {
-    background-image: url("~@/assets/dao-img1.png"), url("~@/assets/dao-card-bg1.png");
-    background-size: auto, 100% 100%;
-    background-position: 95% 95%, center;
-    padding: 3.8rem;
-  }
-  &-2 {
-    background-image: url("~@/assets/dao-card-bg2.png"),  url("~@/assets/dao-card-bg3.png");
-    background-position: center, center bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 100%, 100%;
-    padding: 8rem 2rem 0 2rem;
-    margin-left: 2.5rem;
+  min-height: 30rem;
+  position: relative;
+  padding-top: 4rem;
+  .bg2 {
+    position: absolute;
+    right: 0;
+    top: 7rem;
+    width: 30rem;
+    img {
+      width: 100%;
+    }
   }
 }
 .links a .btn-link {
@@ -119,61 +103,53 @@ export default {
   margin-top: 10rem;
   margin-bottom: 3rem;
 }
-@media (min-width: 992px) and (max-width: 1440px) {
-  .create-card {
-    padding: 5rem 3rem;
-  }
+@media (max-width: 1200px) {
 }
 @media (max-width: 991px) {
   .create-card {
-    padding: 3rem;
+    padding-bottom: 4rem;
+    .right-box {
+      background-image: none;
+    }
+    .bg1 {
+      left: -10rem;
+      width: 60%;
+    }
   }
   .dao-card {
-    min-height: fit-content;
-    &-1 {
-      padding: 3.8rem 2rem;
+    height: fit-content;
+    min-height: auto;
+    padding-top: 0;
+    .bg2 {
+      width: 40%;
+      top: 50%;
+      transform: translateY(-50%);
     }
-    &-2 {
-      margin-left: 0;
-      padding: 8rem 1.5rem 0;
-    }
-  }
-}
-@media (max-width: 960px) {
-  .dao-card-2 {
-    padding: 5rem 1.5rem 0;
   }
 }
 @media (max-width: 767px) {
   .create-card {
-    background-image: linear-gradient(to right, rgba(black, .8), rgba(black, 0)), url("~@/assets/dao-card-bg0.png");
-    background-position: center, center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%, 100% 100%;
-    border-radius: 20px;
-    .btn-box {
-      justify-content: flex-end;
+    padding-bottom: 0;
+    .bg1 {
+      width: 80%;
+      top: 55%;
+      left: auto;
+      right: -10%;
     }
   }
   .dao-card {
-    min-height: 35rem;
-    width: 80%;
-    margin: 1rem auto;
-    &-2 {
-      padding: 8rem 2.5rem 0;
+    .bg2 {
+      width: 0;
     }
   }
 }
 @media (max-width: 500px) {
   .create-card {
-    background-size: cover;
-    background-position: left bottom;
-    border: 1px solid #424344;
-    border-radius: 2rem;
-  }
-  .dao-card {
-    min-height: 400px;
-    width: 100%;
+    padding-bottom: 5rem;
+    .bg1 {
+      top: 40%;
+      width: 100%;
+    }
   }
   .links a span {
     font-size: 16px;
@@ -186,21 +162,10 @@ export default {
   }
 }
 @media (max-width: 400px) {
-  .dao-card {
-    min-height: 350px;
-    &-2 {
-      padding: 6rem 2rem;
-    }
-  }
   .links a span {
     font-size: 12px;
   }
 }
 @media (max-width: 350px) {
-  .create-card {
-    background-image: linear-gradient(to right, rgba(black, .6), rgba(black, .7)), url("~@/assets/dao-card-bg0.png");
-    border-radius: 2.8rem;
-  }
-
 }
 </style>

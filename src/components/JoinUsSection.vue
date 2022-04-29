@@ -1,19 +1,40 @@
 <template>
   <section id="join-section">
-    <div class="font40 font-bold">{{$t('joinSection.title')}}</div>
-    <div class="font20 mb-4 text-grey-dark">{{$t('joinSection.p1')}}</div>
-    <div class="btn-box">
-      <a class="primary-btn" href="http://nutboxteam.hk.mikecrm.com/gou6cN8" target="_blank">
-        <span>{{$t('joinSection.btn1')}}</span>
-        <img src="~@/assets/arrow-forward.svg" alt="">
-      </a>
-      <a class="primary-btn"
-         href="https://blog.nutbox.io/@nutbox.mine/nutbox-global-ambassador-program-or-nutbox"
-         target="_blank">
-        <span>{{$t('joinSection.btn2')}}</span>
-        <img src="~@/assets/arrow-forward.svg" alt="">
-      </a>
+    <div class="container">
+      <div class="title text-bold">Join Us</div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="links">
+            <a href="http://nutboxteam.hk.mikecrm.com/gou6cN8"
+               target="_blank" class="d-flex justify-content-start">
+              <span class="text-bold btn-link text-white">Join as a contributor</span>
+              <i class="arrow-icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="links">
+            <a href="https://blog.nutbox.io/@nutbox.mine/nutbox-global-ambassador-program-or-nutbox"
+               target="_blank" class="d-flex justify-content-start">
+              <span class="text-bold btn-link text-white">Join as a community member</span>
+              <i class="arrow-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+<!--    <div class="btn-box">-->
+<!--      <a class="primary-btn" href="http://nutboxteam.hk.mikecrm.com/gou6cN8" target="_blank">-->
+<!--        <span>{{$t('joinSection.btn1')}}</span>-->
+<!--        <img src="~@/assets/arrow-forward.svg" alt="">-->
+<!--      </a>-->
+<!--      <a class="primary-btn"-->
+<!--         href="https://blog.nutbox.io/@nutbox.mine/nutbox-global-ambassador-program-or-nutbox"-->
+<!--         target="_blank">-->
+<!--        <span>{{$t('joinSection.btn2')}}</span>-->
+<!--        <img src="~@/assets/arrow-forward.svg" alt="">-->
+<!--      </a>-->
+<!--    </div>-->
   </section>
 </template>
 
@@ -25,40 +46,8 @@ export default {
 
 <style scoped lang="scss">
 #join-section {
-  background-image: url("~@/assets/join-bg.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  margin: 0;
-  padding-top: 5rem;
-  .btn-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  a {
-    text-decoration: none;
-  }
-  .primary-btn {
-    color: $text-black;
-    background: white;
-    min-width: 15rem;
-    max-width: 20rem;
-    margin: 1rem;
-    min-height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-      height: 1rem;
-      margin-left: .5rem;
-    }
-  }
-}
-@media (max-width: 560px) {
-  .btn-box {
-    flex-direction: column!important;
+  .title {
+    font-size: 3rem;
   }
 }
 </style>

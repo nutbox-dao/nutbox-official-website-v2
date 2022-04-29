@@ -1,33 +1,34 @@
 <template>
   <div class="about-page">
     <MissionSection/>
-    <div class="container">
-      <DaoSection/>
-      <OurTeamSection/>
-      <GlobalPartnerSection/>
-    </div>
-    <JoinUsSection/>
+    <GrantSection/>
+    <GlobalPartnerSection/>
+<!--    <JoinUsSection/>-->
   </div>
 </template>
 
 <script>
 import MissionSection from '@/components/MissionSection'
-import OurTeamSection from '@/components/OurTeamSection'
-import DaoSection from '@/components/DaoSection'
+import GrantSection from '@/components/GrantSection'
 import GlobalPartnerSection from '@/components/GlobalPartnerSection'
-import JoinUsSection from '@/components/JoinUsSection'
+// import JoinUsSection from '@/components/JoinUsSection'
 
 export default {
   name: 'AboutUsPage',
   components: {
     MissionSection,
-    OurTeamSection,
-    DaoSection,
-    GlobalPartnerSection,
-    JoinUsSection
+    GrantSection,
+    GlobalPartnerSection
+    // JoinUsSection
   }
 }
 </script>
 
 <style scoped lang="scss">
+.about-page {
+  background-image: url("~@/assets/about-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
 </style>

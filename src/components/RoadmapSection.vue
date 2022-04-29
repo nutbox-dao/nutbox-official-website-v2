@@ -1,15 +1,76 @@
 <template>
   <section id="road-map-section">
-    <div class="title mb-5 text-medium font-bold">{{$t('roadmapSection.title')}}</div>
-    <div class="map-container">
-      <div class="map-container-box">
-        <div class="card-box" v-for="item of 7" :key="item">
-          <div class="info text-left">
-            <div class="font24 text-primary-c mb-4">{{$t(`roadmapSection.t${item}`)}}</div>
-<!--            <div class="font16 line-height24 text-grey-dark">{{$t(`roadmapSection.n${item}`)}}</div>-->
-            <div class="font16 line-height24 text-grey-dark mt-2" v-html="$t(`roadmapSection.d${item}`)"></div>
+    <div class="container">
+      <div class="title mb-5 text-bold">Road Map</div>
+      <div class="map-container">
+        <div class="map-container-box">
+          <div class="card-box">
+            <div class="info text-left">
+              <div class="font24 text-primary-c mb-4 text-medium">Oct 2020</div>
+              <div class="font16 line-height24 text-grey-dark mt-2">
+                Create and launch Peanut DAO on Tron network
+              </div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="info text-left">
+              <div class="font24 text-primary-c mb-4">Nov 2021</div>
+              <div class="font16 line-height24 text-grey-dark mt-2">
+                Launch Nutbox ver0.1 on BSC network
+              </div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="info text-left">
+              <div class="font24 text-primary-c mb-4 text-medium">Q1 2022</div>
+              <div class="font16 line-height24 text-grey-dark mt-2">
+                Launch Nutbox Walnut mainnet on BSC, support Steem/Hive and Polkadot
+              </div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="info text-left">
+              <div class="font24 text-primary-c mb-4 text-medium">Q2 2022</div>
+              <div class="font16 line-height24 text-grey-dark mt-2">
+                Launch Toolkits Voting on Walnut, ISO supports Cosmos, Osmosis and Astar networks
+              </div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="info text-left">
+              <div class="font24 text-primary-c mb-4 text-medium">Q3 2022</div>
+              <div class="font16 line-height24 text-grey-dark mt-2">
+                Walnut ISO supports more networks, such as Ethereum, Solana, etc.
+              </div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="info text-left">
+              <div class="font24 text-primary-c mb-4 text-medium">Q4 2022</div>
+              <div class="font16 line-height24 text-grey-dark mt-2">
+                Launch Chestnut
+              </div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="info text-left">
+              <div class="font24 text-primary-c mb-4 text-medium">Q1-Q2 2023</div>
+              <div class="font16 line-height24 text-grey-dark mt-2">
+                Toolkits System and Social Module (Donut)
+              </div>
+            </div>
+          </div>
+          <div class="card-box">
+            <div class="info text-left">
+              <div class="font24 text-primary-c mb-4 text-medium">Q3-Q4 2023</div>
+              <div class="font16 line-height24 text-grey-dark mt-2">
+                Nutbox chain on Polkadot Ecosystem
+              </div>
+            </div>
           </div>
         </div>
+        <div class="gradient-box gradient-box-left"></div>
+        <div class="gradient-box gradient-box-right"></div>
       </div>
     </div>
   </section>
@@ -23,9 +84,8 @@ export default {
 
 <style scoped lang="scss">
 #road-map-section {
-  padding: 0;
-  margin-top: 10rem;
-  margin-bottom: 6rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   .title {
     font-size: 3rem;
   }
@@ -41,12 +101,25 @@ export default {
     display: none;
   }
   .map-container-box {
-    //position: absolute;
     display: flex;
     padding: .5rem;
     animation: move-scroll 22s linear infinite;
     &:hover {
       animation-play-state: paused;
+    }
+  }
+  .gradient-box {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 10%;
+    &-left {
+      left: 0;
+      background-image: linear-gradient(to right, rgba(black, 1), rgba(black, 0));
+    }
+    &-right {
+      right: 0;
+      background-image: linear-gradient(to left, rgba(black, 1), rgba(black, 0));
     }
   }
 }
@@ -66,15 +139,6 @@ export default {
     width: 1px;
     background-color: white;
   }
-  .dot {
-    position: absolute;
-    width: .4rem;
-    height: .4rem;
-    background-color: #F6F7F9;
-    border-radius: .5rem;
-    left: -.2rem;
-    bottom: 0;
-  }
 }
 @keyframes move-scroll {
   0%
@@ -84,12 +148,12 @@ export default {
   1%
   {
     opacity:1;
-    transform:translateX(10%);
+    transform:translateX(20%);
   }
   90%
   {
     opacity:1;
-    transform:translateX(-70%);
+    transform:translateX(-85%);
   }
   98%
   {

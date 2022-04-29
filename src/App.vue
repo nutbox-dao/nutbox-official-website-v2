@@ -158,6 +158,11 @@ export default {
   font-family: MontserratMedium;
   src: url('~@/style/Montserrat-Medium.ttf');
 }
+@font-face
+{
+  font-family: MontserratBlod;
+  src: url('~@/style/Montserrat-Bold.ttf');
+}
 :root {
   --primary-custom: #F8B62B;
   --gradient-primary-color1: #F8B62B;
@@ -193,9 +198,9 @@ body {
   top: 0;
   width: 100%;
   height: 120px;
-  padding-top: 47px;
-  //background-image: url("~@/assets/bg.png");
-  //background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   margin: auto;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.04) ;
   border-bottom-left-radius: 1.2rem;
@@ -227,7 +232,7 @@ body {
     min-height: 58px;
   }
   .logo-brand {
-    height: 50px;
+    height: 47px;
   }
   .navbar {
     padding: 0;
@@ -246,23 +251,14 @@ body {
     color: #A7A7A7;
     font-weight: bold;
     &:hover {
-      background-image:-webkit-linear-gradient(left, var(--gradient-primary-color1), var(--gradient-primary-color2));
-      //-webkit-background-clip:text;
-      //-webkit-text-fill-color:transparent;
-      //width: fit-content;
-      //.select-icon {
-      //  background-image: url("~@/assets/arrow-down-primary.svg");
-      //}
+      color: white;
     }
     &:focus {
       color: white;
     }
   }
   .navbar-light .navbar-nav .active > .nav-link {
-    background-image:-webkit-linear-gradient(left, var(--gradient-primary-color1), var(--gradient-primary-color2));
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    width: fit-content;
+    color: white;
   }
   .dropdown-menu {
     border-radius: 1.2rem;
@@ -303,36 +299,43 @@ body {
     font-size: 16px;
     padding: 0 25px;
     font-weight: bold;
+    border-radius: 8px;
     &:hover {
       color: white!important;
     }
   }
 }
 .page-content {
-  //margin-top: 60px;
+  margin-top: -120px;
+  //padding-top: 120px;
 }
 @media (min-width: 1920px) {
   .container {
     max-width: 1400px!important;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 991px) {
   .page-header {
+    position: fixed;
+    height: fit-content;
+    .h-line .container{
+      background: transparent;
+    }
     .container {
       width: 100%;
       max-width: 100%;
     }
+    .navbar-light .navbar-brand {
+      min-height: 80px;
+    }
     .navbar-nav {
       padding: 20px;
       background-color: black;
-      border-radius: 0 0 20px 20px;
+      border-radius: 20px;
     }
     .navbar-nav .nav-link {
       margin-left: 0;
     }
-  }
-  .h-line .container{
-    max-width: 100%;
   }
 }
 </style>

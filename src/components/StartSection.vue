@@ -3,11 +3,11 @@
     <div class="container">
       <div class="banner-info-box">
         <div class="title">
-          Link <br>
-          <span class="gradient-text gradient-text-left">Community</span> <br>
-          To Web3.0
+          Link
+          <span class="gradient-text gradient-text-left">COMMUNITY</span> <br>
+          to Web3.0
         </div>
-        <div class="desc">
+        <div class="desc text-medium font-bold">
           Bootstrap, govern, and contribute a DAO in a decentralized way.
         </div>
         <div class="row-img">
@@ -25,24 +25,24 @@
           </a>
         </div>
       </div>
-      <div class="bottom-info">
-        <div class="value-item">
-          <div class="label mb-3">Communities</div>
-          <div class="gradient-text gradient-text-bottom value">666</div>
-        </div>
-        <div class="value-item">
-          <div class="label mb-3">DApp Entities</div>
-          <div class="gradient-text gradient-text-bottom value">1024</div>
-        </div>
-        <div class="value-item">
-          <div class="label mb-3">Users</div>
-          <div class="gradient-text gradient-text-bottom value">123 k</div>
-        </div>
-        <div class="value-item">
-          <div class="label mb-3">TVL</div>
-          <div class="gradient-text gradient-text-bottom value">$300 M</div>
-        </div>
-      </div>
+<!--      <div class="bottom-info">-->
+<!--        <div class="value-item">-->
+<!--          <div class="label mb-3">Communities</div>-->
+<!--          <div class="gradient-text gradient-text-bottom value">666</div>-->
+<!--        </div>-->
+<!--        <div class="value-item">-->
+<!--          <div class="label mb-3">DApp Entities</div>-->
+<!--          <div class="gradient-text gradient-text-bottom value">1024</div>-->
+<!--        </div>-->
+<!--        <div class="value-item">-->
+<!--          <div class="label mb-3">Users</div>-->
+<!--          <div class="gradient-text gradient-text-bottom value">123 k</div>-->
+<!--        </div>-->
+<!--        <div class="value-item">-->
+<!--          <div class="label mb-3">TVL</div>-->
+<!--          <div class="gradient-text gradient-text-bottom value">$300 M</div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
   </section>
 </template>
@@ -60,10 +60,11 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  height: 80vh;
+  height: 102vh;
   max-height: 1060px;
   min-height: 800px;
   padding-bottom: 0;
+  padding-top: 120px;
 }
 .container {
   height: 100%;
@@ -73,16 +74,18 @@ export default {
   position: relative;
 }
 .banner-info-box {
+  margin-left: 22px;
+  margin-bottom: 4rem;
   .title {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 900;
     line-height: 4.5rem;
-    font-family: MontserratMedium, Avenir, Helvetica, Arial, sans-serif;
+    font-family: MontserratBlod, Avenir, Helvetica, Arial, sans-serif;
     text-align: left;
   }
   .desc {
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     margin-top: 10px;
   }
