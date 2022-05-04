@@ -36,7 +36,6 @@
           <span>Sampraise</span>
         </div>
       </div>
-      <div class="h-line"></div>
     </div>
   </section>
 </template>
@@ -53,11 +52,6 @@ export default {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center bottom;
-  .h-line {
-    width: 100%;
-    height: 1px;
-    background-color: rgba(white, .3);
-  }
 }
 .title {
   font-size: 3rem;

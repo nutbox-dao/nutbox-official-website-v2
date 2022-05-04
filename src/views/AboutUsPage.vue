@@ -3,7 +3,7 @@
     <MissionSection/>
     <GrantSection/>
     <GlobalPartnerSection/>
-<!--    <JoinUsSection/>-->
+    <JoinUsSection/>
   </div>
 </template>
 
@@ -11,15 +11,15 @@
 import MissionSection from '@/components/MissionSection'
 import GrantSection from '@/components/GrantSection'
 import GlobalPartnerSection from '@/components/GlobalPartnerSection'
-// import JoinUsSection from '@/components/JoinUsSection'
+import JoinUsSection from '@/components/JoinUsSection'
 
 export default {
   name: 'AboutUsPage',
   components: {
     MissionSection,
     GrantSection,
-    GlobalPartnerSection
-    // JoinUsSection
+    GlobalPartnerSection,
+    JoinUsSection
   }
 }
 </script>

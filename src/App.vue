@@ -91,6 +91,12 @@ export default {
           ]
         },
         {
+          name: 'faq',
+          multi: false,
+          url: '/faq',
+          id: 'faq'
+        },
+        {
           name: 'aboutUs',
           multi: false,
           url: '/about',
@@ -106,7 +112,7 @@ export default {
   watch: {
     $route () {
       this.setActiveMenu()
-      window.scrollTo(0, 0)
+      this.$refs.pageContainerRef.scrollTop = 0
     }
   },
   mounted () {
@@ -280,11 +286,7 @@ body {
         background-position: center;
       }
       &:hover {
-        color: var(--primary-custom);
-        background-color: transparent;
-        .arrow-forward-icon {
-          background-image: url("~@/assets/arrow-forward-primary.svg");
-        }
+        background-color: rgba(white, .05);
       }
     }
     .active-icon {
@@ -307,6 +309,7 @@ body {
 }
 .page-content {
   margin-top: -120px;
+  min-height: 100vh;
   //padding-top: 120px;
 }
 @media (min-width: 1920px) {

@@ -269,3 +269,18 @@ button {
 //    font-size: 12px;
 //  }
 //}
+.c-popover {
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
+  min-width: 15rem;
+  width: fit-content;
+}
+.c-popover .popover-body {
+  background-color: #181818;
+  color: white;
+  border-radius: 1.1rem;
+  padding: 1rem;
+}
+.c-popover .arrow::after {
+  border-top-color: #181818!important;
+}

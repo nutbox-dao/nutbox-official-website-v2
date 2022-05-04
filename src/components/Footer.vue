@@ -21,10 +21,46 @@
           </div>
           <div class="col-md-8">
             <div class="menu">
-              <div class="item">Product</div>
-              <div class="item">Document</div>
-              <div class="item">FAQ</div>
-              <div class="item">About us</div>
+              <div type="button" class="item" id="popover-target-product">Product</div>
+              <b-popover custom-class="c-popover"  target="popover-target-product" triggers="hover" placement="top">
+                <a href="https://walnut.nutbox.io" target="_blank" class="d-menu-item">
+                  <span class="">Walnut</span>
+                  <i class="arrow-forward-icon"></i>
+                </a>
+                <a href="https://peanut.nutbox.io" target="_blank" class="d-menu-item">
+                  <span class="">Peanut</span>
+                  <i class="arrow-forward-icon"></i>
+                </a>
+                <a href="https://polkadot.nutbox.io" target="_blank" class="d-menu-item">
+                  <span class="">Crowdloan</span>
+                  <i class="arrow-forward-icon"></i>
+                </a>
+              </b-popover>
+              <div type="button" class="item" id="popover-target-doc">Document</div>
+              <b-popover custom-class="c-popover" target="popover-target-doc" triggers="hover" placement="top">
+                <a href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="d-menu-item">
+                  <div class="d-flex align-items-center">
+                    <span class="">Nutbox Wiki</span>
+                  </div>
+                  <i class="arrow-forward-icon"></i>
+                </a>
+                <a href="/economic-en.pdf" target="_blank" class="d-menu-item">
+                  <div class="d-flex align-items-center">
+                    <img class="mr-2" src="~@/assets/pdf.png" alt="">
+                    <span class="">Economic WhitePaper</span>
+                  </div>
+                  <i class="arrow-forward-icon"></i>
+                </a>
+                <a href="/technical-en.pdf" target="_blank" class="d-menu-item">
+                  <div class="d-flex align-items-center">
+                    <img class="mr-2" src="~@/assets/pdf.png" alt="">
+                    <span class="">Technical WhitePaper</span>
+                  </div>
+                  <i class="arrow-forward-icon"></i>
+                </a>
+              </b-popover>
+              <router-link to="/faq" class="text-white"><div class="item">FAQ</div></router-link>
+              <router-link to="/about" class="text-white"><div class="item">About us</div></router-link>
             </div>
           </div>
         </div>
@@ -67,6 +103,36 @@ export default {
     margin-right: 3.5rem;
   }
 }
+.d-menu-item {
+  padding: .4rem .8rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  img {
+    height: 1.2rem;
+  }
+  span {
+    font-family:MontserratRegular, Avenir, Helvetica, Arial, sans-serif;
+    white-space: nowrap;
+    margin-right: 14px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .arrow-forward-icon {
+    display: block;
+    background-image: url("~@/assets/arrow-forward.svg");
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  &:hover {
+    background-color: rgba(white, .05);
+  }
+}
 .copy-right {
   font-size: .6rem;
   margin-top: 4rem;
@@ -83,6 +149,7 @@ export default {
     justify-content: center;
     .item {
       margin: 0 1rem;
+      color: white;
     }
   }
 }

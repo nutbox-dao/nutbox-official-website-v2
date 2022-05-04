@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import { NavbarPlugin, CardPlugin, TooltipPlugin } from 'bootstrap-vue'
+import { NavbarPlugin, TooltipPlugin, PopoverPlugin } from 'bootstrap-vue'
 import VueRouter from 'vue-router'
 
 import VueI18n from 'vue-i18n'
@@ -13,8 +13,8 @@ import router from './router'
 
 Vue.use(VueRouter)
 Vue.use(NavbarPlugin)
-Vue.use(CardPlugin)
 Vue.use(TooltipPlugin)
+Vue.use(PopoverPlugin)
 
 Vue.use(VueI18n)
 

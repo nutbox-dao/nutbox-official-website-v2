@@ -4,6 +4,7 @@ export default {
   es: 'Español',
   products: '产品',
   doc: '文档',
+  faq: 'FAQ',
   aboutUs: '关于我们',
   peanut: 'Peanut',
   crowdLoan: '众贷',
