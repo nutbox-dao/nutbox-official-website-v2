@@ -20,7 +20,7 @@
           <a href="https://t.me/nutbox_defi" target="_blank">
             <img src="~@/assets/telegram.svg" alt="">
           </a>
-          <a href="https://discord.gg/zPkMuGY" target="_blank">
+          <a href="https://discord.gg/nRXYDRGAfq" target="_blank">
             <img src="~@/assets/discord.svg" alt="">
           </a>
         </div>

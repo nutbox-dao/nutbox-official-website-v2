@@ -7,7 +7,7 @@
           <div class="card-border">
             <div class="j-card">
               <div class="links">
-                <a href="http://nutboxteam.hk.mikecrm.com/gou6cN8"
+                <a href="https://www.notion.so/nutboxwalnut/How-to-join-as-a-contributor-7ceec379f1a8417587ee68372dfd1750"
                    target="_blank" class="d-flex justify-content-start">
                   <span class="text-bold btn-link text-white">Join as a contributor</span>
                   <i class="arrow-icon"></i>
@@ -21,7 +21,7 @@
           <div class="card-border">
             <div class="j-card">
               <div class="links">
-                <a href="https://blog.nutbox.io/@nutbox.mine/nutbox-global-ambassador-program-or-nutbox"
+                <a href="https://www.notion.so/nutboxwalnut/How-to-join-as-a-community-member-cdbdd86492064910aac7de7abf53ce42"
                    target="_blank" class="d-flex justify-content-start">
                   <span class="text-bold btn-link text-white">Join as a community member</span>
                   <i class="arrow-icon"></i>
