@@ -44,17 +44,9 @@
                   </div>
                   <i class="arrow-forward-icon"></i>
                 </a>
-                <a href="/economic-en.pdf" target="_blank" class="d-menu-item">
+                <a href="https://nutbox-io.gitbook.io/walnut/" target="_blank" class="d-menu-item">
                   <div class="d-flex align-items-center">
-                    <img class="mr-2" src="~@/assets/pdf.png" alt="">
-                    <span class="">Economic WhitePaper</span>
-                  </div>
-                  <i class="arrow-forward-icon"></i>
-                </a>
-                <a href="/technical-en.pdf" target="_blank" class="d-menu-item">
-                  <div class="d-flex align-items-center">
-                    <img class="mr-2" src="~@/assets/pdf.png" alt="">
-                    <span class="">Technical WhitePaper</span>
+                    <span class="">Walnut Wiki</span>
                   </div>
                   <i class="arrow-forward-icon"></i>
                 </a>

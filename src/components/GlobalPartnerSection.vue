@@ -35,6 +35,14 @@
           <img src="~@/assets/global-sampraise.png" alt="">
           <span>Sampraise</span>
         </div>
+        <div class="box-item">
+          <img src="~@/assets/global-Mohammed.png" alt="">
+          <span>Mohammed</span>
+        </div>
+        <div class="box-item">
+          <img src="~@/assets/global-Nurik.png" alt="">
+          <span>Nurik</span>
+        </div>
       </div>
     </div>
   </section>
@@ -59,7 +67,7 @@ export default {
 }
 .grid-box {
   display: grid;
-  grid-template-columns: repeat(4, 7.5rem);
+  grid-template-columns: repeat(5, 7.5rem);
   column-gap: 4.5rem;
   row-gap: 1.5rem;
   justify-content: center;

@@ -18,24 +18,24 @@
                   <b-nav-item-dropdown variant="text" no-caret v-if="item.multi">
                     <template #button-content>
                       <div class="d-flex align-items-center justify-content-center">
-                        <span class="">{{$t(item.name)}}</span>
+                        <span class="">{{item.name}}</span>
                         <i class="icon select-icon ml-1"></i>
                       </div>
                     </template>
-                    <b-dropdown-item v-for="subItem of item.subOptions" :key="subItem.name"
+                    <b-dropdown-item v-for="(subItem, index) of item.subOptions" :key="index"
                                      :href="subItem.url" :target="subItem.target">
                       <div class="flex-between-center" style="line-height: 2rem">
                         <div class="flex-start-center">
                           <img v-if="subItem.name==='economicWhitePaper'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
                           <img v-if="subItem.name==='technicalWhitePaper'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
-                          <span class="font-bold">{{$t(subItem.name)}}</span>
+                          <span class="font-bold">{{subItem.name}}</span>
                         </div>
                         <i class="arrow-forward-icon"></i>
                       </div>
                     </b-dropdown-item>
                   </b-nav-item-dropdown>
                   <b-nav-item v-else href="javascript:void(0)" :class="activeNav === item.id? 'active':''"
-                              @click="selectMenu(item.id, item.url, item.target)">{{ $t(item.name) }}
+                              @click="selectMenu(item.id, item.url, item.target)">{{item.name}}
                   </b-nav-item>
                 </div>
                 <b-nav-item>
@@ -69,35 +69,34 @@ export default {
     return {
       menuOptions: [
         {
-          name: 'products',
+          name: 'Products',
           multi: true,
           id: 'products',
           url: '',
           subOptions: [
-            { name: 'walnut', url: 'https://walnut.nutbox.io', target: '_blank' },
-            { name: 'peanut', url: 'https://peanut.nutbox.io', target: '_blank' },
-            { name: 'crowdLoan', url: 'https://polkadot.nutbox.io', target: '_blank' }
+            { name: 'Walnut', url: 'https://walnut.nutbox.io', target: '_blank' },
+            { name: 'Peanut', url: 'https://peanut.nutbox.io', target: '_blank' },
+            { name: 'CrowdLoan', url: 'https://polkadot.nutbox.io', target: '_blank' }
           ]
         },
         {
-          name: 'doc',
+          name: 'Document',
           id: 'doc',
           multi: true,
           url: '',
           subOptions: [
-            { name: 'wiki', target: '_blank', url: 'https://nutbox-io.gitbook.io/nutbox/' },
-            { name: 'economicWhitePaper', target: '_blank', url: '/economic-en.pdf' },
-            { name: 'technicalWhitePaper', target: '_blank', url: '/technical-en.pdf' }
+            { name: 'Nutbox Wiki', target: '_blank', url: 'https://nutbox-io.gitbook.io/nutbox/' },
+            { name: 'Walnut Wiki', target: '_blank', url: 'https://nutbox-io.gitbook.io/walnut/' }
           ]
         },
         {
-          name: 'faq',
+          name: 'FAQ',
           multi: false,
           url: '/faq',
           id: 'faq'
         },
         {
-          name: 'aboutUs',
+          name: 'About us',
           multi: false,
           url: '/about',
           id: 'about'

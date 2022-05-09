@@ -52,7 +52,7 @@
             <div class="g-card g-card-3">
               <div class="d-flex align-items-center">
                 <i class="icon icon-3"></i>
-                <span class="g-title gradient-text gradient-text-bottom">$6.7M</span>
+                <span class="g-title gradient-text gradient-text-bottom">$3.0M</span>
               </div>
               <div class="g-desc">Market Value of PNUT</div>
             </div>
