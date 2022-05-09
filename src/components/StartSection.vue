@@ -7,7 +7,7 @@
           <span class="gradient-text gradient-text-left">COMMUNITY</span> <br>
           to Web3.0
         </div>
-        <div class="desc text-medium font-bold">
+        <div class="desc">
           Bootstrap, govern, and contribute a DAO in a decentralized way.
         </div>
         <div class="row-img">
@@ -90,12 +90,12 @@ export default {
     margin-top: 10px;
   }
   .row-img {
-    margin-top: 2rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: flex-start;
   }
   .row-img img {
-    width: 2rem;
+    width: 1.8rem;
     margin-right: 1rem;
   }
 }

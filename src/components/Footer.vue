@@ -83,7 +83,7 @@ export default {
 .row-img {
   display: flex;
   img {
-    width: 2rem;
+    width: 1.8rem;
     margin-left: 1rem;
   }
 }

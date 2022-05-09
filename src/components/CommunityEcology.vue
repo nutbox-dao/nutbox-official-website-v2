@@ -65,6 +65,7 @@ export default {
 <style scoped lang="scss">
 #community-ecology-section {
   margin-bottom: 8rem;
+  margin-top: 6rem;
 }
 .title {
   font-size: 3rem;

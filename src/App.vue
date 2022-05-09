@@ -240,7 +240,8 @@ body {
     min-height: 58px;
   }
   .logo-brand {
-    height: 47px;
+    height: 2.3rem;
+    min-height: 30px;
   }
   .navbar {
     padding: 0;
@@ -257,7 +258,6 @@ body {
   }
   .navbar-light .navbar-nav .nav-link {
     color: #A7A7A7;
-    font-weight: bold;
     &:hover {
       color: white;
     }
