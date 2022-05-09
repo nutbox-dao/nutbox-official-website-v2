@@ -6,7 +6,7 @@
           <div class="d-flex flex-column justify-content-between h-100">
             <div style="margin-left: 2.5rem">
               <div class="links">
-                <a href="#" class="d-flex justify-content-start">
+                <a href="https://walnut.nutbox.io" class="d-flex justify-content-start" target="blank">
                   <span class="gradient-text gradient-text-bottom text-bold btn-link ">Start Staking</span>
                   <i class="arrow-icon arrow-icon-1"></i>
                 </a>
@@ -32,7 +32,7 @@
         </div>
         <div class="col-12">
           <div class="links" style="margin-left: 2.5rem">
-            <a href="#" class="d-flex justify-content-start">
+            <a href="https://nutbox-io.gitbook.io/nutbox/3.-nutbox-economy/3.3.-nutbox-voting-power" target="blank" class="d-flex justify-content-start">
               <span class="text-medium btn-link text-white">Learn More</span>
               <i class="arrow-icon"></i>
             </a>

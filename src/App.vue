@@ -5,7 +5,7 @@
         <div class="container">
           <b-navbar toggleable="lg">
             <b-navbar-brand>
-              <img src="~@/assets/logo.png" alt="" class="logo-brand" @click="selectMenu('home', '/')">
+              <img src="~@/assets/logo.png" alt="" class="logo-brand" style="cursor: pointer" @click="selectMenu('home', '/')">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse">
               <template #default>
@@ -39,7 +39,7 @@
                   </b-nav-item>
                 </div>
                 <b-nav-item>
-                  <button class="launch-app-btn">launch app</button>
+                  <button class="launch-app-btn" @click="gotoApp">launch app</button>
                 </b-nav-item>
               </b-navbar-nav>
             </b-collapse>
@@ -74,9 +74,9 @@ export default {
           id: 'products',
           url: '',
           subOptions: [
-            { name: 'Walnut', url: 'https://walnut.nutbox.io', target: '_blank' },
-            { name: 'Peanut', url: 'https://peanut.nutbox.io', target: '_blank' },
-            { name: 'CrowdLoan', url: 'https://polkadot.nutbox.io', target: '_blank' }
+            { name: 'walnut', url: 'https://walnut.nutbox.io', target: '_blank' },
+            { name: 'peanut', url: 'https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125', target: '_blank' }
+            // { name: 'crowdLoan', url: 'https://polkadot.nutbox.io', target: '_blank' }
           ]
         },
         {
@@ -147,6 +147,9 @@ export default {
       } else {
         this.headerClass = ''
       }
+    },
+    gotoApp () {
+      window.open('https://walnut.nutbox.io', '_blank')
     }
   }
 }

@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-8 offset-lg-6 offset-md-4 d-flex flex-column justify-content-center">
             <div class="links">
-              <a href="#" class="d-flex justify-content-end">
+              <a href="https://walnut.nutbox.io/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="blank" class="d-flex justify-content-end">
                 <span class="gradient-text gradient-text-bottom text-bold btn-link ">Explore Peanut</span>
                 <i class="arrow-icon arrow-icon-1"></i>
               </a>
