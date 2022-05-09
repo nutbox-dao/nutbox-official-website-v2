@@ -74,8 +74,8 @@ export default {
           id: 'products',
           url: '',
           subOptions: [
-            { name: 'walnut', url: 'https://walnut.nutbox.io', target: '_blank' },
-            { name: 'peanut', url: 'https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125', target: '_blank' }
+            { name: 'Walnut', url: 'https://walnut.nutbox.io', target: '_blank' },
+            { name: 'Peanut', url: 'https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125', target: '_blank' }
             // { name: 'crowdLoan', url: 'https://polkadot.nutbox.io', target: '_blank' }
           ]
         },

@@ -27,14 +27,14 @@
                   <span class="">Walnut</span>
                   <i class="arrow-forward-icon"></i>
                 </a>
-                <a href="https://peanut.nutbox.io" target="_blank" class="d-menu-item">
+                <a href="https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="d-menu-item">
                   <span class="">Peanut</span>
                   <i class="arrow-forward-icon"></i>
                 </a>
-                <a href="https://polkadot.nutbox.io" target="_blank" class="d-menu-item">
-                  <span class="">Crowdloan</span>
-                  <i class="arrow-forward-icon"></i>
-                </a>
+<!--                <a href="https://polkadot.nutbox.io" target="_blank" class="d-menu-item">-->
+<!--                  <span class="">Crowdloan</span>-->
+<!--                  <i class="arrow-forward-icon"></i>-->
+<!--                </a>-->
               </b-popover>
               <div type="button" class="item" id="popover-target-doc">Document</div>
               <b-popover custom-class="c-popover" target="popover-target-doc" triggers="hover" placement="top">
