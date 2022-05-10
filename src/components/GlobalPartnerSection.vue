@@ -78,7 +78,15 @@ export default {
     align-items: center;
   }
   img {
-    width: 100%;
+    width: 5rem;
+    border-radius: 5rem;
+    box-sizing: border-box;
+    padding: 2px;
+    background-color: rgba(white, .2);
+    &:hover {
+      background-image: linear-gradient(to bottom, var(--gradient-primary-color1), var(--gradient-primary-color2));
+      background-repeat: no-repeat;
+    }
   }
   span {
     color: #B0B0B0;

@@ -25,11 +25,9 @@
               <b-popover custom-class="c-popover"  target="popover-target-product" triggers="hover" placement="top">
                 <a href="https://walnut.nutbox.io" target="_blank" class="d-menu-item">
                   <span class="">Walnut</span>
-                  <i class="arrow-forward-icon"></i>
                 </a>
                 <a href="https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="d-menu-item">
                   <span class="">Peanut</span>
-                  <i class="arrow-forward-icon"></i>
                 </a>
 <!--                <a href="https://polkadot.nutbox.io" target="_blank" class="d-menu-item">-->
 <!--                  <span class="">Crowdloan</span>-->
@@ -42,13 +40,11 @@
                   <div class="d-flex align-items-center">
                     <span class="">Nutbox Wiki</span>
                   </div>
-                  <i class="arrow-forward-icon"></i>
                 </a>
                 <a href="https://nutbox-io.gitbook.io/walnut/" target="_blank" class="d-menu-item">
                   <div class="d-flex align-items-center">
                     <span class="">Walnut Wiki</span>
                   </div>
-                  <i class="arrow-forward-icon"></i>
                 </a>
               </b-popover>
               <router-link to="/faq" class="text-white"><div class="item">FAQ</div></router-link>
@@ -96,11 +92,12 @@ export default {
   }
 }
 .d-menu-item {
-  padding: .4rem .8rem;
+  height: 60px;
+  padding: 0 30px;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   text-decoration: none;
   img {
     height: 1.2rem;
@@ -108,9 +105,9 @@ export default {
   span {
     font-family:MontserratRegular, Avenir, Helvetica, Arial, sans-serif;
     white-space: nowrap;
-    margin-right: 14px;
     font-size: 16px;
     line-height: 2.3rem;
+    color: #B0B0B0;
   }
   .arrow-forward-icon {
     display: block;
@@ -122,7 +119,7 @@ export default {
     background-position: center;
   }
   &:hover {
-    background-color: rgba(white, .05);
+    background-color: rgba(white, .1);
   }
 }
 .copy-right {

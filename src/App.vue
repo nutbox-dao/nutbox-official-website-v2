@@ -25,8 +25,8 @@
                     <b-dropdown-item v-for="(subItem, index) of item.subOptions" :key="index"
                                      :href="subItem.url" :target="subItem.target">
                       <div class="flex-between-center line-height46 font16">
-                        <span class="font-bold">{{subItem.name}}</span>
-                        <i class="arrow-forward-icon"></i>
+                        <span class="">{{subItem.name}}</span>
+<!--                        <i class="arrow-forward-icon"></i>-->
                       </div>
                     </b-dropdown-item>
                   </b-nav-item-dropdown>
@@ -231,6 +231,9 @@ body {
     display: flex;
     align-items: center;
     min-height: 58px;
+    img {
+      margin-bottom: 1rem;
+    }
   }
   .logo-brand {
     height: 2.3rem;
@@ -263,16 +266,20 @@ body {
     color: white;
   }
   .dropdown-menu {
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     border: 0.5px solid #545454;
-    min-width: 15rem;
+    min-width: 10rem;
     margin: .5rem auto 1rem auto;
-    padding: .8rem 1rem;
+    padding: 0;
     background-color: #111111;
     .dropdown-item {
-      padding: .2rem .5rem;
-      color: white;
+      height: 60px;
+      padding: 0 30px;
+      color: #B0B0B0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .arrow-forward-icon {
         background-image: url("~@/assets/arrow-forward.svg");
         width: 16px;
@@ -282,7 +289,7 @@ body {
         background-position: center;
       }
       &:hover {
-        background-color: rgba(white, .05);
+        background-color: rgba(white, .1);
       }
     }
     .active-icon {

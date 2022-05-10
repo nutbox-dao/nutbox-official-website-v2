@@ -34,7 +34,6 @@ export default {
 
 <style scoped lang="scss">
 #grant-section {
-  padding-top: 1rem;
   .h-line {
     width: 100%;
     height: 1px;
@@ -44,14 +43,14 @@ export default {
 .title {
   font-size: 3rem;
   line-height: 2.5rem;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-top: 6rem;
+  margin-bottom: 5.7rem;
 }
 .grid-box {
   display: grid;
   grid-template-columns: repeat(4, 12rem);
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   .box-item {
     margin: 0 .5rem;
   }

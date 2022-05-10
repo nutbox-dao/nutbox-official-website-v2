@@ -45,6 +45,7 @@ export default {
 <style scoped lang="scss">
 .title {
   font-size: 3rem;
+  line-height: 2.5rem;
   margin-bottom: 5rem;
 }
 .card-border {
@@ -67,5 +68,8 @@ export default {
   img {
     height: 4rem;
   }
+}
+.links a span {
+  font-size: 1.2rem;
 }
 </style>

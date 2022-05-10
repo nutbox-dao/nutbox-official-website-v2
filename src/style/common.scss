@@ -274,18 +274,18 @@ button {
 //  }
 //}
 .c-popover {
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
-  min-width: 15rem;
+  min-width: 10rem;
   width: fit-content;
 }
 .c-popover .popover-body {
   background-color: #111111;
   color: white;
-  border-radius: 8px;
-  padding: .8rem 1rem;
+  border-radius: 10px;
+  padding: 0;
   border: 0.5px solid #545454;
 }
-.c-popover .arrow::after {
-  border-top-color: #181818!important;
+.c-popover .arrow {
+  display: none!important;
 }
