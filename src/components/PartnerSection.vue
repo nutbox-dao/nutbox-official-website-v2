@@ -5,12 +5,12 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
           <div class="text-bold title">Partners</div>
-          <div class="links">
-            <a href="#" class="d-flex">
-              <span class="gradient-text gradient-text-bottom text-bold btn-link ">Partnership & Cooperation</span>
-              <i class="arrow-icon arrow-icon-1"></i>
-            </a>
-          </div>
+<!--          <div class="links">-->
+<!--            <a href="#" class="d-flex">-->
+<!--              <span class="gradient-text gradient-text-bottom text-bold btn-link ">Partnership & Cooperation</span>-->
+<!--              <i class="arrow-icon arrow-icon-1"></i>-->
+<!--            </a>-->
+<!--          </div>-->
         </div>
         <div class="col-lg-6">
           <div class="grid-box">

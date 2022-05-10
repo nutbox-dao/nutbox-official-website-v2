@@ -19,17 +19,13 @@
                     <template #button-content>
                       <div class="d-flex align-items-center justify-content-center">
                         <span class="">{{item.name}}</span>
-                        <i class="icon select-icon ml-1"></i>
+<!--                        <i class="icon select-icon ml-1"></i>-->
                       </div>
                     </template>
                     <b-dropdown-item v-for="(subItem, index) of item.subOptions" :key="index"
                                      :href="subItem.url" :target="subItem.target">
-                      <div class="flex-between-center" style="line-height: 2rem">
-                        <div class="flex-start-center">
-                          <img v-if="subItem.name==='economicWhitePaper'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
-                          <img v-if="subItem.name==='technicalWhitePaper'" style="width: 1.2rem;" class="mr-2" src="~@/assets/pdf.png" alt="">
-                          <span class="font-bold">{{subItem.name}}</span>
-                        </div>
+                      <div class="flex-between-center line-height46 font16">
+                        <span class="font-bold">{{subItem.name}}</span>
                         <i class="arrow-forward-icon"></i>
                       </div>
                     </b-dropdown-item>
@@ -44,9 +40,6 @@
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>
-        </div>
-        <div class="h-line">
-          <div class="container"></div>
         </div>
       </div>
       <div class="page-content">
@@ -258,6 +251,7 @@ body {
   }
   .navbar-light .navbar-nav .nav-link {
     color: #A7A7A7;
+    font-size: 16px;
     &:hover {
       color: white;
     }
@@ -269,13 +263,13 @@ body {
     color: white;
   }
   .dropdown-menu {
-    border-radius: 1.2rem;
+    border-radius: 8px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-    border: none;
+    border: 0.5px solid #545454;
     min-width: 15rem;
     margin: .5rem auto 1rem auto;
-    padding: .8rem;
-    background-color: #181818;
+    padding: .8rem 1rem;
+    background-color: #111111;
     .dropdown-item {
       padding: .2rem .5rem;
       color: white;

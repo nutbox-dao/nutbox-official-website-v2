@@ -109,8 +109,8 @@ export default {
     font-family:MontserratRegular, Avenir, Helvetica, Arial, sans-serif;
     white-space: nowrap;
     margin-right: 14px;
-    font-weight: 600;
-    font-size: 1rem;
+    font-size: 16px;
+    line-height: 2.3rem;
   }
   .arrow-forward-icon {
     display: block;

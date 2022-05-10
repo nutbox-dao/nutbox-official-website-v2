@@ -15,7 +15,7 @@
               <i class="arrow-icon arrow-icon-1"></i>
             </a>
           </div>
-          <div class="font40 line-height50 mb-3 text-left text-bold">
+          <div class="font40 line-height50 text-left text-bold" style="margin-bottom: 2rem">
             Enter the world of communities and get connected.
           </div>
           <div class="font18 line-height46 mb-4 text-left text-grey-dark">
@@ -31,7 +31,7 @@
       </div>
       <div class="col-lg-5 col-md-8 d-flex flex-column">
         <div class="dao-card-1 text-left">
-          <div class="font40 line-height50 mb-5 text-left text-bold">
+          <div class="font40 line-height50 text-left text-bold" style="margin-bottom: 2rem">
             Create and configure your DAO in 5 minutes.
           </div>
           <div class="font18 line-height46 mb-4 text-left text-grey-dark">
