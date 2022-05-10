@@ -12,7 +12,7 @@
             </div>
             <div class="text-content">
               <div class="title title-1 text-right text-bold">PEANUT</div>
-              <div class="title title-2 text-medium">The first DAO created by Nutbox</div>
+              <div class="title title-2 text-medium font-bold">The first DAO created by Nutbox</div>
               <div class="desc text-left text-grey-dark">
                 From a Staking DAO to an investment DAO, will investing and incubating Walnut ecological projects.
               </div>
@@ -42,9 +42,6 @@ export default {
   position: relative;
   border-radius: 2rem;
   border: 1px solid rgba(white, .2);
-}
-.links a .btn-link {
-  font-size: 1.4rem;
 }
 .title {
   font-size: 2rem;

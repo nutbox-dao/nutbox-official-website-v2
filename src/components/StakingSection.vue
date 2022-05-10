@@ -33,7 +33,7 @@
         <div class="col-12">
           <div class="links" style="margin-left: 2.5rem">
             <a href="https://nutbox-io.gitbook.io/nutbox/3.-nutbox-economy/3.3.-nutbox-voting-power" target="blank" class="d-flex justify-content-start">
-              <span class="text-medium btn-link text-white">Learn More</span>
+              <span class="text-medium btn-link text-white" style="font-size: 1.2rem">Learn More</span>
               <i class="arrow-icon"></i>
             </a>
           </div>
@@ -57,6 +57,7 @@ export default {
 .title {
   font-size: 2rem;
   line-height: 2.5rem;
+  margin-top: 1rem;
 }
 .text-card {
   border: 1px solid rgba(white, .3);

@@ -93,6 +93,7 @@ export default {
 }
 .title {
   font-size: 3rem;
+  line-height: 3.6rem;
   margin-top: 8rem;
   margin-bottom: 4rem;
 }

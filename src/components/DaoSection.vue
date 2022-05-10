@@ -15,10 +15,10 @@
               <i class="arrow-icon arrow-icon-1"></i>
             </a>
           </div>
-          <div class="font36 line-height46 mb-3 text-left text-medium font-bold">
+          <div class="font40 line-height50 mb-3 text-left text-bold">
             Enter the world of communities and get connected.
           </div>
-          <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">
+          <div class="font18 line-height46 mb-4 text-left text-grey-dark">
             The best community supporting platform for community entrepreneurs and digital
             nomads which provides out-of-box facilities and connects worldwide communities.
           </div>
@@ -31,10 +31,10 @@
       </div>
       <div class="col-lg-5 col-md-8 d-flex flex-column">
         <div class="dao-card-1 text-left">
-          <div class="font36 line-height50 mb-5 text-left text-medium font-bold">
+          <div class="font40 line-height50 mb-5 text-left text-bold">
             Create and configure your DAO in 5 minutes.
           </div>
-          <div class="font18 line-height46 mb-4 text-left font-bold text-grey-dark">
+          <div class="font18 line-height46 mb-4 text-left text-grey-dark">
             With Nutbox Toolkits, you can easily create a DAO in 5
             minutes and configure its Defi (Walnut), NFT (Chestnut)
             and Social (Donut) modules.
@@ -95,9 +95,6 @@ export default {
       width: 100%;
     }
   }
-}
-.links a .btn-link {
-  font-size: 1.8rem;
 }
 .t2 {
   margin-top: 10rem;

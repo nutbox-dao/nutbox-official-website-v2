@@ -4,7 +4,7 @@
       <div class="h-line"></div>
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <div class="font40 text-bold title">Partners</div>
+          <div class="text-bold title">Partners</div>
           <div class="links">
             <a href="#" class="d-flex">
               <span class="gradient-text gradient-text-bottom text-bold btn-link ">Partnership & Cooperation</span>
@@ -43,6 +43,8 @@ export default {
 .title {
   text-align: left;
   margin-bottom: 1.5rem;
+  font-size: 3rem;
+  line-height: 3.6rem;
 }
 .links {
   margin-bottom: 4rem;

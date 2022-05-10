@@ -25,7 +25,7 @@
             <div class="g-card g-card-0">
               <div class="d-flex align-items-center">
                 <i class="icon icon-0"></i>
-                <span class="g-title">No.1</span>
+                <span class="g-title g-title-1">No.1</span>
               </div>
               <div class="g-desc">The 1st Staking DAO built by Nutbox</div>
             </div>
@@ -34,7 +34,7 @@
             <div class="g-card g-card-1">
               <div class="d-flex align-items-center">
                 <i class="icon icon-1"></i>
-                <span class="g-title">No.2</span>
+                <span class="g-title g-title-1">No.2</span>
               </div>
               <div class="g-desc">The 2nd largest Staking Platform of Steem Blockchain</div>
             </div>
@@ -43,7 +43,7 @@
             <div class="g-card g-card-2">
               <div class="d-flex align-items-center">
                 <i class="icon icon-2"></i>
-                <span class="g-title gradient-text gradient-text-bottom">$6.7M</span>
+                <span class="g-title g-title-2 gradient-text gradient-text-bottom">$6.7M</span>
               </div>
               <div class="g-desc">Staking Value of STEEM POWER</div>
             </div>
@@ -52,7 +52,7 @@
             <div class="g-card g-card-3">
               <div class="d-flex align-items-center">
                 <i class="icon icon-3"></i>
-                <span class="g-title gradient-text gradient-text-bottom">$3.0M</span>
+                <span class="g-title g-title-2 gradient-text gradient-text-bottom">$3.0M</span>
               </div>
               <div class="g-desc">Market Value of PNUT</div>
             </div>
@@ -173,8 +173,13 @@ export default {
     }
   }
   .g-title {
-    font-size: 2rem;
     line-height: 2.3rem;
+    &-1 {
+      font-size: 2.5rem;
+    }
+    &-2 {
+      font-size: 1.8rem;
+    }
   }
   .g-desc {
     font-size: .9rem;

@@ -2,7 +2,7 @@
   <section id="start-section">
     <div class="container">
       <div class="banner-info-box">
-        <div class="title">
+        <div class="title text-bold">
           Link
           <span class="gradient-text gradient-text-left">COMMUNITY</span> <br>
           to Web3.0
@@ -78,9 +78,7 @@ export default {
   margin-bottom: 4rem;
   .title {
     font-size: 4rem;
-    font-weight: 900;
     line-height: 4.5rem;
-    font-family: MontserratBlod, Avenir, Helvetica, Arial, sans-serif;
     text-align: left;
   }
   .desc {

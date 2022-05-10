@@ -4,12 +4,12 @@
       <div class="title text-bold">Join Us</div>
       <div class="row">
         <div class="col-md-6 mb-4 mb-md-0">
-          <div class="card-border">
-            <div class="j-card">
+          <div class="card-border h-100">
+            <div class="j-card h-100">
               <div class="links">
                 <a href="https://www.notion.so/nutboxwalnut/How-to-join-as-a-contributor-7ceec379f1a8417587ee68372dfd1750"
                    target="_blank" class="d-flex justify-content-start">
-                  <span class="text-bold btn-link text-white">Join as a contributor</span>
+                  <span class="btn-link text-white">Join as a contributor</span>
                   <i class="arrow-icon"></i>
                 </a>
               </div>
@@ -23,7 +23,7 @@
               <div class="links">
                 <a href="https://www.notion.so/nutboxwalnut/How-to-join-as-a-community-member-cdbdd86492064910aac7de7abf53ce42"
                    target="_blank" class="d-flex justify-content-start">
-                  <span class="text-bold btn-link text-white">Join as a community member</span>
+                  <span class="btn-link text-white">Join as a community member</span>
                   <i class="arrow-icon"></i>
                 </a>
               </div>
