@@ -95,9 +95,14 @@ export default {
   }
   img {
     width: 5rem;
-    height: 5rem;
     border-radius: 5rem;
-    box-shadow: .5rem .7rem .9rem .3rem rgba(36, 38, 41, 0.04);
+    box-sizing: border-box;
+    padding: 2px;
+    background-color: rgba(white, .2);
+    &:hover {
+      background-image: linear-gradient(to bottom, var(--gradient-primary-color1), var(--gradient-primary-color2));
+      background-repeat: no-repeat;
+    }
   }
 }
 @media (max-width: 767px) {

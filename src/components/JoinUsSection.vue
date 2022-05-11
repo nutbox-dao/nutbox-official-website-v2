@@ -59,12 +59,14 @@ export default {
   box-sizing: border-box;
 }
 .j-card {
-  background-image: linear-gradient(to right, rgba(#A7A7A7, .15), rgba(#A7A7A7, 0));
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: .8rem 1.7rem;
   border-radius: 1.35rem;
+  &:hover {
+    background-image: linear-gradient(to right, rgba(#A7A7A7, .15), rgba(#A7A7A7, 0));
+  }
   img {
     height: 4rem;
   }

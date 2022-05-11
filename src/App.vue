@@ -14,26 +14,62 @@
             </b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
               <b-navbar-nav class="ml-auto">
-                <div v-for="item of menuOptions" :key="item.name">
-                  <b-nav-item-dropdown variant="text" no-caret v-if="item.multi">
+                <template v-if="windowWith<992">
+                  <b-nav-item-dropdown variant="text" no-caret>
                     <template #button-content>
-                      <div class="d-flex align-items-center justify-content-center">
-                        <span class="">{{item.name}}</span>
-<!--                        <i class="icon select-icon ml-1"></i>-->
-                      </div>
+                      <div class="d-flex align-items-center justify-content-center">Product</div>
                     </template>
-                    <b-dropdown-item v-for="(subItem, index) of item.subOptions" :key="index"
-                                     :href="subItem.url" :target="subItem.target">
-                      <div class="flex-between-center line-height46 font16">
-                        <span class="">{{subItem.name}}</span>
-<!--                        <i class="arrow-forward-icon"></i>-->
-                      </div>
+                    <b-dropdown-item href="https://walnut.nutbox.io" target="_blank" class="">
+                      <div class="flex-between-center line-height46 font16">Walnut</div>
+                    </b-dropdown-item>
+                    <b-dropdown-item href="https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="">
+                      <div class="flex-between-center line-height46 font16">Peanut</div>
                     </b-dropdown-item>
                   </b-nav-item-dropdown>
-                  <b-nav-item v-else href="javascript:void(0)" :class="activeNav === item.id? 'active':''"
-                              @click="selectMenu(item.id, item.url, item.target)">{{item.name}}
+                  <b-nav-item-dropdown variant="text" no-caret>
+                    <template #button-content>
+                      <div class="d-flex align-items-center justify-content-center">Document</div>
+                    </template>
+                    <b-dropdown-item href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="">
+                      <div class="flex-between-center line-height46 font16">Nutbox Wiki</div>
+                    </b-dropdown-item>
+                    <b-dropdown-item href="https://nutbox-io.gitbook.io/walnut/" target="_blank" class="">
+                      <div class="flex-between-center line-height46 font16">Walnut Wiki</div>
+                    </b-dropdown-item>
+                  </b-nav-item-dropdown>
+                </template>
+                <template v-else>
+                  <b-nav-item>
+                    <button class="item" id="nav-popover-product">Product</button>
                   </b-nav-item>
-                </div>
+                  <b-popover custom-class="c-popover" target="nav-popover-product" triggers="hover focus" placement="bottom">
+                    <a href="https://walnut.nutbox.io" target="_blank" class="d-menu-item">
+                      <span class="">Walnut</span>
+                    </a>
+                    <a href="https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="d-menu-item">
+                      <span class="">Peanut</span>
+                    </a>
+                  </b-popover>
+                  <b-nav-item>
+                    <button class="item" id="nav-popover-doc">Document</button>
+                  </b-nav-item>
+                  <b-popover custom-class="c-popover" target="nav-popover-doc" triggers="hover focus" placement="top">
+                    <a href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="d-menu-item">
+                      <div class="d-flex align-items-center">
+                        <span class="">Nutbox Wiki</span>
+                      </div>
+                    </a>
+                    <a href="https://nutbox-io.gitbook.io/walnut/" target="_blank" class="d-menu-item">
+                      <div class="d-flex align-items-center">
+                        <span class="">Walnut Wiki</span>
+                      </div>
+                    </a>
+                  </b-popover>
+                </template>
+                <b-nav-item v-for="item of menuOptions" :key="item.id"
+                            :class="activeNav === item.id? 'active':''"
+                            @click="selectMenu(item.id, item.url, item.target)">{{item.name}}
+                </b-nav-item>
                 <b-nav-item>
                   <button class="launch-app-btn" @click="gotoApp">launch app</button>
                 </b-nav-item>
@@ -62,34 +98,13 @@ export default {
     return {
       menuOptions: [
         {
-          name: 'Products',
-          multi: true,
-          id: 'products',
-          url: '',
-          subOptions: [
-            { name: 'Walnut', url: 'https://walnut.nutbox.io', target: '_blank' },
-            { name: 'Peanut', url: 'https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125', target: '_blank' }
-            // { name: 'crowdLoan', url: 'https://polkadot.nutbox.io', target: '_blank' }
-          ]
-        },
-        {
-          name: 'Document',
-          id: 'doc',
-          multi: true,
-          url: '',
-          subOptions: [
-            { name: 'Nutbox Wiki', target: '_blank', url: 'https://nutbox-io.gitbook.io/nutbox/' },
-            { name: 'Walnut Wiki', target: '_blank', url: 'https://nutbox-io.gitbook.io/walnut/' }
-          ]
-        },
-        {
           name: 'FAQ',
           multi: false,
           url: '/faq',
           id: 'faq'
         },
         {
-          name: 'About us',
+          name: 'About Us',
           multi: false,
           url: '/about',
           id: 'about'
@@ -98,7 +113,8 @@ export default {
       activeNav: 'home',
       langOptions: ['en', 'zh', 'es'],
       lang: 'en',
-      headerClass: ''
+      headerClass: '',
+      windowWith: document.body.clientWidth
     }
   },
   watch: {
@@ -255,6 +271,8 @@ body {
   .navbar-light .navbar-nav .nav-link {
     color: #A7A7A7;
     font-size: 16px;
+    width: fit-content;
+
     &:hover {
       color: white;
     }
@@ -275,26 +293,26 @@ body {
     background-color: #111111;
     .dropdown-item {
       height: 60px;
-      padding: 0 30px;
-      color: #B0B0B0;
+      padding: 0;
+      color: #A7A7A7;
       display: flex;
       align-items: center;
       justify-content: center;
-      .arrow-forward-icon {
-        background-image: url("~@/assets/arrow-forward.svg");
-        width: 16px;
-        height: 16px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
-      }
       &:hover {
         background-color: rgba(white, .1);
       }
     }
-    .active-icon {
-      width: 1.2rem;
-    }
+  }
+  .item {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: #A7A7A7;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
   }
   .launch-app-btn {
     background-image: linear-gradient(to right, var(--gradient-primary-color1), var(--gradient-primary-color2));
@@ -302,11 +320,13 @@ body {
     color: white;
     height: 42px;
     font-size: 16px;
-    padding: 0 25px;
     font-weight: bold;
     border-radius: 8px;
+    width: 140px;
+    font-family:MontserratBlod, Avenir, Helvetica, Arial, sans-serif;
     &:hover {
       color: white!important;
+      background-image: linear-gradient(to right, var(--gradient-primary-color1), var(--gradient-primary-color1));
     }
   }
 }

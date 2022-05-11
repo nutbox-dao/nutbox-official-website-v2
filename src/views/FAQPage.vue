@@ -98,7 +98,7 @@ export default {
   margin-bottom: 4rem;
 }
 .q-title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 1.5rem;
 }
 .a-desc {

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="bottom-box">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 d-flex align-items-center">
             <div class="row-img">
               <a href="https://github.com/nutbox-dao" target="_blank">
                 <img src="~@/assets/github.svg" alt="">
@@ -21,21 +21,30 @@
           </div>
           <div class="col-md-8">
             <div class="menu">
-              <div type="button" class="item" id="popover-target-product">Product</div>
-              <b-popover custom-class="c-popover"  target="popover-target-product" triggers="hover" placement="top">
+<!--              <div class="text-center my-3">-->
+<!--                <button v-b-popover.hover.top="'I am popover directive content!'" title="Popover Title">-->
+<!--                  Hover Me-->
+<!--                </button>-->
+
+<!--                <b-button id="popover-target-1">-->
+<!--                  Hover Me-->
+<!--                </b-button>-->
+<!--                <b-popover target="popover-target-1" triggers="hover" placement="top">-->
+<!--                  <template #title>Popover Title</template>-->
+<!--                  I am popover <b>component</b> content!-->
+<!--                </b-popover>-->
+<!--              </div>-->
+              <button class="item" id="popover-target-product">Product</button>
+              <b-popover custom-class="c-popover"  target="popover-target-product" triggers="hover focus" placement="top">
                 <a href="https://walnut.nutbox.io" target="_blank" class="d-menu-item">
                   <span class="">Walnut</span>
                 </a>
                 <a href="https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="d-menu-item">
                   <span class="">Peanut</span>
                 </a>
-<!--                <a href="https://polkadot.nutbox.io" target="_blank" class="d-menu-item">-->
-<!--                  <span class="">Crowdloan</span>-->
-<!--                  <i class="arrow-forward-icon"></i>-->
-<!--                </a>-->
               </b-popover>
-              <div type="button" class="item" id="popover-target-doc">Document</div>
-              <b-popover custom-class="c-popover" target="popover-target-doc" triggers="hover" placement="top">
+              <button class="item" id="popover-target-doc">Document</button>
+              <b-popover custom-class="c-popover" target="popover-target-doc" triggers="hover focus" placement="top">
                 <a href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="d-menu-item">
                   <div class="d-flex align-items-center">
                     <span class="">Nutbox Wiki</span>
@@ -77,7 +86,9 @@ export default {
   padding-top: 2rem;
 }
 .row-img {
+  width: 100%;
   display: flex;
+  align-items: center;
   img {
     width: 1.8rem;
     margin-left: 1rem;
@@ -86,40 +97,19 @@ export default {
 .menu {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   font-size: 16px;
   .item {
     margin-right: 3.5rem;
-  }
-}
-.d-menu-item {
-  height: 60px;
-  padding: 0 30px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  img {
-    height: 1.2rem;
-  }
-  span {
-    font-family:MontserratRegular, Avenir, Helvetica, Arial, sans-serif;
-    white-space: nowrap;
-    font-size: 16px;
-    line-height: 2.3rem;
-    color: #B0B0B0;
-  }
-  .arrow-forward-icon {
-    display: block;
-    background-image: url("~@/assets/arrow-forward.svg");
-    width: 16px;
-    height: 16px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-  }
-  &:hover {
-    background-color: rgba(white, .1);
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    color: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
 }
 .copy-right {

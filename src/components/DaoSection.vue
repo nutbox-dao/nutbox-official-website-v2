@@ -7,7 +7,7 @@
           <img src="~@/assets/dao-img1.png" alt="">
         </div>
         <div class="col-lg-6  offset-lg-6 col-md-8 offset-md-4 d-flex flex-column justify-content-center right-box">
-          <div class="links mb-3">
+          <div class="links links-float mb-3">
             <a class="justify-content-start" href="https://walnut.nutbox.app/#/community/index" target="blank">
               <span class="gradient-text gradient-text-bottom text-medium btn-link">
                 Explore  Communities

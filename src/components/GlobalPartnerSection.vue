@@ -64,14 +64,15 @@ export default {
 .title {
   font-size: 3rem;
   line-height: 2.5rem;
+  margin-top: 2rem;
 }
 .grid-box {
   display: grid;
   grid-template-columns: repeat(5, 7.5rem);
   column-gap: 4.5rem;
-  row-gap: 1.5rem;
+  row-gap: 2rem;
   justify-content: center;
-  margin: 5rem 0;
+  margin: 7rem 0 8rem;
   .box-item {
     display: flex;
     flex-direction: column;

@@ -5,7 +5,7 @@
         <div class="col-lg-7 col-md-7">
           <div class="d-flex flex-column justify-content-between h-100">
             <div style="margin-left: 2.5rem">
-              <div class="links">
+              <div class="links links-float">
                 <a href="https://walnut.nutbox.io" class="d-flex justify-content-start" target="blank">
                   <span class="gradient-text gradient-text-bottom text-bold btn-link ">Start Staking</span>
                   <i class="arrow-icon arrow-icon-1"></i>
