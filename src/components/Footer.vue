@@ -57,7 +57,7 @@
                 </a>
               </b-popover>
               <router-link to="/faq" class="text-white"><div class="item">FAQ</div></router-link>
-              <router-link to="/about" class="text-white"><div class="item">About us</div></router-link>
+              <router-link to="/about" class="text-white"><div class="item">About Us</div></router-link>
             </div>
           </div>
         </div>
