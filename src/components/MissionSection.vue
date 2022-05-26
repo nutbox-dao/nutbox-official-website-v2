@@ -4,10 +4,9 @@
       <div class="banner-card">
         <div class="row">
           <div class="col-md-7 text-left">
-            <div class="title text-bold">Our Mission</div>
+            <div class="title text-bold">{{$t('missionSection.title')}}</div>
             <div class="desc text-grey-dark">
-              Create anything from a staking protocol to the next big DAO.
-              Automatically distribute community Token to contributors.
+             {{$t('missionSection.p1')}}
             </div>
           </div>
           <div class="img-box">
@@ -16,10 +15,7 @@
         </div>
       </div>
       <div class="data-card">
-        <div class="title text-bold text-left line-height46">
-          Peanut <br>
-          the <span class="gradient-text gradient-text-bottom">1st</span> Staking DAO.
-        </div>
+        <div class="title text-bold text-left line-height46" v-html="$t('missionSection.p2')"></div>
         <div class="grid-box">
           <div class="box-item0">
             <div class="g-card g-card-0">
@@ -27,7 +23,7 @@
                 <i class="icon icon-0"></i>
                 <span class="g-title g-title-1">No.1</span>
               </div>
-              <div class="g-desc">The 1st Staking DAO built by Nutbox</div>
+              <div class="g-desc">{{$t('missionSection.p3')}}</div>
             </div>
           </div>
           <div class="box-item1">
@@ -36,7 +32,7 @@
                 <i class="icon icon-1"></i>
                 <span class="g-title g-title-1">No.2</span>
               </div>
-              <div class="g-desc">The 2nd largest Staking Platform of Steem Blockchain</div>
+              <div class="g-desc">{{$t('missionSection.p4')}}</div>
             </div>
           </div>
           <div class="box-item2">
@@ -45,7 +41,7 @@
                 <i class="icon icon-2"></i>
                 <span class="g-title g-title-2 gradient-text gradient-text-bottom">$6.7M</span>
               </div>
-              <div class="g-desc">Staking Value of STEEM POWER</div>
+              <div class="g-desc">{{$t('missionSection.p5')}}</div>
             </div>
           </div>
           <div class="box-item3">
@@ -54,7 +50,7 @@
                 <i class="icon icon-3"></i>
                 <span class="g-title g-title-2 gradient-text gradient-text-bottom">$3.0M</span>
               </div>
-              <div class="g-desc">Market Value of PNUT</div>
+              <div class="g-desc">{{$t('missionSection.p6')}}</div>
             </div>
           </div>
         </div>

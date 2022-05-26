@@ -8,7 +8,7 @@
           to Web3.0
         </div>
         <div class="desc">
-          Bootstrap, govern, and contribute a DAO in a decentralized way.
+          {{$t('startSection.p1')}}
         </div>
         <div class="row-img">
           <a href="https://twitter.com/NutboxDao" target="_blank">

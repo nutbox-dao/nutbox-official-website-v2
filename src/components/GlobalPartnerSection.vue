@@ -1,7 +1,7 @@
 <template>
   <section id="global-partner-section">
     <div class="container">
-      <div class="title text-bold">Global  Ambassador</div>
+      <div class="title text-bold">{{$t('globalSection.title')}}</div>
       <div class="grid-box">
         <div class="box-item">
           <img src="~@/assets/global-aku.png" alt="">

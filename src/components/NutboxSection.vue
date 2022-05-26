@@ -10,12 +10,11 @@
           <div class="nut-card nut-card-1">
             <img class="icon" src="~@/assets/nut-card-icon1.png" alt="">
             <div class="card-title text-bold">
-              Bootstrap community
-              in a safe and easy way
+              {{$t('nutboxSection.t1')}}
             </div>
             <div class="card-h-line"></div>
             <div class="desc text-grey-dark">
-              Easy to form a DAO Treasury
+              {{$t('nutboxSection.p1')}}
             </div>
           </div>
         </div>
@@ -23,11 +22,11 @@
           <div class="nut-card nut-card-2">
             <img class="icon" src="~@/assets/nut-card-icon2.png" alt="">
             <div class="card-title text-bold">
-              All-in-one platform
+              {{$t('nutboxSection.t2')}}
             </div>
             <div class="card-h-line"></div>
             <div class="desc text-grey-dark">
-              DeFi, Governance, NFT and more to come
+              {{$t('nutboxSection.p2')}}
             </div>
           </div>
         </div>
@@ -35,11 +34,11 @@
           <div class="nut-card nut-card-2">
             <img class="icon" src="~@/assets/nut-card-icon3.png" alt="">
             <div class="card-title text-bold">
-              Multi-chain supported
+              {{$t('nutboxSection.t3')}}
             </div>
             <div class="card-h-line"></div>
             <div class="desc text-left text-grey-dark">
-              Currently support Cosmos, Steem, Hive, and will soon support mainstream Pos chains such as Solana, Polkadot, Ethereum2.0 etc.
+              {{$t('nutboxSection.p3')}}
             </div>
           </div>
         </div>

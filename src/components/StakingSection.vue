@@ -7,20 +7,18 @@
             <div style="margin-left: 2.5rem">
               <div class="links links-float">
                 <a href="https://walnut.nutbox.io" class="d-flex justify-content-start" target="blank">
-                  <span class="gradient-text gradient-text-bottom text-bold btn-link ">Start Staking</span>
+                  <span class="gradient-text gradient-text-bottom text-bold btn-link ">{{$t('stakingSection.btn1')}}</span>
                   <i class="arrow-icon arrow-icon-1"></i>
                 </a>
               </div>
-              <div class="title text-left text-bold">The $NUT Native Token</div>
+              <div class="title text-left text-bold">{{$t('stakingSection.t1')}}</div>
             </div>
             <div>
               <div class="text-card">
-                $NUT is the native token of Nutbox economy, providing members and
-                communities with benefits and services, and dictates Nutbox’s governance.
+                {{$t('stakingSection.p1')}}
               </div>
               <div class="text-card">
-                Nutbox Voting Power (NUT Power for short) is the Governance Power of Nutbox DAO.
-                The Nutbox governance reward of a user is charged by the user’s governance activity.
+                {{$t('stakingSection.p2')}}
               </div>
             </div>
           </div>
@@ -33,7 +31,7 @@
         <div class="col-12">
           <div class="links" style="margin-left: 2.5rem">
             <a href="https://nutbox-io.gitbook.io/nutbox/3.-nutbox-economy/3.3.-nutbox-voting-power" target="blank" class="d-flex justify-content-start">
-              <span class="text-medium btn-link text-white" style="font-size: 1.2rem">Learn More</span>
+              <span class="text-medium btn-link text-white" style="font-size: 1.2rem">{{$t('stakingSection.btn2')}}</span>
               <i class="arrow-icon"></i>
             </a>
           </div>

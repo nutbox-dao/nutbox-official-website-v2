@@ -6,15 +6,15 @@
           <div class="col-lg-6 col-md-8 offset-lg-6 offset-md-4 d-flex flex-column justify-content-center">
             <div class="links links-float">
               <a href="https://walnut.nutbox.io/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="blank" class="d-flex justify-content-end">
-                <span class="gradient-text gradient-text-bottom text-bold btn-link ">Explore Peanut</span>
+                <span class="gradient-text gradient-text-bottom text-bold btn-link ">{{$t('peanutSection.btn1')}}</span>
                 <i class="arrow-icon arrow-icon-1"></i>
               </a>
             </div>
             <div class="text-content">
               <div class="title title-1 text-right text-bold">PEANUT</div>
-              <div class="title title-2 text-medium font-bold">The first DAO created by Nutbox</div>
+              <div class="title title-2 text-medium font-bold">{{$t('peanutSection.t1')}}</div>
               <div class="desc text-left text-grey-dark">
-                From a Staking DAO to an investment DAO, will investing and incubating Walnut ecological projects.
+                {{$t('peanutSection.p1')}}
               </div>
             </div>
           </div>

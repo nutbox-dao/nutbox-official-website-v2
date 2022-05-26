@@ -1,7 +1,7 @@
 <template>
   <section id="join-section">
     <div class="container">
-      <div class="title text-bold">Join Us</div>
+      <div class="title text-bold">{{$t('joinSection.title')}}</div>
       <div class="row">
         <div class="col-md-6 mb-4 mb-md-0">
           <div class="card-border h-100">
@@ -9,7 +9,7 @@
               <div class="links">
                 <a href="https://www.notion.so/nutboxwalnut/How-to-join-as-a-contributor-7ceec379f1a8417587ee68372dfd1750"
                    target="_blank" class="d-flex justify-content-start">
-                  <span class="btn-link text-white">Join as a contributor</span>
+                  <span class="btn-link text-white">{{$t('joinSection.p1')}}</span>
                   <i class="arrow-icon"></i>
                 </a>
               </div>
@@ -23,7 +23,7 @@
               <div class="links">
                 <a href="https://www.notion.so/nutboxwalnut/How-to-join-as-a-community-member-cdbdd86492064910aac7de7abf53ce42"
                    target="_blank" class="d-flex justify-content-start">
-                  <span class="btn-link text-white">Join as a community member</span>
+                  <span class="btn-link text-white">{{$t('joinSection.p2')}}</span>
                   <i class="arrow-icon"></i>
                 </a>
               </div>

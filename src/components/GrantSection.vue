@@ -2,23 +2,23 @@
   <section id="grant-section">
     <div class="container">
       <div class="h-line"></div>
-      <div class="title text-bold">Grant</div>
+      <div class="title text-bold">{{$t('grantSection.title')}}</div>
       <div class="grid-box">
         <div class="box-item">
           <img src="~@/assets/grant-img0.png" alt="">
-          <span>Wanxiang Blockchain Hackathon</span>
+          <span>{{$t('grantSection.p1')}}</span>
         </div>
         <div class="box-item">
           <img src="~@/assets/grant-img1.png" alt="">
-          <span>Moonbeam</span>
+          <span>{{$t('grantSection.p2')}}</span>
         </div>
         <div class="box-item">
           <img src="~@/assets/grant-img2.png" alt="">
-          <span>Astar</span>
+          <span>{{$t('grantSection.p3')}}</span>
         </div>
         <div class="box-item">
           <img src="~@/assets/grant-img3.png" alt="">
-          <span>Near Aurora</span>
+          <span>{{$t('grantSection.p4')}}</span>
         </div>
       </div>
       <div class="h-line"></div>

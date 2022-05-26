@@ -1,4 +1,5 @@
 export default {
+  language: 'Language',
   zh: '中文(简体)',
   en: 'English',
   es: 'Español',
@@ -6,125 +7,113 @@ export default {
   doc: 'Documents',
   faq: 'FAQ',
   aboutUs: 'About Us',
-  peanut: 'Peanut',
-  crowdLoan: 'Crowdloan',
-  walnut: 'Walnut',
-  wiki: 'Nutbox Wiki',
-  economicWhitePaper: 'Economic Whitepaper',
-  technicalWhitePaper: 'Technical Whitepaper',
+  launchApp: 'Launch app',
   startSection: {
-    p1: 'Link Community to Web3.0',
-    btn1: 'Try Crowdloan',
-    btn2: 'Try Peanut',
-    btn3: 'Try Walnut'
+    p1: 'Bootstrap, govern, and contribute a DAO in a decentralized way.'
   },
-  factorySection: {
-    title: 'The DAO Operating System for Web3.0',
-    p1: 'Nutbox offers following tools to community',
-    t1: 'Crowd-Staking Offering Protocol',
-    desc1: 'It only takes 5 minutes to configure the community Staking mining module and start the community Staking Economy',
-    t2: 'DApp Store',
-    desc2: 'It\'s easy to bring DeFi, social media and NFT to the community',
-    t3: 'DAO Governance Factory',
-    desc3: 'It makes community governance to be efficient based on social interaction DAO governance'
+  daoSection: {
+    btn1: 'Explore  Communities',
+    t1: 'Enter the world of communities and get connected.',
+    p1: 'The best community supporting platform for community entrepreneurs and digital nomads which provides out-of-box facilities and connects worldwide communities.',
+    t2: 'Create and configure your DAO in 5 minutes.',
+    p2: 'With Nutbox Toolkits, you can easily create a DAO in 5 minutes and configure its Defi (Walnut), NFT (Chestnut) and Social (Donut) modules.'
   },
-  blockchainSection: {
-    title: 'Connected Blockchains',
-    now: 'Now',
-    inDevelopment: 'In Development',
-    planned: 'Planned'
+  nutboxSection: {
+    t1: 'Bootstrap community in a safe and easy way',
+    p1: 'Easy to form a DAO Treasury',
+    t2: 'All-in-one platform',
+    p2: 'DeFi, Governance, NFT and more to come',
+    t3: 'Multi-chain supported',
+    p3: 'Currently support Cosmos, Steem, Hive, and will soon support mainstream Pos chains such as Solana, Polkadot, Ethereum2.0 etc.'
+  },
+  stakingSection: {
+    btn1: 'Start Staking',
+    t1: 'The $NUT Native Token',
+    p1: '$NUT is the native token of Nutbox economy, providing members and communities with benefits and services, and dictates Nutbox’s governance.',
+    p2: 'Nutbox Voting Power (NUT Power for short) is the Governance Power of Nutbox DAO. The Nutbox governance reward of a user is charged by the user’s governance activity.',
+    btn2: 'Learn More'
+  },
+  peanutSection: {
+    btn1: 'Explore Peanut',
+    t1: 'The first DAO created by Nutbox',
+    p1: 'From a Staking DAO to an investment DAO, will investing and incubating Walnut ecological projects.'
   },
   roadmapSection: {
     title: 'ROAD MAP',
-    p1: 'Nutbox team has gone through 3 years',
-    t1: 'Jan 2019',
-    d1: 'Launch WhereIN DApp, a Steem-based lifestyle sharing community. We decentralizes WhereIN DAO with community curators, WhereIN also becomes one of the super witness of Steem Blockchain',
-    t2: 'Oct 2020',
-    d2: 'Launch Nutbox Sub-DAO（Peanut v1）on Steem and Tron Blockchain',
-    t3: 'May 2021',
-    d3: 'Launch Nutbox Slot Auction, try to implement Nutbox ISO module in Polkadot ecosystem',
-    t4: 'Feb 2022',
-    d4: 'Launch Nutbox Walnut on BSC, support PoS chains such as Steem, Hive, Cosmos',
+    t1: 'Oct 2020',
+    p1: 'Create and launch Peanut DAO on Tron network',
+    t2: 'Nov 2021',
+    p2: 'Launch Nutbox ver0.1 on BSC network',
+    t3: 'Q1 2022',
+    p3: 'Launch Nutbox Walnut mainnet on BSC, support Steem/Hive and Polkadot',
+    t4: 'Q2 2022',
+    p4: 'Launch Toolkits Voting on Walnut, ISO supports Cosmos, Osmosis and Astar networks',
     t5: 'Q3 2022',
-    d5: 'Multi-chain support and Toolkits Voting',
-    t6: 'Q1 2023',
-    d6: 'Launch NFT and Social Module',
-    t7: 'Q3 2023',
-    d7: 'Launch Toolkits System, enable community extensions and DApp entries'
+    p5: 'Walnut ISO supports more networks, such as Ethereum, Solana, etc.',
+    t6: 'Q4 2022',
+    p6: 'Launch Chestnut',
+    t7: 'Q1-Q2 2023',
+    p7: 'Toolkits System and Social Module (Donut)',
+    t8: 'Q3-Q4 2023',
+    p8: 'Nutbox chain on Polkadot Ecosystem'
   },
   partnerSection: {
-    title: 'Partners',
-    btnText: 'Partnership & Cooperation',
-    CTNABIA: 'Chengdu Tianfu New Area Blockchain Industry Association'
+    title: 'Partners'
+  },
+  communitySection: {
+    title: 'Communities Joined Nutbox <span class="gradient-text gradient-text-bottom">Ecosystem</span>'
   },
   missionSection: {
     title: 'Our Mission',
-    p1: 'Help the communities on the PoS chain like Polkadot, ETH2.0, ' +
-      'to easily create their Staking Economy platform and build DAO by Crowd-Staking, ' +
-      'DApp, Dao governance and other factory protocols.'
+    p1: 'Create anything from a staking protocol to the next big DAO. Automatically distribute community Token to contributors.',
+    p2: 'Peanut <br>the <span class="gradient-text gradient-text-bottom">1st</span> Staking DAO.',
+    p3: 'The 1st Staking DAO built by Nutbox',
+    p4: 'The 2nd largest Staking Platform of Steem Blockchain',
+    p5: 'Staking Value of STEEM POWER',
+    p6: 'Market Value of PNUT'
   },
-  teamSection: {
-    title: 'Our Team',
-    p1: 'Nutbox offers following tools to community',
-    member1: {
-      title: 'Founder',
-      name: 'Guozi Yin',
-      p1: 'Founder of Nutbox, WhereIN',
-      p2: 'Representative of one of Steem 21 super nodes',
-      p3: 'CEO of Chengdu Bitdance Technology'
-    },
-    member2: {
-      title: 'Advisory',
-      name: 'Jiang Duan',
-      p1: 'Expert of National Thousand Talents Plan',
-      p2: 'Professor of SWUFE',
-      p3: 'CEO of Chengdu 9Broad Technology'
-    },
-    member3: {
-      title: 'Co-Founder',
-      name: 'Wenfeng Wang',
-      p1: 'More than 5 years of experience in blockchain development',
-      p2: 'Developer of Bitcoin, Ethereum, Polkadot'
-    },
-    member4: {
-      title: 'PIC of BD',
-      name: 'Haiou Zhang',
-      p1: 'Founder of cocogo',
-      p2: 'Webmaster of loser886.cn',
-      p3: 'CEO of Chengdu Guzi Trade'
-    }
+  grantSection: {
+    title: 'Grant',
+    p1: 'Wanxiang Blockchain Hackathon',
+    p2: 'Moonbeam',
+    p3: 'Astar',
+    p4: 'Near Aurora'
   },
   globalSection: {
-    title: 'Our Global Partners'
+    title: 'Global Ambassador'
   },
   joinSection: {
     title: 'Join Us',
-    p1: 'You are the one we’ve been looking for',
-    btn1: 'Apply for team member',
-    btn2: 'Apply for global ambassador'
+    p1: 'Join as a contributor',
+    p2: 'Join as a contributor'
   },
-  footerSection: {
-    contactUs: 'Contact Us'
-  },
-  communitySection: {
-    title: 'Communities joined Nutbox ecosystem'
-  },
-  daoSection: {
-    title1: 'Create and configure your DAO in 5 minutes',
-    desc1: 'Build Defi apps and tools on the largest crypto project on Nutbox. Get started with quick start guides, protocol documentation, a Javascript SDK and fully open source code.',
-    desc2: 'Help Web3 community automatically distribute community Token to community contributors. ',
-    btn1: 'Explore Communities',
-    title2: 'Provide everything needed to govern your'
-  },
-  peanutSection: {
-    title: 'First DAO created by Nutbox.',
-    desc1: 'By tokenization the PoS Chain’s Staking rewards, it has become a new generation, community-owned staking providers platform.',
-    btn1: 'Explore Peanut'
-  },
-  nutPowerSection: {
-    title: '',
-    desc1: 'The utility token of Nutbox ecosystem, providing members and communities with benefits and services, and dictates Nutbox’s governance.',
-    desc2: 'The Governance Power of Nutbox DAO. The Nutbox governance reward of a user is charged by the user governance activity.'
-  },
-  readMore: 'Read More'
+  faqSection: {
+    title: 'Frequently Asked <br> <span class="gradient-text gradient-text-bottom">Questions</span>',
+    q1: 'What is Nutbox?',
+    a1: 'Nutbox is a DAO infrastructure facing Web3. Any community creator can create DAO using Nutbox protocol one-click, help DAO to bootstrap, and attract community members to participate.',
+    q2: 'What functions do you provide?',
+    a2: 'The three pillars of Nutbox’s basic modules are: Multi-Chain Proof of Stake Networks (Walnut), NFT Module (Chestnut) and Social Layer (Donut). Walnut has already been launched and the other two will be coming soon.',
+    q3: 'What is NUT?',
+    a3: 'NUT is the native token of Nutbox economy, providing members and communities with benefits and services, and dictates Nutbox’s governance.',
+    q4: 'How is NUT distributed?',
+    a4: 'The total number of NUT is 1 billion. According to the different allocation methods, it is divided into 2 categories:' +
+      '<br>' +
+      '① 65% is used to support Nutbox ecosystem building, including collator, Slot Auction, Protocol Development, Toolkits Staking;' +
+      '<br>' +
+      '② 35% is used for MKT, private sale and allocation of founding team.',
+    q5: 'What is NUT address and where it is listed?',
+    a5: 'NUT (BSC): 0x4429FcdD4eC4EA4756B493e9c0525cBe747c2745<br>NUT is not listed yet.',
+    q6: 'What’s the difference between Nutbox, Peanut and Walnut?',
+    a6: 'Walnut is the Multi-Chain Proof of Stake Networks module of Nutbox, it can also been seen as the Phase 1 of Nutbox.' +
+      '<br>' +
+      'Peanut is an investing DAO that is created by using Walnut.',
+    q7: 'What PoS chains does Walnut support at present?',
+    a7: 'Currently support Cosmos, Steem, Hive, and will soon support mainstream Pos chains such as Solana, Polkadot, Ethereum2.0 etc.',
+    q8: 'How to create a Staking-based DAO using Walnut?',
+    a8: 'Please check the guide here:' +
+      '<br>' +
+      '<a href="https://nutbox-io.gitbook.io/walnut/create-a-staking-based-dao/create-a-staking-based-dao-in-3-minutes">' +
+      'https://nutbox-io.gitbook.io/walnut/create-a-staking-based-dao/create-a-staking-based-dao-in-3-minutes' +
+      '</a>'
+  }
 }

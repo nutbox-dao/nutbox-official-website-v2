@@ -40,7 +40,7 @@
                 </template>
                 <template v-else>
                   <b-nav-item>
-                    <button class="item" id="nav-popover-product">Product</button>
+                    <button class="item" id="nav-popover-product">{{$t('products')}}</button>
                   </b-nav-item>
                   <b-popover custom-class="c-popover" target="nav-popover-product" triggers="hover focus" placement="bottom">
                     <a href="https://walnut.nutbox.io" target="_blank" class="d-menu-item">
@@ -51,7 +51,7 @@
                     </a>
                   </b-popover>
                   <b-nav-item>
-                    <button class="item" id="nav-popover-doc">Document</button>
+                    <button class="item" id="nav-popover-doc">{{$t('doc')}}</button>
                   </b-nav-item>
                   <b-popover custom-class="c-popover" target="nav-popover-doc" triggers="hover focus" placement="top">
                     <a href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="d-menu-item">
@@ -68,10 +68,25 @@
                 </template>
                 <b-nav-item v-for="item of menuOptions" :key="item.id"
                             :class="activeNav === item.id? 'active':''"
-                            @click="selectMenu(item.id, item.url, item.target)">{{item.name}}
+                            @click="selectMenu(item.id, item.url, item.target)">{{$t(item.name)}}
                 </b-nav-item>
+                <!--语言切换-->
+<!--                <b-nav-item-dropdown variant="text" no-caret>-->
+<!--                  <template #button-content>-->
+<!--                    <div class="d-flex align-items-center justify-content-center">{{$t('language')}}</div>-->
+<!--                  </template>-->
+<!--                  <b-dropdown-item @click="setLang('en')">-->
+<!--                    <div class="flex-between-center line-height46 font16">{{$t('en')}}</div>-->
+<!--                  </b-dropdown-item>-->
+<!--                  <b-dropdown-item @click="setLang('zh')">-->
+<!--                    <div class="flex-between-center line-height46 font16">{{$t('zh')}}</div>-->
+<!--                  </b-dropdown-item>-->
+<!--                  <b-dropdown-item @click="setLang('es')">-->
+<!--                    <div class="flex-between-center line-height46 font16">{{$t('es')}}</div>-->
+<!--                  </b-dropdown-item>-->
+<!--                </b-nav-item-dropdown>-->
                 <b-nav-item>
-                  <button class="launch-app-btn" @click="gotoApp">launch app</button>
+                  <button class="launch-app-btn" @click="gotoApp">{{$t('launchApp')}}</button>
                 </b-nav-item>
               </b-navbar-nav>
             </b-collapse>
@@ -98,13 +113,13 @@ export default {
     return {
       menuOptions: [
         {
-          name: 'FAQ',
+          name: 'faq',
           multi: false,
           url: '/faq',
           id: 'faq'
         },
         {
-          name: 'About Us',
+          name: 'aboutUs',
           multi: false,
           url: '/about',
           id: 'about'

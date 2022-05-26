@@ -10,17 +10,16 @@
           <div class="links links-float mb-3">
             <a class="justify-content-start" href="https://walnut.nutbox.app/#/community/index" target="blank">
               <span class="gradient-text gradient-text-bottom text-medium btn-link">
-                Explore  Communities
+                {{$t('daoSection.btn1')}}
               </span>
               <i class="arrow-icon arrow-icon-1"></i>
             </a>
           </div>
           <div class="font40 line-height50 text-left text-bold" style="margin-bottom: 2rem">
-            Enter the world of communities and get connected.
+            {{$t('daoSection.t1')}}
           </div>
           <div class="font18 line-height46 mb-4 text-left text-grey-dark">
-            The best community supporting platform for community entrepreneurs and digital
-            nomads which provides out-of-box facilities and connects worldwide communities.
+            {{$t('daoSection.p1')}}
           </div>
         </div>
       </div>
@@ -32,12 +31,10 @@
       <div class="col-lg-5 col-md-8 d-flex flex-column">
         <div class="dao-card-1 text-left">
           <div class="font40 line-height50 text-left text-bold" style="margin-bottom: 2rem">
-            Create and configure your DAO in 5 minutes.
+            {{$t('daoSection.t2')}}
           </div>
           <div class="font18 line-height46 mb-4 text-left text-grey-dark">
-            With Nutbox Toolkits, you can easily create a DAO in 5
-            minutes and configure its Defi (Walnut), NFT (Chestnut)
-            and Social (Donut) modules.
+            {{$t('daoSection.p2')}}
           </div>
         </div>
       </div>

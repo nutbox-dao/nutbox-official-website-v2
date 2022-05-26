@@ -1,70 +1,70 @@
 <template>
   <section id="road-map-section">
     <div class="container">
-      <div class="title mb-5 text-bold">Road Map</div>
+      <div class="title mb-5 text-bold">{{$t('roadmapSection.title')}}</div>
       <div class="map-container">
         <div class="map-container-box">
           <div class="card-box">
             <div class="info text-left">
-              <div class="font24 text-primary-c mb-4 text-medium">Oct 2020</div>
+              <div class="font24 text-primary-c mb-4 text-medium">{{$t('roadmapSection.t1')}}</div>
               <div class="font16 line-height24 text-grey-dark mt-2">
-                Create and launch Peanut DAO on Tron network
+                {{$t('roadmapSection.p1')}}
               </div>
             </div>
           </div>
           <div class="card-box">
             <div class="info text-left">
-              <div class="font24 text-primary-c mb-4">Nov 2021</div>
+              <div class="font24 text-primary-c mb-4 text-medium">{{$t('roadmapSection.t2')}}</div>
               <div class="font16 line-height24 text-grey-dark mt-2">
-                Launch Nutbox ver0.1 on BSC network
+                {{$t('roadmapSection.p2')}}
               </div>
             </div>
           </div>
           <div class="card-box">
             <div class="info text-left">
-              <div class="font24 text-primary-c mb-4 text-medium">Q1 2022</div>
+              <div class="font24 text-primary-c mb-4 text-medium">{{$t('roadmapSection.t3')}}</div>
               <div class="font16 line-height24 text-grey-dark mt-2">
-                Launch Nutbox Walnut mainnet on BSC, support Steem/Hive and Polkadot
+                {{$t('roadmapSection.p3')}}
               </div>
             </div>
           </div>
           <div class="card-box">
             <div class="info text-left">
-              <div class="font24 text-primary-c mb-4 text-medium">Q2 2022</div>
+              <div class="font24 text-primary-c mb-4 text-medium">{{$t('roadmapSection.t4')}}</div>
               <div class="font16 line-height24 text-grey-dark mt-2">
-                Launch Toolkits Voting on Walnut, ISO supports Cosmos, Osmosis and Astar networks
+                {{$t('roadmapSection.p4')}}
               </div>
             </div>
           </div>
           <div class="card-box">
             <div class="info text-left">
-              <div class="font24 text-primary-c mb-4 text-medium">Q3 2022</div>
+              <div class="font24 text-primary-c mb-4 text-medium">{{$t('roadmapSection.t5')}}</div>
               <div class="font16 line-height24 text-grey-dark mt-2">
-                Walnut ISO supports more networks, such as Ethereum, Solana, etc.
+                {{$t('roadmapSection.p5')}}
               </div>
             </div>
           </div>
           <div class="card-box">
             <div class="info text-left">
-              <div class="font24 text-primary-c mb-4 text-medium">Q4 2022</div>
+              <div class="font24 text-primary-c mb-4 text-medium">{{$t('roadmapSection.t6')}}</div>
               <div class="font16 line-height24 text-grey-dark mt-2">
-                Launch Chestnut
+                {{$t('roadmapSection.p6')}}
               </div>
             </div>
           </div>
           <div class="card-box">
             <div class="info text-left">
-              <div class="font24 text-primary-c mb-4 text-medium">Q1-Q2 2023</div>
+              <div class="font24 text-primary-c mb-4 text-medium">{{$t('roadmapSection.t7')}}</div>
               <div class="font16 line-height24 text-grey-dark mt-2">
-                Toolkits System and Social Module (Donut)
+                {{$t('roadmapSection.p7')}}
               </div>
             </div>
           </div>
           <div class="card-box">
             <div class="info text-left">
-              <div class="font24 text-primary-c mb-4 text-medium">Q3-Q4 2023</div>
+              <div class="font24 text-primary-c mb-4 text-medium">{{$t('roadmapSection.t8')}}</div>
               <div class="font16 line-height24 text-grey-dark mt-2">
-                Nutbox chain on Polkadot Ecosystem
+                {{$t('roadmapSection.p8')}}
               </div>
             </div>
           </div>

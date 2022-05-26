@@ -34,7 +34,7 @@
 <!--                  I am popover <b>component</b> content!-->
 <!--                </b-popover>-->
 <!--              </div>-->
-              <button class="item" id="popover-target-product">Product</button>
+              <button class="item" id="popover-target-product">{{$t('products')}}</button>
               <b-popover custom-class="c-popover"  target="popover-target-product" triggers="hover focus" placement="top">
                 <a href="https://walnut.nutbox.io" target="_blank" class="d-menu-item">
                   <span class="">Walnut</span>
@@ -43,7 +43,7 @@
                   <span class="">Peanut</span>
                 </a>
               </b-popover>
-              <button class="item" id="popover-target-doc">Document</button>
+              <button class="item" id="popover-target-doc">{{$t('doc')}}</button>
               <b-popover custom-class="c-popover" target="popover-target-doc" triggers="hover focus" placement="top">
                 <a href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="d-menu-item">
                   <div class="d-flex align-items-center">
@@ -56,8 +56,8 @@
                   </div>
                 </a>
               </b-popover>
-              <router-link to="/faq" class="text-white"><div class="item">FAQ</div></router-link>
-              <router-link to="/about" class="text-white"><div class="item">About Us</div></router-link>
+              <router-link to="/faq" class="text-white"><div class="item">{{$t('faq')}}</div></router-link>
+              <router-link to="/about" class="text-white"><div class="item">{{$t('aboutUs')}}</div></router-link>
             </div>
           </div>
         </div>

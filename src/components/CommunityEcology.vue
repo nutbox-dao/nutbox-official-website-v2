@@ -3,9 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 offset-md-6">
-          <div class="title text-bold">
-            Communities Joined Nutbox
-            <span class="gradient-text gradient-text-bottom">Ecosystem</span>
+          <div class="title text-bold" v-html="$t('communitySection.title')">
           </div>
         </div>
       </div>
