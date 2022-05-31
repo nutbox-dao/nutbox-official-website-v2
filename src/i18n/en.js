@@ -23,6 +23,7 @@ export default {
     p2: 'With Nutbox Toolkits, you can easily create a DAO in 5 minutes and configure its Defi (Walnut), NFT (Chestnut) and Social (Donut) modules.'
   },
   nutboxSection: {
+    title: 'Why <span class="gradient-text gradient-text-bottom">Nutbox</span> ?',
     t1: 'Bootstrap community in a safe and easy way',
     p1: 'Easy to form a DAO Treasury',
     t2: 'All-in-one platform',

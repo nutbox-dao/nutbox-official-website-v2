@@ -2,8 +2,7 @@
   <section id="nut-power-section">
     <div class="container">
       <div class="h-line h-line-top"></div>
-      <div class="text-bold title line-height50">
-        Why <span class="gradient-text gradient-text-bottom">Nutbox</span> ?
+      <div class="text-bold title line-height50" v-html="$t('nutboxSection.title')">
       </div>
       <div class="row">
         <div class="col-lg-4">

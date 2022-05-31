@@ -21,6 +21,7 @@ export default {
     p2: 'Nutbox Toolkitを使用すると、5分でDAOを簡単に作成し、そのDefi（Walnut）、NFT（Chestnut）、およびSocial（Donut）モジュールを構成できます。'
   },
   nutboxSection: {
+    title: 'なぜ <span class="gradient-text gradient-text-bottom">Nutbox</span> ?',
     t1: '安全で簡単な方法でのブートストラップコミュニティ',
     p1: '簡単でDAOトレジャリーを作成します',
     t2: 'オールインワンプラットフォーム',
