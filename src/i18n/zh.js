@@ -10,9 +10,8 @@ export default {
   aboutUs: '关于我们',
   launchApp: '启动应用程序',
   startSection: {
-    title: `连接
-    <span class="gradient-text gradient-text-left">社区</span> <br>
-    到 Web3.0`,
+    title: `大
+    <span class="gradient-text gradient-text-left">DAO</span> 至简`,
     p1: '自举地、 治理地、 去中心化地运行DAO.'
   },
   daoSection: {

@@ -10,9 +10,10 @@ export default {
   aboutUs: 'About Us',
   launchApp: 'Launch app',
   startSection: {
-    title: `Link
-    <span class="gradient-text gradient-text-left">COMMUNITY</span> <br>
-    to Web3.0`,
+    // title: `Link
+    // <span class="gradient-text gradient-text-left">COMMUNITY</span> <br>
+    // to Web3.0`,
+    title: 'Building a DAO is hard<br> <span class="gradient-text gradient-text-left">Nutbox</span> makes it easy.',
     p1: 'Bootstrap, govern, and contribute a DAO in a decentralized way.'
   },
   daoSection: {
