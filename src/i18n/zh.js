@@ -3,6 +3,7 @@ export default {
   zh: '中文(简体)',
   en: 'English',
   es: 'Español',
+  jp: '日本語',
   products: '产品',
   doc: '文档',
   faq: 'FAQ',

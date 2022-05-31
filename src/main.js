@@ -8,6 +8,7 @@ import VueI18n from 'vue-i18n'
 import zh from './i18n/zh'
 import en from './i18n/en'
 import es from './i18n/es'
+import jp from './i18n/jp'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import router from './router'
@@ -23,7 +24,8 @@ const i18n = new VueI18n({
   messages: {
     zh: zh,
     en: en,
-    es: es
+    es: es,
+    jp: jp
   }
 })
 

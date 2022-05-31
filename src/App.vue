@@ -71,20 +71,20 @@
                             @click="selectMenu(item.id, item.url, item.target)">{{$t(item.name)}}
                 </b-nav-item>
                 <!--语言切换-->
-<!--                <b-nav-item-dropdown variant="text" no-caret>-->
-<!--                  <template #button-content>-->
-<!--                    <div class="d-flex align-items-center justify-content-center">{{$t('language')}}</div>-->
-<!--                  </template>-->
-<!--                  <b-dropdown-item @click="setLang('en')">-->
-<!--                    <div class="flex-between-center line-height46 font16">{{$t('en')}}</div>-->
-<!--                  </b-dropdown-item>-->
-<!--                  <b-dropdown-item @click="setLang('zh')">-->
-<!--                    <div class="flex-between-center line-height46 font16">{{$t('zh')}}</div>-->
-<!--                  </b-dropdown-item>-->
-<!--                  <b-dropdown-item @click="setLang('es')">-->
-<!--                    <div class="flex-between-center line-height46 font16">{{$t('es')}}</div>-->
-<!--                  </b-dropdown-item>-->
-<!--                </b-nav-item-dropdown>-->
+               <b-nav-item-dropdown variant="text" no-caret>
+                 <template #button-content>
+                   <div class="d-flex align-items-center justify-content-center">{{$t('language')}}</div>
+                 </template>
+                 <b-dropdown-item @click="setLang('en')">
+                   <div class="flex-between-center line-height46 font16">{{$t('en')}}</div>
+                 </b-dropdown-item>
+                 <b-dropdown-item @click="setLang('zh')">
+                   <div class="flex-between-center line-height46 font16">{{$t('zh')}}</div>
+                 </b-dropdown-item>
+                 <b-dropdown-item @click="setLang('jp')">
+                   <div class="flex-between-center line-height46 font16">{{$t('jp')}}</div>
+                 </b-dropdown-item>
+               </b-nav-item-dropdown>
                 <b-nav-item>
                   <button class="launch-app-btn" @click="gotoApp">{{$t('launchApp')}}</button>
                 </b-nav-item>
