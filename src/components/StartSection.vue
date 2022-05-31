@@ -2,10 +2,7 @@
   <section id="start-section">
     <div class="container">
       <div class="banner-info-box">
-        <div class="title text-bold">
-          Link
-          <span class="gradient-text gradient-text-left">COMMUNITY</span> <br>
-          to Web3.0
+        <div class="title text-bold" v-html="$t('startSection.title')">
         </div>
         <div class="desc">
           {{$t('startSection.p1')}}

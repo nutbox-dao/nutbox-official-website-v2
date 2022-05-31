@@ -10,6 +10,9 @@ export default {
   aboutUs: '关于我们',
   launchApp: 'Launch app',
   startSection: {
+    title: `Link
+    <span class="gradient-text gradient-text-left">COMMUNITY</span> <br>
+    to Web3.0`,
     p1: 'Bootstrap, govern, and contribute a DAO in a decentralized way.'
   },
   daoSection: {

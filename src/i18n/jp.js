@@ -10,6 +10,7 @@ export default {
   aboutUs: 'Nutboxとは',
   launchApp: 'アプリを起動',
   startSection: {
+    title: '<span class="gradient-text gradient-text-left">コミュニティ</span>を <br> Web3.0 に連携',
     p1: '分散型の方法でDAOをブートストラップ、管理、および寄付する。'
   },
   daoSection: {
@@ -84,9 +85,9 @@ export default {
     title: 'グローバルアンバサダー'
   },
   joinSection: {
-    title: 'Join Us',
-    p1: '出金者になる',
-    p2: '出金者になる'
+    title: '採用情報',
+    p1: 'チームメンバーになる',
+    p2: 'アンバサダーになる'
   },
   faqSection: {
     title: 'よくある <br> <span class="gradient-text gradient-text-bottom">質問</span>',

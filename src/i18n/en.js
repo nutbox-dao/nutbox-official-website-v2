@@ -10,6 +10,9 @@ export default {
   aboutUs: 'About Us',
   launchApp: 'Launch app',
   startSection: {
+    title: `Link
+    <span class="gradient-text gradient-text-left">COMMUNITY</span> <br>
+    to Web3.0`,
     p1: 'Bootstrap, govern, and contribute a DAO in a decentralized way.'
   },
   daoSection: {
@@ -86,7 +89,7 @@ export default {
   joinSection: {
     title: 'Join Us',
     p1: 'Join as a contributor',
-    p2: 'Join as a contributor'
+    p2: 'Join as an ambassador'
   },
   faqSection: {
     title: 'Frequently Asked <br> <span class="gradient-text gradient-text-bottom">Questions</span>',
