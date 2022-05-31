@@ -84,6 +84,9 @@
                  <b-dropdown-item @click="setLang('jp')">
                    <div class="flex-between-center line-height46 font16">{{$t('jp')}}</div>
                  </b-dropdown-item>
+                 <b-dropdown-item @click="setLang('es')">
+                   <div class="flex-between-center line-height46 font16">{{$t('es')}}</div>
+                 </b-dropdown-item>
                </b-nav-item-dropdown>
                 <b-nav-item>
                   <button class="launch-app-btn" @click="gotoApp">{{$t('launchApp')}}</button>
