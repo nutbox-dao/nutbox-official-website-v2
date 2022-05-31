@@ -53,6 +53,9 @@ export default {
   margin-bottom: 5rem;
   .box-item {
     margin: 0 .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   img {
     width: 90%;
