@@ -61,7 +61,7 @@ export default {
     p6: 'Web2 to web3 wormhole and NUT POWER online',
     t7: 'Q4 2022',
     p7: 'NFT module online and Nutbox support Ethereum and Solana, etc.',
-    t8: 'Q1-Q2 2022',
+    t8: 'Q1-Q2 2023',
     p8: 'Toolkits System online'
   },
   partnerSection: {
