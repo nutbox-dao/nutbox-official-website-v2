@@ -8,11 +8,12 @@ export default {
   doc: '文档',
   faq: '常见问题',
   aboutUs: '关于我们',
+  whitePaper: '白皮书',
   launchApp: '启动应用程序',
   startSection: {
     title: `大
     <span class="gradient-text gradient-text-left">DAO</span> 至简`,
-    p1: '自举地、 治理地、 去中心化地运行DAO.'
+    p1: '一个web3 DAO基础设施，让您轻易而举地构建强大的、基于区块链的组织'
   },
   daoSection: {
     btn1: '探索社区',

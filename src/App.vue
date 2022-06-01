@@ -19,10 +19,10 @@
                     <template #button-content>
                       <div class="d-flex align-items-center justify-content-center">Product</div>
                     </template>
-                    <b-dropdown-item href="https://walnut.nutbox.io" target="_blank" class="">
-                      <div class="flex-between-center line-height46 font16">Walnut</div>
+                    <b-dropdown-item href="https://app.nutbox.io" target="_blank" class="">
+                      <div class="flex-between-center line-height46 font16">Nutbox</div>
                     </b-dropdown-item>
-                    <b-dropdown-item href="https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="">
+                    <b-dropdown-item href="https://app.nutbox.io/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="">
                       <div class="flex-between-center line-height46 font16">Peanut</div>
                     </b-dropdown-item>
                   </b-nav-item-dropdown>
@@ -33,9 +33,9 @@
                     <b-dropdown-item href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="">
                       <div class="flex-between-center line-height46 font16">Nutbox Wiki</div>
                     </b-dropdown-item>
-                    <b-dropdown-item href="https://nutbox-io.gitbook.io/walnut/" target="_blank" class="">
-                      <div class="flex-between-center line-height46 font16">Walnut Wiki</div>
-                    </b-dropdown-item>
+                    <!-- <b-dropdown-item href="https://nutbox-io.gitbook.io/walnut/" target="_blank" class="">
+                      <div class="flex-between-center line-height46 font16">{{ $t('whitePaper') }}</div>
+                    </b-dropdown-item> -->
                   </b-nav-item-dropdown>
                 </template>
                 <template v-else>
@@ -43,10 +43,10 @@
                     <button class="item" id="nav-popover-product">{{$t('products')}}</button>
                   </b-nav-item>
                   <b-popover custom-class="c-popover" target="nav-popover-product" triggers="hover focus" placement="bottom">
-                    <a href="https://walnut.nutbox.io" target="_blank" class="d-menu-item">
-                      <span class="">Walnut</span>
+                    <a href="https://app.nutbox.io" target="_blank" class="d-menu-item">
+                      <span class="">Nutbox</span>
                     </a>
-                    <a href="https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="d-menu-item">
+                    <a href="https://app.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="d-menu-item">
                       <span class="">Peanut</span>
                     </a>
                   </b-popover>
@@ -59,11 +59,11 @@
                         <span class="">Nutbox Wiki</span>
                       </div>
                     </a>
-                    <a href="https://nutbox-io.gitbook.io/walnut/" target="_blank" class="d-menu-item">
+                    <!-- <a href="https://nutbox-io.gitbook.io/walnut/" target="_blank" class="d-menu-item">
                       <div class="d-flex align-items-center">
-                        <span class="">Walnut Wiki</span>
+                        <span class="">{{ $t('whitePaper') }}</span>
                       </div>
-                    </a>
+                    </a> -->
                   </b-popover>
                 </template>
                 <b-nav-item v-for="item of menuOptions" :key="item.id"
@@ -78,14 +78,14 @@
                  <b-dropdown-item @click="setLang('en')">
                    <div class="flex-between-center line-height46 font16">{{$t('en')}}</div>
                  </b-dropdown-item>
-                 <b-dropdown-item @click="setLang('zh')">
-                   <div class="flex-between-center line-height46 font16">{{$t('zh')}}</div>
-                 </b-dropdown-item>
                  <b-dropdown-item @click="setLang('jp')">
                    <div class="flex-between-center line-height46 font16">{{$t('jp')}}</div>
                  </b-dropdown-item>
                  <b-dropdown-item @click="setLang('es')">
                    <div class="flex-between-center line-height46 font16">{{$t('es')}}</div>
+                 </b-dropdown-item>
+                 <b-dropdown-item @click="setLang('zh')">
+                   <div class="flex-between-center line-height46 font16">{{$t('zh')}}</div>
                  </b-dropdown-item>
                </b-nav-item-dropdown>
                 <b-nav-item>

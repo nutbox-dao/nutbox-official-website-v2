@@ -8,13 +8,14 @@ export default {
   doc: 'Documents',
   faq: 'FAQ',
   aboutUs: 'About Us',
+  whitePaper: 'White Paper',
   launchApp: 'Launch app',
   startSection: {
     // title: `Link
     // <span class="gradient-text gradient-text-left">COMMUNITY</span> <br>
     // to Web3.0`,
-    title: 'Building a DAO is hard<br> <span class="gradient-text gradient-text-left">Nutbox</span> makes it easy.',
-    p1: 'Bootstrap, govern, and contribute a DAO in a decentralized way.'
+    title: 'Building a <span class="gradient-text gradient-text-left">DAO</span> is hard<br> Nutbox makes it easy',
+    p1: 'A web3 DAO infrastructure that enables you to easily build powerful, blockchain-based organization.'
   },
   daoSection: {
     btn1: 'Explore  Communities',
@@ -47,21 +48,21 @@ export default {
   roadmapSection: {
     title: 'ROAD MAP',
     t1: 'Oct 2020',
-    p1: 'Create and launch Peanut DAO on Tron network',
-    t2: 'Nov 2021',
-    p2: 'Launch Nutbox ver0.1 on BSC network',
-    t3: 'Q1 2022',
-    p3: 'Launch Nutbox Walnut mainnet on BSC, support Steem/Hive and Polkadot',
-    t4: 'Q2 2022',
-    p4: 'Launch Toolkits Voting on Walnut, ISO supports Cosmos, Osmosis and Astar networks',
-    t5: 'Q3 2022',
-    p5: 'Walnut ISO supports more networks, such as Ethereum, Solana, etc.',
-    t6: 'Q4 2022',
-    p6: 'Launch Chestnut',
-    t7: 'Q1-Q2 2023',
-    p7: 'Toolkits System and Social Module (Donut)',
-    t8: 'Q3-Q4 2023',
-    p8: 'Nutbox chain on Polkadot Ecosystem'
+    p1: 'The First Staking DAO —— Peanut online',
+    t2: 'Q2 2021',
+    p2: 'Launch Nutbox Slot Auction on Polkadot network',
+    t3: 'Q4 2021',
+    p3: 'Launch Nutbox V0.1 on BSC network',
+    t4: 'Q1 2022',
+    p4: 'Nutbox support PoS Chain such as Steem/Hive, Cosmos and Osmosis',
+    t5: 'Q2 2022',
+    p5: 'Launch NFT Staking and DAO Treasury module, support Polkadot and Astar network',
+    t6: 'Q3 2022',
+    p6: 'Web2 to web3 wormhole and NUT POWER online',
+    t7: 'Q4 2022',
+    p7: 'NFT module online and Nutbox support Ethereum and Solana, etc.',
+    t8: 'Q1-Q2 2022',
+    p8: 'Toolkits System online'
   },
   partnerSection: {
     title: 'Partners'

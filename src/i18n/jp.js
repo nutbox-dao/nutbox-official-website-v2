@@ -8,10 +8,11 @@ export default {
   doc: 'ドキュメント',
   faq: 'FAQ',
   aboutUs: 'Nutboxとは',
+  whitePaper: 'ホワイトペーパー',
   launchApp: 'アプリを起動',
   startSection: {
     // title: '<span class="gradient-text gradient-text-left">コミュニティ</span>を <br> Web3.0 に連携',
-    title: 'Building a DAO is hard<br> <span class="gradient-text gradient-text-left">Nutbox</span> makes it easy.',
+    title: 'Building a <span class="gradient-text gradient-text-left">DAO</span> is hard<br> Nutbox makes it easy',
     p1: '分散型の方法でDAOをブートストラップ、管理、および寄付する。'
   },
   daoSection: {

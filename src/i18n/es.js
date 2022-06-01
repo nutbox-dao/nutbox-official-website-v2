@@ -8,13 +8,14 @@ export default {
   doc: 'Documentos',
   faq: 'FAQ',
   aboutUs: 'Sobre Nosotros',
+  whitePaper: 'Papel Blanco',
   launchApp: 'Iniciar app',
   startSection: {
     // title: `Úniendo
     // <span class="gradient-text gradient-text-left">LA COMUNIDAD</span> <br>
     // a la Web3.0`,
-    title: 'Construir un DAO puede ser difícil <span class="gradient-text gradient-text-left">Nutbox</span> lo hace fácil.',
-    p1: 'Bootstrap, gobernanza y desarrollo DAO en forma descentralizada.'
+    title: 'Construir un <span class="gradient-text gradient-text-left">DAO</span> es difícil<br> Nutbox lo hace fácil',
+    p1: 'Una infraestructura DAO en la web3 que te permite construir poderosas organizaciones Blockchain.'
   },
   daoSection: {
     btn1: 'Explorar Comunidades',
