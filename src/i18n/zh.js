@@ -61,7 +61,7 @@ export default {
     t7: 'Q4 2022',
     p7: 'NFT功能上线，并且Nutbox将支持Ethereum和Solana等网络',
     t8: 'Q2-Q2 2023',
-    p8: '上线工具插件功能'
+    p8: '上线插件功能'
   },
   partnerSection: {
     title: '合作伙伴'

@@ -58,7 +58,7 @@ export default {
     p5: 'NFTステーキングとDAOトレジャリーモジュールをリリースし、PolkadotとAstarネットワークを対応します',
     t6: 'Q3 2022',
     p6: 'Web2からweb3のワームホールへ、NUT POWERはオンライン',
-    t7: 'Q4 2023',
+    t7: 'Q4 2022',
     p7: 'NFTモジュールはオンライン、NutboxはEthereumとSolanaなどを対応します',
     t8: 'Q1-Q2 2023',
     p8: 'ツールキットシステムはオンライン'
