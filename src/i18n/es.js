@@ -26,9 +26,9 @@ export default {
   nutboxSection: {
     title: '¿Porque <span class="gradient-text gradient-text-bottom">Nutbox</span> ?',
     t1: 'Bootstrap de comunidades en una forma rápida y segura ',
-    p1: 'Crear una tesorería DAO no será un problema',
+    p1: 'Crear una tesorería DAO no será un problema.',
     t2: 'Todo en una misma plataforma',
-    p2: 'DeFi, Modúlos de Gobernanza, NFT y mucho más esta por venir',
+    p2: 'DeFi, Modúlos de Gobernanza, NFT y mucho más esta por venir.',
     t3: 'Soportamos Multi-Cadena',
     p3: 'Actualmente soportamos Cosmos, Steem, Hive, y pronto admitirá las grandes cadenas Pos como son Solana, Polkadot, Ethereum2.0 y más.'
   },
@@ -36,7 +36,7 @@ export default {
     btn1: 'Iniciar Staking',
     t1: '$NUT es el Token Nativo',
     p1: '$NUT es el token nativo de la economía de Nutbox, provee a los miembros y comunidades, productos y servicios, dictando la gobernabilidad de Nutbox.',
-    p2: 'Nutbox Voting Power (NUT Power para abreviar) es el poder de gobernanza de Nutbox DAO. LA recompensa por la gobernanza de Nutbox se genera por la actividad del la misma gobernabiliad.',
+    p2: 'Nutbox Voting Power (NUT Power para abreviar) es el poder de gobernanza de Nutbox DAO. La recompensa por la gobernanza de Nutbox se genera por la actividad del la misma gobernabiliad.',
     btn2: 'Aprende más'
   },
   peanutSection: {
@@ -96,11 +96,11 @@ export default {
   faqSection: {
     title: 'Preguntas frecuentes <br> <span class="gradient-text gradient-text-bottom">Preguntas</span>',
     q1: '¿Que es Nutbox?',
-    a1: 'Nutbox es una infraestructura DAO en la Web3. Cualquier creador de la comunidad puede crear su DAO utilizando el protocolo Nutbox con un solo clic.  Puede poner en marcha su.',
+    a1: 'Nutbox es una infraestructura DAO en la Web3. Cualquier creador de la comunidad puede crear su DAO utilizando el protocolo Nutbox con un solo click. Pon en marcha tu comunidad DAO.',
     q2: '¿Que funciones ofrece?',
-    a2: 'Los tres pilares de los módulos básicos de Nutbox son: Multi-Chain Proof of Stake Networks (Walnut), Módulo NFT (Chestnut) y Social Layer (Donut). Walnut ya se lanzó y los otros dos llegarán pronto.',
+    a2: 'Los tres pilares de los módulos básicos de Nutbox son: Multi-Chain Proof of Stake Networks (Walnut), Módulo NFT (Chestnut) y capa de interacción social (Donut). Walnut ya se lanzó y los otros dos modúlos llegarán pronto.',
     q3: '¿Que es NUT?',
-    a3: 'NUT es el token nativo de la economía de Nutbox, que brinda beneficios y servicios a los miembros y las comunidades, y dicta la gobernanza de Nutbox.',
+    a3: 'NUT es el token nativo de la economía de Nutbox, que brinda beneficios y servicios a los miembros, comunidades y dicta la gobernanza de Nutbox.',
     q4: '¿Como se distribuye NUT?',
     a4: 'El número total de NUT es de mil millones. Según los diferentes métodos de asignación, se divide en 2 categorías:' +
       '<br>' +
