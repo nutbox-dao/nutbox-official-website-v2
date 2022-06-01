@@ -13,7 +13,7 @@ export default {
     // title: `Úniendo
     // <span class="gradient-text gradient-text-left">LA COMUNIDAD</span> <br>
     // a la Web3.0`,
-    title: 'Building a DAO is hard<br> <span class="gradient-text gradient-text-left">Nutbox</span> makes it easy.',
+    title: 'Construir un DAO puede ser difícil <span class="gradient-text gradient-text-left">Nutbox</span> lo hace fácil.',
     p1: 'Bootstrap, gobernanza y desarrollo DAO en forma descentralizada.'
   },
   daoSection: {
