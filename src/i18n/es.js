@@ -10,9 +10,10 @@ export default {
   aboutUs: 'Sobre Nosotros',
   launchApp: 'Iniciar app',
   startSection: {
-    title: `Úniendo 
-    <span class="gradient-text gradient-text-left">LA COMUNIDAD</span> <br>
-    a la Web3.0`,
+    // title: `Úniendo
+    // <span class="gradient-text gradient-text-left">LA COMUNIDAD</span> <br>
+    // a la Web3.0`,
+    title: 'Building a DAO is hard<br> <span class="gradient-text gradient-text-left">Nutbox</span> makes it easy.',
     p1: 'Bootstrap, gobernanza y desarrollo DAO en forma descentralizada.'
   },
   daoSection: {
