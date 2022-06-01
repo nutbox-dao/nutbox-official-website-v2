@@ -4,6 +4,7 @@ export default {
   en: 'English',
   es: 'Español',
   jp: '日本語',
+  kr: '한국어',
   products: 'Productos',
   doc: 'Documentos',
   faq: 'FAQ',
@@ -14,7 +15,7 @@ export default {
     // title: `Úniendo
     // <span class="gradient-text gradient-text-left">LA COMUNIDAD</span> <br>
     // a la Web3.0`,
-    title: 'Construir un <span class="gradient-text gradient-text-left">DAO</span> es difícil<br> Nutbox lo hace fácil',
+    title: 'Construir un <span class="gradient-text gradient-text-left">DAO</span> es difícil<br> Nutbox lo hace  <span class="gradient-text gradient-text-left">fácil</span>',
     p1: 'Una infraestructura DAO en la web3 que te permite construir poderosas organizaciones Blockchain.'
   },
   daoSection: {

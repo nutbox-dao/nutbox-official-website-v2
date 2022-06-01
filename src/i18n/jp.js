@@ -4,6 +4,7 @@ export default {
   en: 'English',
   es: 'Español',
   jp: '日本語',
+  kr: '한국어',
   products: '製品一覧',
   doc: 'ドキュメント',
   faq: 'FAQ',
@@ -12,8 +13,8 @@ export default {
   launchApp: 'アプリを起動',
   startSection: {
     // title: '<span class="gradient-text gradient-text-left">コミュニティ</span>を <br> Web3.0 に連携',
-    title: 'Building a <span class="gradient-text gradient-text-left">DAO</span> is hard<br> Nutbox makes it easy',
-    p1: '分散型の方法でDAOをブートストラップ、管理、および寄付する。'
+    title: 'Building a <span class="gradient-text gradient-text-left">DAO</span> is hard<br> Nutbox makes it <span class="gradient-text gradient-text-left">easy</span>',
+    p1: '強力なブロックチェーンベースの組織を簡単に構築できるようにするweb3DAOインフラストラクチャ。。'
   },
   daoSection: {
     btn1: 'コミュニティを探索する',
@@ -46,21 +47,21 @@ export default {
   roadmapSection: {
     title: 'ロードマップ',
     t1: '2020年10月',
-    p1: 'TronネットワークでPeanut DAOを作成して起動します。',
-    t2: '2021年11月',
-    p2: 'BSCネットワークでNutboxver0.1を起動します。',
-    t3: 'Q1 2022',
-    p3: 'BSCでNutbox Walnutメインネットを起動し、Steem/HiveとPolkadotを対応します。',
-    t4: 'Q2 2022',
-    p4: 'Walnutで投票ツールキットを起動します。ISOはCosmos、Osmosis、Astarネットワークを対応します。',
-    t5: 'Q3 2022',
-    p5: 'Walnut ISOは、Ethereum、Solanaなどのより多くのネットワークを対応します。',
-    t6: 'Q4 2022',
-    p6: 'Chestnutを起動します。',
-    t7: 'Q1-Q2 2023',
-    p7: 'ツールキットシステムとソーシャルモジュール (Donut)',
-    t8: 'Q3-Q4 2023',
-    p8: 'PolkadotエコシステムのNutboxチェーン'
+    p1: 'Peanut、最初のステーキングDAOとしてはオンライン',
+    t2: 'Q2 2021',
+    p2: 'PolkadotネットワークでNutbox Slot Auctionをリリース',
+    t3: 'Q4 2021',
+    p3: 'BSCネットワークでNutbox V0.1をリリース',
+    t4: 'Q1 2022',
+    p4: 'NutboxはSteem/Hive、CosmosとOsmosisなどのPoSチェーンを対応します。',
+    t5: 'Q2 2022',
+    p5: 'NFTステーキングとDAOトレジャリーモジュールをリリースし、PolkadotとAstarネットワークを対応します',
+    t6: 'Q3 2022',
+    p6: 'Web2からweb3のワームホールへ、NUT POWERはオンライン',
+    t7: 'Q4 2023',
+    p7: 'NFTモジュールはオンライン、NutboxはEthereumとSolanaなどを対応します',
+    t8: 'Q1-Q2 2023',
+    p8: 'ツールキットシステムはオンライン'
   },
   partnerSection: {
     title: 'パートナー'
