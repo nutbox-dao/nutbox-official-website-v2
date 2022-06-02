@@ -21,7 +21,7 @@ export default {
     t1: 'コミュニティの世界に入り、つながる。',
     p1: 'すぐに使える施設を提供し、世界中のコミュニティをつなぐ、コミュニティ起業家やデジタルノマドのための最高のコミュニティサポートプラットフォーム。',
     t2: '5分でDAOを作成および構築します。',
-    p2: 'Nutbox Toolkitを使用すると、5分でDAOを簡単に作成し、そのDefi（Walnut）、NFT（Chestnut）、およびSocial（Donut）モジュールを構成できます。'
+    p2: 'Nutbox Toolkitを使用すると、5分でDAOを簡単に作成し、そのDefi、NFT、およびSocialモジュールを構成できます。'
   },
   nutboxSection: {
     title: 'なぜ <span class="gradient-text gradient-text-bottom">Nutbox</span> ?',
@@ -98,7 +98,7 @@ export default {
     q1: 'Nutboxとは?',
     a1: 'Nutboxは、Web3に面したDAOインフラストラクチャです。コミュニティの作成者は誰でも、Nutboxプロトコルをワンクリックで使用してDAOを作成し、DAOのブートストラップを支援し、コミュニティメンバーを引き付けて参加させることができます。',
     q2: 'どのような機能を提供していますか?',
-    a2: 'Nutboxの3つの基本モジュールは、マルチチェーンプルーフオブステークネットワーク（Walnut）、NFTモジュール（Chestnut）、ソーシャルレイヤー（Donut）です。Walnutはすでにリーリスされており、他の2つはまもなくリーリスされます。 ',
+    a2: 'Nutboxの3つの基本モジュールは、マルチチェーンプルーフオブステークネットワーク、NFTモジュール、ソーシャルレイヤーです。Nutboxはすでにリーリスされており、他の2つはまもなくリーリスされます。 ',
     q3: 'NUTとは?',
     a3: 'NUTは、Nutboxエコノミーの公式トークンであり、メンバーとコミュニティにメリットとサービスを提供し、Nutboxのガバナンスを決定します。',
     q4: 'NUTはどのように配布されますか?',
@@ -109,13 +109,13 @@ export default {
       '② 35％は、MKT、プライベートセール、および創設チームの割り当てに使用されます。',
     q5: 'NUTアドレスは？上場されましたか？ ',
     a5: 'NUT (BSC): 0x4429FcdD4eC4EA4756B493e9c0525cBe747c2745<br>NUTはまだ上場されていません。',
-    q6: 'Nutbox、Peanut、Walnutの違いは何ですか?',
-    a6: 'Walnutは、Nutboxのマルチチェーンプルーフオブステークネットワークモジュールであり、NutboxのPhrase1と見なすこともできます。' +
+    q6: 'Nutbox、Peanutの違いは何ですか?',
+    a6: 'Nutboxは、Nutboxのマルチチェーンプルーフオブステークネットワークモジュールであり、NutboxのPhrase1と見なすこともできます。' +
       '<br>' +
-      'Peanutは、Walnutを使用して作成された投資DAOです',
-    q7: '現在WalnutはどのPoSチェーンを対応していますか?',
+      'Peanutは、Nutboxを使用して作成された投資DAOです',
+    q7: '現在NutboxはどのPoSチェーンを対応していますか?',
     a7: '現在、Cosmos、Steem、Hiveは対応しており、まもなくSolana、Polkadot、Ethereum2.0などの主流のPosチェーンを対応する予定です。',
-    q8: 'Walnutを使用してステーキングベースのDAOを作成する方法?',
+    q8: 'Nutboxを使用してステーキングベースのDAOを作成する方法?',
     a8: 'こちらのガイドをご確認ください:' +
       '<br>' +
       '<a href="https://nutbox-io.gitbook.io/walnut/create-a-staking-based-dao/create-a-staking-based-dao-in-3-minutes">' +

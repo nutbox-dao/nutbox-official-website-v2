@@ -21,7 +21,7 @@ export default {
     t1: '进入社区的世界并建立联系。',
     p1: '为社区企业家和数字游民提供最好的社区支持平台，提供开箱即用的设施，连接全球社区。',
     t2: '在5分钟内创建并配置DAO。',
-    p2: '使用Nutbox工具包，你可以在5分钟内轻松创建一个DAO，并配置它的Defi(Walnut)、NFT(Chesnut)和社交(Donut)模块。'
+    p2: '使用Nutbox工具包，你可以在5分钟内轻松创建一个DAO，并配置它的Defi、NFT和社交模块。'
   },
   nutboxSection: {
     title: '为什么是 <span class="gradient-text gradient-text-bottom">Nutbox</span> ？',
@@ -42,7 +42,7 @@ export default {
   peanutSection: {
     btn1: '探索 Peanut',
     t1: 'Nutbox创建的第一个DAO',
-    p1: '从质押DAO到投资DAO，将投资孵化Walnut生态项目。'
+    p1: '从质押DAO到投资DAO，将投资孵化Nutbox生态项目。'
   },
   roadmapSection: {
     title: '路线图',
@@ -98,7 +98,7 @@ export default {
     q1: 'Nutbox是什么?',
     a1: 'Nutbox 是面向 Web3 的 DAO基础架构。任何社区创建者都可以使用 Nutbox 协议一键创建 DAO，帮助 DAO 引导，吸引社区成员参与。',
     q2: '你们提供什么功能?',
-    a2: 'Nutbox 基础模块的三大支柱是：多链权益证明网络（Walnut）、NFT 模块（Chestnut）和社交层（Donut）。Walnut已经上市，其他两款即将上市。',
+    a2: 'Nutbox 基础模块的三大支柱是：多链权益证明网络Nutbox、NFT 模块和社交层。Nutbox已经上线，其他两款即将上市。',
     q3: 'NUT是什么?',
     a3: 'NUT 是 Nutbox 经济的原生代币，为会员和社区提供福利和服务，决定了 Nutbox 的治理。',
     q4: ' NUT是如何分配的?',
@@ -109,13 +109,13 @@ export default {
       '② 35%用于MKT、私募和分配创始团队。',
     q5: 'NUT的地址是什么以及将在哪里上所?',
     a5: 'NUT (BSC): 0x4429FcdD4eC4EA4756B493e9c0525cBe747c2745<br>NUT 还没有上交易所。',
-    q6: 'Nutbox, Peanut和Walnut的差别是什么?',
-    a6: 'Walnut 是 Nutbox 的多链权益证明网络模块，也可以看作是Nutbox的第一阶段。' +
+    q6: 'Nutbox, Peanut的差别是什么?',
+    a6: 'Nutbox 是一个web3 DAO基础设施，使用户轻而易举的创建出强大的，基于区块链的组织' +
       '<br>' +
-      'Peanut 是一个使用 Walnut 创建的投资DAO',
-    q7: 'Walnut目前支持哪些PoS链？',
+      'Peanut 是一个使用 Nutbox 创建的投资DAO',
+    q7: 'Nutbox目前支持哪些PoS链？',
     a7: '目前支持 Cosmos, Steem, Hive, 很快会支持比如 Solana, Polkadot, Ethereum2.0 等PoS主链。',
-    q8: '如何使用 Walnut 创建基于 Staking 的 DAO？',
+    q8: '如何使用 Nutbox 创建基于 Staking 的 DAO？',
     a8: '请在此处查看指南:' +
       '<br>' +
       '<a href="https://nutbox-io.gitbook.io/walnut/create-a-staking-based-dao/create-a-staking-based-dao-in-3-minutes">' +
