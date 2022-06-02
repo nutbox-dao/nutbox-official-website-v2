@@ -16,10 +16,10 @@
           <img src="~@/assets/grant-img2.png" alt="">
           <span>{{$t('grantSection.p3')}}</span>
         </div>
-        <div class="box-item">
+        <!-- <div class="box-item">
           <img src="~@/assets/grant-img3.png" alt="">
           <span>{{$t('grantSection.p4')}}</span>
-        </div>
+        </div> -->
       </div>
       <div class="h-line"></div>
     </div>

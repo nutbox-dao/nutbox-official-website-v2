@@ -23,7 +23,7 @@ export default {
     t1: 'Enter the world of communities and get connected.',
     p1: 'The best community supporting platform for community entrepreneurs and digital nomads which provides out-of-box facilities and connects worldwide communities.',
     t2: 'Create and configure your DAO in 5 minutes.',
-    p2: 'With Nutbox Toolkits, you can easily create a DAO in 5 minutes and configure its Defi (Walnut), NFT (Chestnut) and Social (Donut) modules.'
+    p2: 'With Nutbox Toolkits, you can easily create a DAO in 5 minutes and configure its Defi, NFT and Social modules.'
   },
   nutboxSection: {
     title: 'Why <span class="gradient-text gradient-text-bottom">Nutbox</span> ?',
@@ -44,7 +44,7 @@ export default {
   peanutSection: {
     btn1: 'Explore Peanut',
     t1: 'The first DAO created by Nutbox',
-    p1: 'From a Staking DAO to an investment DAO, will investing and incubating Walnut ecological projects.'
+    p1: 'From a Staking DAO to an investment DAO, will investing and incubating Nutbox ecological projects.'
   },
   roadmapSection: {
     title: 'ROAD MAP',
@@ -100,7 +100,7 @@ export default {
     q1: 'What is Nutbox?',
     a1: 'Nutbox is a DAO infrastructure facing Web3. Any community creator can create DAO using Nutbox protocol one-click, help DAO to bootstrap, and attract community members to participate.',
     q2: 'What functions do you provide?',
-    a2: 'The three pillars of Nutbox’s basic modules are: Multi-Chain Proof of Stake Networks (Walnut), NFT Module (Chestnut) and Social Layer (Donut). Walnut has already been launched and the other two will be coming soon.',
+    a2: 'The three pillars of Nutbox’s basic modules are: Multi-Chain Proof of Stake Networks, NFT Module and Social Layer. Nutbox has already been launched and the other two will be coming soon.',
     q3: 'What is NUT?',
     a3: 'NUT is the native token of Nutbox economy, providing members and communities with benefits and services, and dictates Nutbox’s governance.',
     q4: 'How is NUT distributed?',
@@ -111,13 +111,13 @@ export default {
       '② 35% is used for MKT, private sale and allocation of founding team.',
     q5: 'What is NUT address and where it is listed?',
     a5: 'NUT (BSC): 0x4429FcdD4eC4EA4756B493e9c0525cBe747c2745<br>NUT is not listed yet.',
-    q6: 'What’s the difference between Nutbox, Peanut and Walnut?',
-    a6: 'Walnut is the Multi-Chain Proof of Stake Networks module of Nutbox, it can also been seen as the Phase 1 of Nutbox.' +
+    q6: 'What’s the difference between Nutbox, Peanut?',
+    a6: 'Nutbox is a web3 DAO infrastructure that enables you to easily build powerful, blockchain-based organization.' +
       '<br>' +
-      'Peanut is an investing DAO that is created by using Walnut.',
-    q7: 'What PoS chains does Walnut support at present?',
+      'Peanut is a staking DAO that is created by using Nutbox.',
+    q7: 'What PoS chains does Nutbox support at present?',
     a7: 'Currently support Cosmos, Steem, Hive, and will soon support mainstream Pos chains such as Solana, Polkadot, Ethereum2.0 etc.',
-    q8: 'How to create a Staking-based DAO using Walnut?',
+    q8: 'How to create a Staking-based DAO using Nutbox?',
     a8: 'Please check the guide here:' +
       '<br>' +
       '<a href="https://nutbox-io.gitbook.io/walnut/create-a-staking-based-dao/create-a-staking-based-dao-in-3-minutes">' +
