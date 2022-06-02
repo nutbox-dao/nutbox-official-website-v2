@@ -340,7 +340,8 @@ body {
     font-size: 16px;
     font-weight: bold;
     border-radius: 8px;
-    width: 140px;
+    min-width: 140px;
+    white-space: nowrap;
     font-family:MontserratBlod, Avenir, Helvetica, Arial, sans-serif;
     &:hover {
       color: white!important;
@@ -376,6 +377,9 @@ body {
       padding: 20px;
       background-color: black;
       border-radius: 20px;
+      box-shadow: 0 2px 10px 2px rgba(white, 0.1);
+      max-height: 480px;
+      overflow: auto;
     }
     .navbar-nav .nav-link {
       margin-left: 0;
