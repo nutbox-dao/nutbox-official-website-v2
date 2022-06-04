@@ -46,7 +46,7 @@
                     <a href="https://app.nutbox.io" target="_blank" class="d-menu-item">
                       <span class="">Nutbox</span>
                     </a>
-                    <a href="https://app.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="d-menu-item">
+                    <a href="https://app.nutbox.io/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="d-menu-item">
                       <span class="">Peanut</span>
                     </a>
                   </b-popover>
