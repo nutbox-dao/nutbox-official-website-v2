@@ -36,23 +36,23 @@
 <!--              </div>-->
               <button class="item" id="popover-target-product">{{$t('products')}}</button>
               <b-popover custom-class="c-popover"  target="popover-target-product" triggers="hover focus" placement="top">
-                <a href="https://walnut.nutbox.io" target="_blank" class="d-menu-item">
-                  <span class="">Walnut</span>
+                <a href="https://app.nutbox.io" target="_blank" class="d-menu-item">
+                  <span class="">Nutbox</span>
                 </a>
-                <a href="https://walnut.nutbox.app/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="d-menu-item">
+                <a href="https://app.nutbox.io/#/sub-community/home/?id=0xc54C1F0E7A75Fb405038891E316c973D26Bf0125" target="_blank" class="d-menu-item">
                   <span class="">Peanut</span>
                 </a>
               </b-popover>
               <button class="item" id="popover-target-doc">{{$t('doc')}}</button>
               <b-popover custom-class="c-popover" target="popover-target-doc" triggers="hover focus" placement="top">
-                <a href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="d-menu-item">
+                <a href="https://www.notion.so/nutboxwalnut/Nutbox-WiKi-f771539074914594b162975739bd7eb7" target="_blank" class="d-menu-item">
                   <div class="d-flex align-items-center">
                     <span class="">Nutbox Wiki</span>
                   </div>
                 </a>
                 <a href="https://nutbox-io.gitbook.io/walnut/" target="_blank" class="d-menu-item">
                   <div class="d-flex align-items-center">
-                    <span class="">Walnut Wiki</span>
+                    <span class="">{{ $t('whitePaper') }}</span>
                   </div>
                 </a>
               </b-popover>
