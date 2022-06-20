@@ -30,12 +30,12 @@
                     <template #button-content>
                       <div class="d-flex align-items-center justify-content-center">Document</div>
                     </template>
-                    <b-dropdown-item href="https://www.notion.so/nutboxwalnut/Nutbox-WiKi-f771539074914594b162975739bd7eb7" target="_blank" class="">
+                    <b-dropdown-item href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="">
                       <div class="flex-between-center line-height46 font16">Nutbox Wiki</div>
                     </b-dropdown-item>
-                    <b-dropdown-item href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="">
+                    <!-- <b-dropdown-item href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="">
                       <div class="flex-between-center line-height46 font16">{{ $t('whitePaper') }}</div>
-                    </b-dropdown-item>
+                    </b-dropdown-item> -->
                   </b-nav-item-dropdown>
                 </template>
                 <template v-else>
@@ -54,16 +54,16 @@
                     <button class="item" id="nav-popover-doc">{{$t('doc')}}</button>
                   </b-nav-item>
                   <b-popover custom-class="c-popover" target="nav-popover-doc" triggers="hover focus" placement="top">
-                    <a href="https://www.notion.so/nutboxwalnut/Nutbox-WiKi-f771539074914594b162975739bd7eb7" target="_blank" class="d-menu-item">
+                    <a href="https://nutbox-io.gitbook.io/nutbox/" target="_blank" class="d-menu-item">
                       <div class="d-flex align-items-center">
                         <span class="">Nutbox Wiki</span>
                       </div>
                     </a>
-                    <a href="https://nutbox-io.gitbook.io/walnut/" target="_blank" class="d-menu-item">
+                    <!-- <a href="https://nutbox-io.gitbook.io/walnut/" target="_blank" class="d-menu-item">
                       <div class="d-flex align-items-center">
                         <span class="">{{ $t('whitePaper') }}</span>
                       </div>
-                    </a>
+                    </a> -->
                   </b-popover>
                 </template>
                 <b-nav-item v-for="item of menuOptions" :key="item.id"
