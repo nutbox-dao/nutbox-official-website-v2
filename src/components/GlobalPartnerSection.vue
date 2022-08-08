@@ -4,10 +4,6 @@
       <div class="title text-bold">{{$t('globalSection.title')}}</div>
       <div class="grid-box">
         <div class="box-item">
-          <img src="~@/assets/global-aku.png" alt="">
-          <span>Aku</span>
-        </div>
-        <div class="box-item">
           <img src="~@/assets/global-allen.png" alt="">
           <span>Allen Hu</span>
         </div>
@@ -24,24 +20,12 @@
           <span>Tim Bae</span>
         </div>
         <div class="box-item">
-          <img src="~@/assets/global-happy.png" alt="">
-          <span>HAPPY</span>
-        </div>
-        <div class="box-item">
           <img src="~@/assets/global-sookjin.png" alt="">
           <span>Sook Jin Goh</span>
         </div>
         <div class="box-item">
-          <img src="~@/assets/global-sampraise.png" alt="">
-          <span>Sampraise</span>
-        </div>
-        <div class="box-item">
           <img src="~@/assets/global-Mohammed.png" alt="">
           <span>Mohammed</span>
-        </div>
-        <div class="box-item">
-          <img src="~@/assets/global-Nurik.png" alt="">
-          <span>Nurik</span>
         </div>
       </div>
     </div>
@@ -68,8 +52,8 @@ export default {
 }
 .grid-box {
   display: grid;
-  grid-template-columns: repeat(5, 7.5rem);
-  column-gap: 4.5rem;
+  grid-template-columns: repeat(6, 7.5rem);
+  column-gap: 2.5rem;
   row-gap: 2rem;
   justify-content: center;
   margin: 7rem 0 8rem;
