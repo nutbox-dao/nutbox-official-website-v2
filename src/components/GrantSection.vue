@@ -4,12 +4,17 @@
       <div class="h-line"></div>
       <div class="title text-bold">{{$t('grantSection.title')}}</div>
       <div class="grid-box">
+
         <div class="box-item">
-          <img src="~@/assets/grant-img0.png" alt="">
+          <img src="~@/assets/grant-img3.jpeg" alt="">
           <span>{{$t('grantSection.p1')}}</span>
         </div>
         <div class="box-item">
           <img src="~@/assets/grant-img1.png" alt="">
+          <span>{{$t('grantSection.p1')}}</span>
+        </div>
+        <div class="box-item">
+          <img src="~@/assets/grant-img0.png" alt="">
           <span>{{$t('grantSection.p2')}}</span>
         </div>
         <div class="box-item">
