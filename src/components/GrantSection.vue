@@ -6,7 +6,7 @@
       <div class="grid-box">
 
         <div class="box-item">
-          <img src="~@/assets/grant-img3.jpeg" alt="">
+          <img src="~@/assets/grant-img3.png" alt="">
           <span>{{$t('grantSection.p1')}}</span>
         </div>
         <div class="box-item">
